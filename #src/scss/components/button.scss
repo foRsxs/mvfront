@@ -1,0 +1,31 @@
+.button {
+    padding: 16px 44px;
+    border-radius: 8px;
+    background-color: $red;
+    border: 1px solid $red;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    @include def-anim;
+
+    &:hover {
+        color: $black_text;
+        background-color: transparent;
+    }
+
+
+    &:active {
+        color: $black_text;
+        background-color: transparent;
+        transform: scale(0.95);
+    }
+
+    &:disabled {
+        background-color: $small_text;
+        color: #fff;
+        border-color: $small_text;
+    }
+
+}

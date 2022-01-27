@@ -1,0 +1,139 @@
+.footer {
+    color: #fff;
+    background-color: $black_text;
+
+    &__top {    
+        padding: 62px 0;
+        display: flex;
+        justify-content: space-between;
+        // align-items: center;
+        &_logo {
+            display: block;
+        }
+        &_contacts {
+
+            &_item {
+                display: block;
+                margin-bottom: 25px;
+                padding-left: 26px;
+                position: relative;
+                font-size: 12px;
+                line-height: 16px;
+                color: $light_gray;
+
+                &:first-child {
+                    &:after {
+                        position: absolute;
+                        content: url('../img/whatsapp-f.svg');
+                        top: 0;
+                        left: 0;
+                    }
+                }
+
+                &:last-child {
+                    &:after {
+                        position: absolute;
+                        content: url('../img/tel-f.svg');
+                        top: 0;
+                        left: 0;
+                    }
+                }
+
+                span {
+                    font-weight: 600;
+                    font-size: 15px;
+                    line-height: 16px;
+                    color: #fff;
+                    display: block;
+                    margin-bottom: 3px;
+                }
+            }
+        }
+        &_nav {
+            display: flex;
+            gap: 87px;
+            &_list {
+                
+            }
+
+            &_item {
+                margin-bottom: 20px;
+                &:hover {
+                    a {
+                        color: #fff;
+                    }
+                }
+
+                a {
+                    font-weight: 500;
+                    font-size: 14px;
+                    // line-height: 40px;
+                    text-transform: uppercase;
+                    color: $light_gray;
+                    display: block;
+                    @include def-anim;
+                }
+            }
+        }
+
+        &_ex {
+            .soc {
+                display: flex;
+                align-items: center;
+                gap: 14px;
+                margin-bottom: 43px;
+
+                &__item {
+                    width: 49px;
+                    height: 49px;
+                    border: 1px solid #292929;
+                    border-radius: 6px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    @include def-anim;
+
+                    &:hover {
+                        border-color: $red;
+                        svg {
+                            path {
+                                fill: $red;
+                            }
+                        }
+                    }
+
+                    svg {
+                        
+                        path {
+                            @include def-anim;
+                            fill: #fff;
+
+                        }
+                    }
+                }
+            }
+
+            .pay {
+                display: flex;
+                gap: 25px;
+                &__item {
+
+                }
+            }
+        }
+    }
+    .ln {
+        height: 1px;
+        width: 100%;
+        background-color: #fff;
+        opacity: .1;
+    }
+    &__bot {
+        padding: 22px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+}

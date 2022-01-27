@@ -1,0 +1,128 @@
+.conn {
+
+    &__in {
+        display: flex;
+        justify-content: space-between;
+        padding: 90px 0;
+        align-items: center;
+    }
+
+    &__img {
+        width: 30%;
+    }
+
+    &__content {
+        position: relative;
+        height: 100%;
+
+        .conn__prev {
+            position: absolute;
+            top: -40px;
+            left: calc(50% - 20px);
+            z-index: 10;
+            cursor: pointer;
+        }
+
+        .conn__next {
+            position: absolute;
+            bottom: -40px;
+            left: calc(50% - 20px);
+            z-index: 10;
+            cursor: pointer;
+        }
+
+    }
+
+    &__slider {
+        max-height: 500px;
+        width: 278px;
+
+        &_wr {
+            align-items: center;
+        }
+
+        &_sl {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 172px;
+            width: 100%;
+            overflow: hidden;
+            padding: 15px 60px;
+            border-radius: 10px;
+            border: 1px solid transparent;
+            
+
+            @include def-anim;
+            &_img {
+                width: 100%;
+                border-radius: 10px;
+                overflow: hidden;
+                max-height: 100%;
+                // padding: 5px;
+                
+                border-radius: 10px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        &_sl.swiper-slide-active {
+            padding: 5px;
+            border-color: $black_text;
+            
+        }
+    }
+
+
+    &__body {
+        width: 30%;
+
+        
+    }
+
+    &__title {
+        margin-bottom: 27px;
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 39px;
+    }
+
+    &__link {
+        padding: 25px;
+        padding-left: 0;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 16px;
+        /* identical to box height, or 107% */
+
+        text-transform: uppercase;
+        border-top: 1px solid $line_gray;
+        border-bottom: 1px solid $line_gray;
+
+        &_item {
+            display: block;
+            padding-left: 40px;
+            position: relative;
+            @include def-anim;
+
+            &:hover {
+                color: $red;
+            }
+
+            &:after {
+                position: absolute;
+                content: url('../img/conn_insta.svg');
+                top: calc(50% - 11px);
+                left: 0;
+            }
+        }
+    }
+}

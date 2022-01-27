@@ -1,0 +1,195 @@
+.prev {
+
+
+    &__in {
+        margin: 50px 0;
+        display: flex;
+        justify-content: space-between;
+        max-height: 450px;
+    }
+
+    &__slider {
+        border-radius: 10px;
+        height: 450px;
+        overflow: hidden;
+        width: 790px;
+        position: relative;
+
+        
+
+        &_wr {
+            height: 100%;
+          
+        }
+
+        &_sl {
+            background-color: $dark_gray;
+            height: 100%;
+            &:nth-child(odd) {
+                background-color: $green;
+            }
+        }
+
+        .prev__left {
+            position: absolute;
+            z-index: 5;
+            top: calc(50% - 20px);
+            left: 20px;
+            cursor: pointer;
+        }
+
+        .prev__right {
+            position: absolute;
+            z-index: 5;
+            top: calc(50% - 20px);
+            right: 20px;
+            cursor: pointer;
+        }
+
+        .prev__pag {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            gap: 20px;
+            padding: 21px 0;
+            z-index: 5;
+
+            .prev__pag_item {
+                cursor: pointer;
+                @include def-anim;
+                width: 6px;
+                height: 6px;
+                border-radius: 100%;
+                background: #FFFFFF;
+                opacity: 0.5;
+
+            }
+
+            .prev__pag_cur {
+                width: 12px;
+                height: 12px;
+                border-radius: 100%;
+                background-color: $red;
+            }
+
+            .prev__pag_active {
+                width: 12px;
+                height: 12px;
+                border-radius: 100%;
+                background-color: $red;
+                opacity: 1;
+            }
+        }
+    }
+
+    &__ex {
+        max-width: 380px;
+        width: 100%;
+        min-height: 100%;
+        &_item {
+
+        }
+
+        &_item.prev__ex_item_first {
+            max-height: 165px;
+            height: 100%;
+            background-color: $light_gray;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 30px;
+        }
+        &_item.prev__ex_item_an {
+            max-height: 255px;
+            height: 100%;
+            
+        }
+
+        .prev__ex_item_an {
+            border: 2px solid $line_gray;
+            border-radius: 10px;
+            overflow: hidden;
+            padding: 15px 20px;
+            &_title {
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 24px;
+                text-transform: uppercase;
+            }
+
+            &_subtitle {
+                font-weight: 500;
+                font-size: 13px;
+                line-height: 18px;
+                color: $light_gray;
+                margin-bottom: 14px;
+            }
+
+            &_indicators {
+                display: flex;
+                justify-content: space-between;
+
+                .indicator__item {
+                    width: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    &:nth-child(1) {
+                        padding-right: 34px;
+                        border-right: 0.5px solid $line_gray;
+                    }
+
+                    &:nth-child(2) {
+                        padding-left: 34px;
+                        border-left: 0.5px solid $line_gray;
+                    }
+
+
+                    &_title {
+                        text-align: center;
+                        margin-bottom: 19px;
+                        font-weight: 500;
+                        font-size: 17px;
+                        line-height: 16px;
+                    }
+
+                    &_value {
+                        width: 110px;
+                        height: 110px;
+                        border-radius: 100%;
+                        border: 2px solid $line_gray;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        .value {
+                            position: relative;
+                            padding-right: 28px;
+
+                            .h {
+                                font-weight: 600;
+                                font-size: 22px;
+                                line-height: 24px;
+                            }
+
+                            .m {
+                                position: absolute;
+                                font-weight: 600;
+                                font-size: 14px;
+                                line-height: 17px;
+                                color: $line_gray;
+                                right: 0;
+                                top: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+    }
+}

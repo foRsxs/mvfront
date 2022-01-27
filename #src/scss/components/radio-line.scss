@@ -1,0 +1,88 @@
+.radio-line-wr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    .range-line {
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        top: 7.5px;
+        left: 0;
+        background-color: $line_gray;
+        // z-index: -1;
+        
+    }
+    .radio-line {
+        &:nth-child(2) {
+            label {
+                justify-content: flex-start;
+
+                &:after {
+                    left: 0;
+                    
+                }
+            }
+        }
+        
+        &:last-child {
+            label {
+                justify-content: flex-end;
+
+                &:after {
+                    right: 0;
+                    left: unset;
+                }
+            }
+        }
+        input {
+            position: absolute;
+            top: 0;
+            left: 0;
+            visibility: hidden;
+            opacity: 0;
+            z-index: -1;
+            appearance: none;
+            pointer-events: none;
+        }
+    
+        label {
+            font-size: 14px;
+            line-height: 16px;
+            position: relative;
+            max-width: 43px;
+            padding-top: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            white-space: nowrap;
+    
+            &:after {
+                position: absolute;
+                content: '';
+                top: 0;
+                left: calc(50% - 7.5px);
+                width: 13px;
+                height: 13px;
+                border: 2px solid $line_gray;
+                background-color: #fff;
+                border-radius: 4px;
+    
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        input:checked ~ label {
+
+            &:after {
+                content: url('../img/radio.svg');
+                border-color: $red;
+            }
+        }
+
+        
+    }
+}

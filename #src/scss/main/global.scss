@@ -1,0 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+input, button {
+    background-color: transparent;
+    border: none;
+    font-style: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    font-weight: inherit;
+    cursor: pointer;
+}
+
+*, html {
+    &::-webkit-scrollbar {
+        width: 4px;
+        background-color: $line_gray;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: $dark_gray;
+    }
+}
+
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    color: $black_text;
+}
+
+//HELPERS
+.container {
+    max-width: 1240px;
+    padding: 0 20px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.form__name {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 16px;
+}
+
+.w-230 { 
+    width: 230px !important;
+}
+
+.w-270 {
+    width: 270px !important;
+}
+
+.section__title {
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+    text-transform: uppercase;
+}

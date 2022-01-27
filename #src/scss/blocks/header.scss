@@ -1,0 +1,170 @@
+.header {
+
+
+    &__in {
+        padding: 18px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__contacts {
+        display: flex;
+        align-items: center;
+        width: 33%;
+        justify-content: space-between;
+        
+
+
+        &_item {
+            display: block;
+            font-size: 12px;
+            line-height: 16px;
+            color: $dark_gray;
+            padding-left: 26px;
+            position: relative;
+
+            &:hover {
+                span {
+                    color: $red;
+                }
+            }
+            span {
+                font-size: 15px;
+                line-height: 16px;
+                font-weight: 600;
+                display: block;
+                margin-bottom: 3px;
+                color: $black_text;
+            }
+
+            &:nth-child(1) {
+
+                &:after {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    content: url('../img/whatsapp.svg');
+                }
+            }
+
+            &:nth-child(2) {
+
+                &:after {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    content: url('../img/tel.svg');
+                }
+            }
+        }
+    }
+
+    &__logo {
+        width: 33%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    &__ex {
+        width: 33%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+
+    &__select {
+        
+        .choices {  
+            width: 267px;
+            
+
+            &__inner {
+                background-color: transparent;
+                font-size: 13px;
+                font-weight: 500;
+                display: flex;
+                align-items: center;
+                padding: 5px 10px;
+                padding-bottom: 5px !important;
+                min-height: unset;
+            }
+
+            .choices__list.choices__list--dropdown {
+                max-height: 571px;
+
+                .choices__group {
+
+                    margin-top: 17px;
+                    .choices__heading {
+                        padding: 0 14px !important;
+                        color: $black_text;
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 16px;
+                        text-transform: uppercase;
+                        border: none !important;
+                        margin-bottom: 12px;
+                    }
+                }
+                .choices__input {
+                    padding: 9px 13px;
+                    
+                    border: 1px solid $line_gray;
+                }
+                .choices__item {
+                    padding: 4px;
+                    padding-left: 28px;
+                    color: $dark_gray;
+                    font-size: 13px;
+                    font-weight: 500;
+
+                    &:hover {
+                        background-color: #fff;
+                        color: $red;
+                    }
+                }
+
+                .choices__item.is-highlighted {
+                    background-color: #fff;
+                    color: $red;
+                }
+            }
+        }
+    }
+
+    &__basket {
+        font-size: 15px;
+        line-height: 16px;
+        padding-left: 40px;
+        position: relative;
+
+        &:after {
+            position: absolute;
+            content: url('../img/basket.svg');
+            top: calc(50% - 13.5px);
+            left: 0;
+        }
+
+        span {
+            position: absolute;
+            left: 16px;
+            top: -11px;
+            z-index: 2;
+            height: 20px;
+            width: 20px;
+            border-radius: 100%;
+            background-color: $red;
+            border: 2px solid #fff;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 12px;
+        }
+    }
+}

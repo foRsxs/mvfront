@@ -1,0 +1,12 @@
+.scroll-custom {
+    overflow: hidden;
+    overflow-y: scroll !important; 
+
+    &::-webkit-scrollbar {
+        width: 4px;
+        background-color: $line_gray;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: $dark_gray;
+    }
+}

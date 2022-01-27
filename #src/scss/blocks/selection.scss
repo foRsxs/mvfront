@@ -1,0 +1,112 @@
+.selection {
+    background-color: $menu_down;
+    padding-bottom: 20px;
+    &__in {
+
+    }
+
+    &__head {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+
+        &_title {
+            margin-right: 46px;
+            padding: 19px 26px;
+            border: 1px solid $line_gray;
+            border-radius: 0px 0px 6px 6px;
+            text-transform: uppercase;
+            border-top: none;
+        }
+
+        &_ex {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            flex: 1 0 auto;
+
+            &_q {
+                font-size: 15px;
+                line-height: 18px;
+                color: $dark_gray;
+
+                &:hover {
+                    text-decoration: underline;
+                    text-decoration-style: dotted;
+                }
+            }
+
+            &_r {
+                padding: 5px 10px 5px 10px;
+                border: 1px solid $line_gray;
+                font-size: 15px;
+                line-height: 16px;
+                display: flex;
+                align-items: center;
+                
+                color: $dark_gray;
+                cursor: pointer;
+                border-radius: 5px; 
+                @include def-anim;
+
+                &:hover {
+                    border-color: $black_text;
+                    color: $black_text;
+
+                    svg {
+                        path {
+                            fill: $black_text;
+                        }
+                    }
+                }
+
+                &:active {
+                    border-color: $black_text;
+                    color: $black_text;
+
+                    svg {
+                        path {
+                            fill: $black_text;
+                        }
+                    }
+                }
+
+                svg {
+                    margin-left: 10px;
+                }
+
+            }
+        }
+    }
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+
+        &_item {
+            .form__name {
+                margin-bottom: 20px;
+            }
+
+            &_wr {
+
+            }
+
+
+            &_input {
+                margin-bottom: 10px;
+            }
+        }
+
+        &_item.range {
+            .form__name {
+                margin-bottom: 20px;
+            }
+        }
+
+        &_btn {
+            align-self: flex-end;
+            margin-bottom: 20px;
+        }
+    }
+}
