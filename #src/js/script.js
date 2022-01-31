@@ -5,6 +5,8 @@ import { selectionAcc } from './components/selectionAcc';
 import MicroModal from 'micromodal'; 
 import { burgerBtn } from './components/burgerBtn';
 import { mobileMenu } from './components/mobileMenu';
+import { cardSelects } from './components/cardSelects';
+import { tabs } from './components/tabs';
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -80,12 +82,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const connPrev = document.querySelector('#connPrev');
     const connNext = document.querySelector('#connNext');
 
-    connPrev.addEventListener('click', () => {
-        connSlider.slidePrev();
-    });
-    connNext.addEventListener('click', () => {
-        connSlider.slideNext();
-    })
+    if(connPrev) {
+        connPrev.addEventListener('click', () => {
+            connSlider.slidePrev();
+        });
+    }
+    if(connNext) {
+        connNext.addEventListener('click', () => {
+            connSlider.slideNext();
+        })
+    }
 
 
     const products = document.querySelectorAll('.product');
@@ -110,6 +116,8 @@ document.addEventListener('DOMContentLoaded', () => {
     selectionAcc();
     burgerBtn();
     mobileMenu();
+    cardSelects();
+    tabs();
 
 
     

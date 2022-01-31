@@ -16,6 +16,10 @@
 @import './blocks/conn.scss';
 @import './blocks/seo.scss';
 @import './blocks/footer.scss';
+@import './blocks/bc.scss';
+
+
+
 
 
 
@@ -26,6 +30,11 @@
 @import './components/products.scss';
 @import './components/scroll.scss';
 @import './components/more.scss';
+
+
+
+//PAGES 
+@import './pages/card.scss';
 
 
 //MEDIA
@@ -47,5 +56,9 @@
 @import './adaptive/blocks/header.scss';
 @import './adaptive/blocks/nav.scss';
 @import './adaptive/blocks/seo.scss';
+
+
+//pages 
+@import './adaptive/pages/card.scss';
 
 

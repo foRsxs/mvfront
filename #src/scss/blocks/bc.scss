@@ -1,0 +1,31 @@
+.bc {
+
+    &__in {
+        padding: 25px 0;
+        display: flex;
+    }
+
+    &__item {
+        padding-right: 25px;
+        position: relative;
+        display: block;
+        margin-right: 15px;
+        font-size: 14px;
+        line-height: 17px;
+
+        &:after {
+            position: absolute;
+            content: url('../img/bc-arrow.svg');
+            top: 0;
+            right: 0;
+        }
+    }
+
+    &__item.current {   
+        color: $light_gray;
+
+        &:after {
+            display: none;
+        }
+    }
+}
