@@ -1,9 +1,10 @@
 import Choices from 'choices.js';
-import Swiper, {Navigation, Pagination} from 'swiper';
+import Swiper, {Navigation, Pagination, Thumbs} from 'swiper';
 import { navMenu } from './components/navMenu';
 import { selectionAcc } from './components/selectionAcc';
 import MicroModal from 'micromodal'; 
 import { burgerBtn } from './components/burgerBtn';
+import { mobileMenu } from './components/mobileMenu';
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -44,14 +45,37 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
     });
-
-    const connSlider = new Swiper('.conn__slider', {
-        direction: 'vertical',
+    
+    const connThumbs = new Swiper('.conn__thumbs', {
+        
         slidesPerView: 3,
         spaceBetween: 20,
-        centeredSlides: true,
-        initialSlide: 2,
+        
+        
+
     });
+    const connSlider = new Swiper('.conn__slider', {
+        modules: [Thumbs],
+        direction: 'horizontal',
+        slidesPerView: 1,
+        
+        breakpoints: {
+            600: {
+            direction: 'vertical',
+            slidesPerView: 3,
+            spaceBetween: 20,
+            centeredSlides: true,
+            initialSlide: 2,
+            }
+        },
+        thumbs: {
+            swiper: connThumbs
+        },
+    });
+
+    
+
+    
 
     const connPrev = document.querySelector('#connPrev');
     const connNext = document.querySelector('#connNext');
@@ -85,7 +109,7 @@ document.addEventListener('DOMContentLoaded', () => {
     navMenu();
     selectionAcc();
     burgerBtn();
-
+    mobileMenu();
 
 
     
