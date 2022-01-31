@@ -1,0 +1,88 @@
+@media (max-width: 1200px) {
+
+    .nav {
+
+        &__user {
+            display: none;
+        }
+
+        &__select {
+            display: block;
+            padding: 7px 0;
+
+            .choices {  
+                width: 210px;
+                
+    
+                &__inner {
+                    background-color: transparent;
+                    font-size: 13px;
+                    font-weight: 500;
+                    display: flex;
+                    align-items: center;
+                    padding: 2px 10px;
+                    padding-bottom: 5px !important;
+                    min-height: unset;
+                    border: 1px solid #E1E5EE !important;
+                    background-color: #fff;
+                    border-radius: 4px;
+                }
+                .choices__list.choices__list--dropdown.is-active {
+                    z-index: 20;
+                }
+                .choices__list.choices__list--dropdown {
+                    max-height: 571px;
+                    border-radius: 4px;
+                    .choices__group {
+    
+                        margin-top: 17px;
+                        .choices__heading {
+                            padding: 0 14px !important;
+                            color: $black_text;
+                            font-weight: 600;
+                            font-size: 14px;
+                            line-height: 16px;
+                            text-transform: uppercase;
+                            border: none !important;
+                            margin-bottom: 12px;
+                        }
+                    }
+                    .choices__input {
+                        padding: 9px 13px;
+                        
+                        border: 1px solid $line_gray;
+                    }
+                    .choices__item {
+                        padding: 4px;
+                        padding-left: 28px;
+                        color: $dark_gray;
+                        font-size: 13px;
+                        font-weight: 500;
+    
+                        &:hover {
+                            background-color: #fff;
+                            color: $red;
+                        }
+                    }
+    
+                    .choices__item.is-highlighted {
+                        background-color: #fff;
+                        color: $red;
+                    }
+                }
+            }
+        }
+
+        &__menu {
+            gap: 30px;
+
+            &_item.nav__menu_item_drop {
+                
+                .nav__menu_item_list {
+                    top: 51px;
+                    width: calc(100vw - 94px);
+                }
+            }
+        }
+    }
+}

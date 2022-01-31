@@ -2,10 +2,11 @@
 
 
     &__in {
-        margin: 50px 0;
+        // margin: 50px 0;
+        padding: 50px 0;
         display: flex;
         justify-content: space-between;
-        max-height: 450px;
+        // max-height: 450px;
     }
 
     &__slider {
@@ -94,8 +95,8 @@
         }
 
         &_item.prev__ex_item_first {
-            max-height: 165px;
-            height: 100%;
+            height: 165px;
+            // height: 100%;
             background-color: $light_gray;
             border-radius: 10px;
             overflow: hidden;

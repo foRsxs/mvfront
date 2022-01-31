@@ -61,25 +61,24 @@
     
             &:after {
                 position: absolute;
-                content: '';
+                content: url('../img/radio.svg');
                 top: 0;
                 left: calc(50% - 7.5px);
-                width: 13px;
-                height: 13px;
-                border: 2px solid $line_gray;
-                background-color: #fff;
-                border-radius: 4px;
+                // width: 13px;
+                // height: 13px;
+                // border: 2px solid $line_gray;
+                // background-color: #fff;
+                // border-radius: 4px;
     
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                // display: flex;
+                // justify-content: center;
+                // align-items: center;
             }
         }
         input:checked ~ label {
 
             &:after {
-                content: url('../img/radio.svg');
-                border-color: $red;
+                content: url('../img/radio-checked.svg');
             }
         }
 

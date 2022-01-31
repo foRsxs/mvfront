@@ -41,6 +41,7 @@ body {
     font-size: 16px;
     line-height: 19px;
     color: $black_text;
+    overflow-x: hidden;
 }
 
 //HELPERS
@@ -70,4 +71,11 @@ body {
     font-size: 38px;
     line-height: 46px;
     text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+    .section__title {
+        font-size: 30px;
+        line-height: 36px;
+    }
 }

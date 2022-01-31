@@ -17,13 +17,20 @@
             border-radius: 0px 0px 6px 6px;
             text-transform: uppercase;
             border-top: none;
+
+            svg {
+                display: none;
+            }
         }
+
+        
 
         &_ex {
             display: flex;
             justify-content: space-between;
             align-items: flex-end;
             flex: 1 0 auto;
+            
 
             &_q {
                 font-size: 15px;

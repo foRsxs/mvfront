@@ -1,0 +1,74 @@
+@media (max-width: 1200px) {
+
+    .header {
+
+
+        &__in {
+            padding: 15px 0;
+            
+        }
+        &__contacts {
+            width: 100%;
+            flex-wrap: wrap;
+
+            &_item {
+                width: 100%;
+                margin-bottom: 13px;
+                font-size: 15px;
+                line-height: 16px;
+
+                &:last-child {
+                    margin: 0;
+                }
+                div {
+                    display: none;
+                }
+            }
+        }
+
+        &__select {
+            display: none;
+        }
+
+        &__logo {
+            width: 20%;
+            margin: 0 40px;
+            img {
+                // width: 150px;
+                height: 57px;
+            }
+        }
+
+        &__ex {
+            width: 100%;
+
+        }
+
+        &__basket {
+            div {
+                display: none;
+            }
+        }
+
+        &__user {
+            display: block;
+        }
+
+        &__tb_links {
+            display: block;
+
+            .link {
+                display: block;
+                margin-bottom: 9px;
+                text-align: center;
+                @include def-anim;
+                font-size: 14px;
+                line-height: 16px;
+
+                &:hover {
+                    color: $red;
+                }
+            }
+        }
+    }
+}

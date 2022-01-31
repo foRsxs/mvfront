@@ -1,15 +1,25 @@
 import Choices from 'choices.js';
 import Swiper, {Navigation, Pagination} from 'swiper';
+import { navMenu } from './components/navMenu';
+import { selectionAcc } from './components/selectionAcc';
 
 document.addEventListener('DOMContentLoaded', () => {
     
-    const headerSelect = new Choices('.choices', {
+    const headerSelect = new Choices('.header-ch', {
         itemSelectText: '',
         noResultsText: 'Ничего не найдено',
         loadingText: 'Загрузка',
         allowHTML: true,
         searchPlaceholderValue: 'Поиск по названию...',
         
+    });
+
+    const navChoice = new Choices('.nav-ch', {
+        itemSelectText: '',
+        noResultsText: 'Ничего не найдено',
+        loadingText: 'Загрузка',
+        allowHTML: true,
+        searchPlaceholderValue: 'Поиск по названию...',
     });
 
 
@@ -69,49 +79,12 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
+    navMenu();
+    selectionAcc();
 
-    const navDropItem = document.querySelector('.nav__menu_item_drop');
 
-    navDropItem.addEventListener('click', (e) => {
-        let head = e.currentTarget.querySelector('.nav__menu_item_head');
-        let menu = e.currentTarget.querySelector('.nav__menu_item_list');
 
-        navDropItem.classList.toggle('active');
-
-        if(navDropItem.classList.contains('active')) {
-            menu.style.cssText = `height: ${menu.scrollHeight}px; visibility: visible; padding: 25px`;
-        }
-
-        if(!navDropItem.classList.contains('active')) {
-            menu.style.cssText = `height: 0px; visibility: hidden; padding: 0 25px`;
-        }
-    });
-
-    // navDropItem.addEventListener('mouseover', (e) => {
-    //     let head = e.currentTarget.querySelector('.nav__menu_item_head');
-    //     let menu = e.currentTarget.querySelector('.nav__menu_item_list');
-
-    //     if(e.target == head || e.target == menu) {
-    //         menu.style.cssText = `height: ${menu.scrollHeight}px; visibility: visible; `;
-
-    //     }
-    // });
-
-    // navDropItem.addEventListener('mouseout', (e) => {
-    //     let menu = e.currentTarget.querySelector('.nav__menu_item_list');
-    //     menu.style.cssText = `height: 0px; visibility: hidden; `;
-    // });
-
-    // navDropItem.addEventListener('mouseout', (e) => {
-    //     let head = e.currentTarget.querySelector('.nav__menu_item_head');
-    //     let menu = e.currentTarget.querySelector('.nav__menu_item_list');
-
-    //     if(e.target == head || e.target == menu) {
-    //         menu.style.cssText = `height: 0px; visibility: hidden; `;
-
-    //     }
-
-    // });
+    
 });
 
 

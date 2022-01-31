@@ -25,6 +25,24 @@
 @import './components/button.scss';
 @import './components/products.scss';
 @import './components/scroll.scss';
+
+
 //MEDIA
+
+
+//components
+@import './adaptive/components/products.scss';
+
+
+
+//blocks
+@import './adaptive/blocks/prev.scss';
+@import './adaptive/blocks/selection.scss';
+@import './adaptive/blocks/pop.scss';
+@import './adaptive/blocks/adv.scss';
+@import './adaptive/blocks/conn.scss';
+@import './adaptive/blocks/footer.scss';
+@import './adaptive/blocks/header.scss';
+@import './adaptive/blocks/nav.scss';
 
 

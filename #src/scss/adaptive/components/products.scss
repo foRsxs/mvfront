@@ -1,0 +1,29 @@
+@media (max-width: 1200px) {
+    .products {
+        
+        .product_wr {
+            max-width: unset;
+            width: 31%;
+
+            &:hover {
+                
+                .product {
+                    width: 100%;
+                    left: 0;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    .products { 
+        gap: 0;
+        justify-content: space-between;
+        .product_wr {
+
+            width: 48%;
+        }
+    }
+}
