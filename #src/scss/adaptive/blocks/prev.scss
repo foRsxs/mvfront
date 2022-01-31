@@ -17,7 +17,7 @@
             max-width: unset;
             min-height: unset;
             justify-content: space-between;
-            height: 277px;  
+            height: 227px;  
 
             &_item {
                 height: 100%;
@@ -35,6 +35,33 @@
                 max-height: unset;
                 height: 100%;
                 
+            }
+            .prev__ex_item_an {
+
+                &_indicators {
+
+
+                    .indicator__item {
+
+                        &_value {
+                            width: 98px;
+                            height: 98px;
+
+                            .value {
+
+                                .h {
+                                    font-size: 18px;
+                                    line-height: 21px;
+                                }
+
+                                .m {
+                                    font-size: 12px;
+                                    line-height: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }

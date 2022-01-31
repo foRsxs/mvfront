@@ -1460,7 +1460,7 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    height: 277px;
+    height: 227px;
   }
   .prev__ex_item {
     height: 100%;
@@ -1474,6 +1474,18 @@ body {
     width: 48%;
     max-height: unset;
     height: 100%;
+  }
+  .prev__ex .prev__ex_item_an_indicators .indicator__item_value {
+    width: 98px;
+    height: 98px;
+  }
+  .prev__ex .prev__ex_item_an_indicators .indicator__item_value .value .h {
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .prev__ex .prev__ex_item_an_indicators .indicator__item_value .value .m {
+    font-size: 12px;
+    line-height: 14px;
   }
 }
 @media (max-width: 1200px) {
