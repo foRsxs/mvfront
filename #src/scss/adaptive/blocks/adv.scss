@@ -18,3 +18,13 @@
         }
     }
 }
+
+@media (max-width: 600px) {
+
+    .adv {
+
+        &__in {
+            padding: 30px 0;
+        }
+    }
+}

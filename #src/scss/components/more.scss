@@ -1,0 +1,30 @@
+.products__more {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .products__more {
+        display: flex;
+        justify-content: center;
+        &_btn {
+            padding: 16px 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 16px;
+            text-transform: uppercase;
+            @include def-anim;
+            border: 1px solid $red;
+            border-radius: 8px;
+            max-width: 345px;
+            width: 100%;
+
+            &:active {
+                background-color: $red;
+                color: #fff;
+            }
+        }
+    }
+}

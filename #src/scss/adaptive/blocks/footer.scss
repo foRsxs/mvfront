@@ -49,3 +49,49 @@
 
     
 }
+
+@media (max-width: 700px) {
+
+    .footer {
+
+        &__top {
+
+            &_logo {
+                width: 100%;
+                display: flex;justify-content: center;
+                margin-bottom: 20px;
+            }
+
+            &_contacts {
+                order: 2;
+                display: flex;
+                justify-content: space-evenly;
+            }
+
+            &_nav {
+                order: 4;
+                width: 100%;
+                justify-content: center;
+            }
+
+            &_ex {
+                order: 3;
+                justify-content: center;
+
+                .soc {
+                    justify-content: center;
+                }
+
+                .pay {
+                    
+                }
+            }
+        }
+
+        &__bot {
+            .pay {
+                display: none;
+            }
+        }
+    }
+}

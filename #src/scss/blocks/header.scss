@@ -8,7 +8,15 @@
         align-items: center;
     }
 
+    &__burger {
+        display: none;
+    }
+
     &__tb_links {
+        display: none;
+    }
+
+    &__tel {
         display: none;
     }
 
@@ -105,7 +113,15 @@
             }
 
             .choices__list.choices__list--dropdown {
-                max-height: 571px;
+                // // max-height: 571px;
+                max-height: calc(100vh - 100px);
+                border-radius: 4px;
+                .choices__list {
+                    
+                    max-height: calc(100vh - 100px);
+                    
+                }
+               
 
                 .choices__group {
 

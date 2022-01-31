@@ -27,3 +27,20 @@
         }
     }
 }
+
+@media (max-width: 600px) {
+
+    .products {
+
+
+        .product_wr {
+            width: 100%;
+            margin-bottom: 15px;
+
+            .product {
+                width: 100%;
+
+            }
+        }
+    }
+}

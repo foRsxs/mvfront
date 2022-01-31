@@ -10,18 +10,21 @@
         &__contacts {
             width: 100%;
             flex-wrap: wrap;
+            align-items: center;
 
             &_item {
                 width: 100%;
                 margin-bottom: 13px;
                 font-size: 15px;
                 line-height: 16px;
+                margin-bottom: 0;
 
                 &:last-child {
                     margin: 0;
+                    display: none;
                 }
                 div {
-                    display: none;
+                    // display: none;
                 }
             }
         }
@@ -69,6 +72,110 @@
                     color: $red;
                 }
             }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        z-index: 100;
+
+
+        &__burger {
+            display: block;
+            display: flex;
+            justify-content: flex-start;
+            width: 100%;
+
+            &_btn.active {
+                
+
+                span {
+
+                    &:nth-child(1) {
+                        top: calc(50% - 1.5px);
+                        transform: rotate(45deg);
+                    }   
+                    &:nth-child(2) {
+                        opacity: 0;
+                    }
+
+                    &:nth-child(3) {
+                        bottom: calc(50% - 1.5px);
+                        transform: rotate(-45deg);
+                    }  
+
+                    
+                }
+            }
+            &_btn {
+                position: relative;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 26px;
+                height: 21px;
+
+                span {
+                    width: 100%;
+                    height: 3px;
+                    display: block;
+                    background-color: #000;
+                    border-radius: 4px;
+                    position: absolute;
+                    @include def-anim;
+
+                    &:nth-child(1) {
+                        top: 0;
+                        left: 0;
+                    }
+
+                    &:nth-child(2) {
+                        top: calc(50% - 1.5px);
+                        left: 0;
+                        background-color: $red;
+                        opacity: 1;
+                        
+                    }
+
+                    &:nth-child(3) {
+                        bottom: 0;
+                        left: 0;
+                    }
+                }
+            }
+        }
+        &__contacts {
+            display: none;
+        }
+
+
+        &__in {
+
+        }
+
+        &__user {
+            display: none;
+        }
+
+        &__ex {
+            justify-content: flex-end;
+            gap: 20px;
+        }
+
+        &__tel {
+            display: block;
+        }
+
+        &__tb_links {
+            display: none;
         }
     }
 }

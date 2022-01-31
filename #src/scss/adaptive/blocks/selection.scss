@@ -81,3 +81,26 @@
         }
     }
 }
+
+
+@media (max-width: 600px) {
+
+    .selection {
+
+        &__body {
+            
+            &_item {
+                width: 100% !important;
+
+                &:nth-child(1) {
+
+                    .selection__body_item_wr {
+                        display: flex;
+                        justify-content: flex-start;
+                        gap: 10%;
+                    }
+                }
+            }
+        }
+    }
+}
