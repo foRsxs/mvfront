@@ -87,6 +87,12 @@
         z-index: 100;
 
 
+        &__logo {
+            img {
+                height: 46px;
+            width: 124px;
+            }
+        }
         &__burger {
             display: block;
             display: flex;

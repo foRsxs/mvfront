@@ -25,15 +25,33 @@ export function tabs() {
 
         tabsParent.addEventListener('click', (e) =>  {
             if(e.target && e.target.classList.contains('card__tabs_head_item')) {
+                
                 tabsEl.forEach((i, index) =>  {
                     if(e.target == i) {
                         hideTabs();
                         showTabs(index);
                     }
-                })
+                });
             }
+
+            
         });
     }
+
+
+    if(window.innerWidth < 600) {
+        tabsEl[1].innerHTML = 'хар-ки';
+    } else {
+        tabsEl[1].innerHTML = 'характеристики'; 
+    }
+
+    window.addEventListener('resize', (e) => {
+        if(window.innerWidth < 600) {
+            tabsEl[1].innerHTML = 'хар-ки';
+        } else {
+            tabsEl[1].innerHTML = 'характеристики'; 
+        }
+    });
 
 
 

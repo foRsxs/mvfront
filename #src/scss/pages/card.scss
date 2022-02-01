@@ -194,11 +194,19 @@
 
                             &__list {
                                 overflow-x: hidden;
+
+
                             }
 
                             &__list--dropdown {
                                 
                                 border: 1px solid $line_gray;
+
+                                .choices__item--selectable {
+                                    padding-right: 10px !important;
+                                    display: flex;
+                                    justify-content: center;
+                                }
                                 
                             }
                         }
@@ -242,7 +250,11 @@
                             &__list--dropdown {
                                 
                                 border: 1px solid $line_gray;
-                                
+                                .choices__item--selectable {
+                                    padding-right: 10px !important;
+                                    display: flex;
+                                    justify-content: center;
+                                }
                             }
                         }
                     }
@@ -392,6 +404,8 @@
                 color: $dark_gray;
                 text-transform: uppercase;
                 cursor: pointer;
+
+                
 
                 &:nth-child(1) {
                     border-top-left-radius: 6px;

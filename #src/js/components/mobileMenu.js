@@ -2,7 +2,7 @@ export function mobileMenu() {
 
     const mobmenuDropEl = document.querySelector('.mobmenu__nav_item_drop');
     const mobmenuDropMenu = document.querySelector('.mobmenu__subnav_wr');
-
+    
     if(mobmenuDropEl) {
         mobmenuDropEl.addEventListener('click', (e) => {
             e.preventDefault();
