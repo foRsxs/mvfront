@@ -134,6 +134,10 @@
     &__subnav {
         margin-bottom: 45px;
 
+        &:last-child {
+            margin: 0;
+        }
+
         &_title {
             font-weight: 600;
             font-size: 14px;
@@ -247,6 +251,7 @@
 
                 a {
                     &:after {   
+                        left: -2px;
                         content: url('../img/mob-icon-4.svg');
                     }
                 }

@@ -2198,6 +2198,9 @@ body[class=no-scroll] {
 .mobmenu__subnav {
   margin-bottom: 45px;
 }
+.mobmenu__subnav:last-child {
+  margin: 0;
+}
 .mobmenu__subnav_title {
   font-weight: 600;
   font-size: 14px;
@@ -2272,6 +2275,7 @@ body[class=no-scroll] {
   content: url("../img/mob-icon-3.svg");
 }
 .mobmenu__contacts_item:nth-child(4) a:after {
+  left: -2px;
   content: url("../img/mob-icon-4.svg");
 }
 .mobmenu__contacts_item:nth-child(5) a:after {
