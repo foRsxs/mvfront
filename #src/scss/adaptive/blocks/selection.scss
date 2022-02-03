@@ -87,6 +87,13 @@
 
     .selection {
 
+        &__head {
+
+            &_title {
+                font-size: 16px;
+                line-height: 21px;
+            }
+        }
         &__body {
             
             &_item {

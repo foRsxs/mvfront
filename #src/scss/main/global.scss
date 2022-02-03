@@ -13,10 +13,11 @@ li {
     list-style: none;
 }
 
-input, button {
+input, button, textarea {
     background-color: transparent;
     border: none;
     font-style: inherit;
+    font-family: inherit;
     font-size: inherit;
     line-height: inherit;
     font-weight: inherit;
@@ -48,6 +49,8 @@ body[class="no-scroll"] {
     overflow-y: hidden;
 }
 
+
+
 //HELPERS
 .container {
     max-width: 1240px;
@@ -78,6 +81,10 @@ body[class="no-scroll"] {
 
 .w-270 {
     width: 270px !important;
+}
+
+.o-0 {
+    opacity: 0;
 }
 
 .section__title {

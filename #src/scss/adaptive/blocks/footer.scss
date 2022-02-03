@@ -95,3 +95,36 @@
         }
     }
 }
+
+@media (max-width: 400px) {
+
+    .footer {
+
+
+        &__top {
+
+            &_contacts {
+                justify-content: space-between;
+                &_item {
+                    span {
+                        font-size: 13px;
+                    }
+                }
+            }
+            &_nav {
+                gap: 0;
+                justify-content: space-between;
+                &_list {
+                    
+                    
+                }
+                &_item {
+                        
+                    a {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+}

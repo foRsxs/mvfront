@@ -1,0 +1,10 @@
+.textarea {
+
+    textarea {
+        border-radius: 6px;
+        border: 1px solid $line_gray;
+        resize: none;
+        display: block;
+        width: 100%;
+    }
+}

@@ -324,6 +324,28 @@
                     line-height: 16px;
                 }
             }
+
+            &_content {
+                &_item {
+                    .rev__total {
+                        display: none;
+                    }
+                }
+
+                &_item.rev {
+                    flex-direction: column;
+
+                    .rev__mob_btn {
+                        display: block;
+                        margin-bottom: 20px;
+                    }
+
+                    .rev__list {
+                        width: 100%;
+                    }
+
+                }
+            }
         }
     }
 }

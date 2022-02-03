@@ -7,6 +7,11 @@ import { burgerBtn } from './components/burgerBtn';
 import { mobileMenu } from './components/mobileMenu';
 import { cardSelects } from './components/cardSelects';
 import { tabs } from './components/tabs';
+import { seoBtn } from './components/seoBtn';
+import { tabsFunc } from './components/tabsFunc';
+import { ratingFunc } from './components/ratingFunc';
+import { textareaAutoHeight } from './components/textareaAutoHeight';
+import { mobileRatingModal } from './components/mobileRatingModal';
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -118,6 +123,12 @@ document.addEventListener('DOMContentLoaded', () => {
     mobileMenu();
     cardSelects();
     tabs();
+    seoBtn();
+    tabsFunc('.tabs-wrapper', '.tabs-parent', '.tabs-tab', '.tabs-content');
+    ratingFunc('.rating__item');
+    ratingFunc('.revmodal__rating_item');
+    textareaAutoHeight('.autoheight');
+    mobileRatingModal();
 
 
     

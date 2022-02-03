@@ -38,20 +38,23 @@ export function tabs() {
         });
     }
 
-
-    if(window.innerWidth < 600) {
-        tabsEl[1].innerHTML = 'хар-ки';
-    } else {
-        tabsEl[1].innerHTML = 'характеристики'; 
-    }
-
-    window.addEventListener('resize', (e) => {
+    if(tabsEl.length > 0) {
         if(window.innerWidth < 600) {
             tabsEl[1].innerHTML = 'хар-ки';
         } else {
             tabsEl[1].innerHTML = 'характеристики'; 
         }
-    });
+    
+        window.addEventListener('resize', (e) => {
+            if(window.innerWidth < 600) {
+                tabsEl[1].innerHTML = 'хар-ки';
+            } else {
+                tabsEl[1].innerHTML = 'характеристики'; 
+            }
+        });
+    }
+
+    
 
 
 
