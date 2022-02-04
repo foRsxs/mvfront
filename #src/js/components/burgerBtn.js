@@ -14,7 +14,14 @@ export function burgerBtn() {
         burgerButtonEl.addEventListener('click', () => {
             mobMenuEl.classList.toggle('is-open');
             burgerButtonEl.classList.toggle('active');      
-            disablePageScroll(document.body);
+            
+            if(mobMenuEl.classList.contains('is-open')) {
+                disablePageScroll(document.body);
+            }
+
+            if(!mobMenuEl.classList.contains('is-open')) {
+                enablePageScroll(document.body);
+            }
         });
 
         mobmenuWrapper.addEventListener('click', (e) => {
