@@ -1,8 +1,8 @@
-.range {
+.range-test {
 
 }
 
-.range.noUi-horizontal {
+.range-test.noUi-horizontal {
     height: 4px !important;
     border: none;
     box-shadow: none;
@@ -29,6 +29,12 @@
 
         &:after {
 
+        }
+    }
+
+    .noUi-handle-upper, .noUi-handle-lower {
+        &:after {
+            display: none;
         }
     }
 }

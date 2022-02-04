@@ -1718,19 +1718,19 @@ body[class=no-scroll] {
     width: 100%;
   }
 }
-.range.noUi-horizontal {
+.range-test.noUi-horizontal {
   height: 4px !important;
   border: none;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
-.range.noUi-horizontal .noUi-base {
+.range-test.noUi-horizontal .noUi-base {
   background-color: #E1E5EE;
 }
-.range.noUi-horizontal .noUi-connect {
+.range-test.noUi-horizontal .noUi-connect {
   background-color: #DE2747;
 }
-.range.noUi-horizontal .noUi-handle {
+.range-test.noUi-horizontal .noUi-handle {
   width: 20px;
   height: 20px;
   border-radius: 100%;
@@ -1738,9 +1738,13 @@ body[class=no-scroll] {
   border: 5px solid #DE2747;
   top: calc(50% - 8px);
 }
-.range.noUi-horizontal .noUi-handle:before {
+.range-test.noUi-horizontal .noUi-handle:before {
   display: none;
 }
+.range-test.noUi-horizontal .noUi-handle-upper:after, .range-test.noUi-horizontal .noUi-handle-lower:after {
+  display: none;
+}
+
 .card__in {
   padding: 30px 0;
 }
@@ -2403,7 +2407,7 @@ body[class=no-scroll] {
   font-size: 15px;
   line-height: 16px;
 }
-.category__body_filter_in .filter__item_body.range {
+.category__body_filter_in .filter__item_body.range-test {
   padding-right: 20px;
 }
 .category__body_filter_in .filter__item .radio {

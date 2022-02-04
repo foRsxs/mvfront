@@ -1,7 +1,6 @@
 import Choices from 'choices.js';
 import Swiper, {Navigation, Pagination, Thumbs} from 'swiper';
-import noUiSlider from 'nouislider';
-import wNumb from 'wnumb';
+
 import { navMenu } from './components/navMenu';
 import { selectionAcc } from './components/selectionAcc';
 import MicroModal from 'micromodal'; 
@@ -14,6 +13,7 @@ import { tabsFunc } from './components/tabsFunc';
 import { ratingFunc } from './components/ratingFunc';
 import { textareaAutoHeight } from './components/textareaAutoHeight';
 import { mobileRatingModal } from './components/mobileRatingModal';
+import { rangeSlider } from './components/rangeSlider';
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -120,42 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-    //Range test
-    let filterPrice = document.querySelector('.range');
-
-    let input1 = document.querySelector('#test1');
-    let input2 = document.querySelector('#test2');
-
-    let inputs = [input1, input2];
-
-
-    noUiSlider.create(filterPrice, {
-        start: [0, 100000],
-        connect: true,
-        step: 1,
-        tooltips: false,
-
-        range: {
-            'min': 0,
-            'max': 100000
-        },
-        format: {
-            from: function(value) {
-                return parseInt(value);
-            },
-            to: function(value) {
-                return parseInt(value);  
-            }
-        }
-        // format: {
-        //     from: wNumb({thousand: ' ', suffix: '₸', }),
-        //     to: wNumb({thousand: ' ', suffix: '₸', })
-        // }
-    });
-
-    filterPrice.noUiSlider.on('update', function (values, handle) {
-        inputs[handle].value = `${values[handle]}`;
-    });
+   
     
     
 
@@ -172,6 +137,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ratingFunc('.revmodal__rating_item', '.revmodal__rating_total');
     textareaAutoHeight('.autoheight');
     mobileRatingModal();
+    rangeSlider();
 
 
     
