@@ -345,6 +345,18 @@
                     }
 
                 }
+
+                &_item.character {
+
+                    .item {
+
+                        .name {
+                            &:after {
+                                display: none;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
