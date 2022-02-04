@@ -1,0 +1,74 @@
+.category {
+
+    &__in {
+
+    }
+
+    &__head {
+        margin-bottom: 35px;
+
+        &_title {
+
+        }
+    }
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+
+        &_filter {
+            width: 20%;
+
+
+            &_in {
+
+                .filter__item {
+                    margin-bottom: 46px;
+
+                    &_title {
+                        margin-bottom: 20px;
+                        font-weight: 500;
+                        font-size: 17px;
+                        line-height: 18px;
+                    }
+
+                    &_inputs {
+
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-bottom: 25px;
+
+                        input {
+                            width: 48%;
+                            padding: 7px;
+                            border: 1px solid $line_gray;
+                            border-radius: 5px;
+                            font-weight: 500;
+                            font-size: 15px;
+                            line-height: 16px;
+                        }
+                    }
+
+                    &_body.range {
+                        padding-right: 20px;
+                    }
+
+                    .radio {
+                        margin-bottom: 10px;
+
+                        &:last-child {
+                            margin: 0;
+                        }
+                    }
+
+                    
+                }
+            }
+        }
+
+        &_list {
+            width: 73%;
+        }
+    }
+}

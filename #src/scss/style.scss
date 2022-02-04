@@ -17,6 +17,7 @@
 @import './blocks/seo.scss';
 @import './blocks/footer.scss';
 @import './blocks/bc.scss';
+@import './blocks/lenses-filter.scss';
 
 
 
@@ -32,11 +33,13 @@
 @import './components/more.scss';
 @import './components/textarea.scss';
 @import './components/revmodal.scss';
+@import './components/range.scss';
 
 
 
 //PAGES 
 @import './pages/card.scss';
+@import './pages/category.scss';
 
 
 //MEDIA

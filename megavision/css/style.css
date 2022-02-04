@@ -1718,6 +1718,29 @@ body[class=no-scroll] {
     width: 100%;
   }
 }
+.range.noUi-horizontal {
+  height: 4px !important;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.range.noUi-horizontal .noUi-base {
+  background-color: #E1E5EE;
+}
+.range.noUi-horizontal .noUi-connect {
+  background-color: #DE2747;
+}
+.range.noUi-horizontal .noUi-handle {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: #fff;
+  border: 5px solid #DE2747;
+  top: calc(50% - 8px);
+}
+.range.noUi-horizontal .noUi-handle:before {
+  display: none;
+}
 .card__in {
   padding: 30px 0;
 }
@@ -2334,6 +2357,63 @@ body[class=no-scroll] {
   border-radius: 3px;
   border: 1px solid #DE2747;
   height: 100%;
+}
+
+.category__head {
+  margin-bottom: 35px;
+}
+.category__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.category__body_filter {
+  width: 20%;
+}
+.category__body_filter_in .filter__item {
+  margin-bottom: 46px;
+}
+.category__body_filter_in .filter__item_title {
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 18px;
+}
+.category__body_filter_in .filter__item_inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 25px;
+}
+.category__body_filter_in .filter__item_inputs input {
+  width: 48%;
+  padding: 7px;
+  border: 1px solid #E1E5EE;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 16px;
+}
+.category__body_filter_in .filter__item_body.range {
+  padding-right: 20px;
+}
+.category__body_filter_in .filter__item .radio {
+  margin-bottom: 10px;
+}
+.category__body_filter_in .filter__item .radio:last-child {
+  margin: 0;
+}
+.category__body_list {
+  width: 73%;
 }
 
 @media (max-width: 1200px) {

@@ -1,0 +1,34 @@
+.range {
+
+}
+
+.range.noUi-horizontal {
+    height: 4px !important;
+    border: none;
+    box-shadow: none;
+
+    .noUi-base {
+        background-color: $line_gray;
+    }
+
+    .noUi-connect {
+        background-color: $red;
+
+    }
+
+    .noUi-handle {
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        background-color: #fff;
+        border: 5px solid $red;
+        top: calc(50% - 8px);
+        &:before {
+            display: none;
+        }
+
+        &:after {
+
+        }
+    }
+}
