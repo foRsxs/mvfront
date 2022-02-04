@@ -8,7 +8,6 @@ export function mobileRatingModal() {
         btn.addEventListener('click', () => {
             mobRev.classList.add('active');
             document.body.classList.add('no-scroll');
-            document.documentElement.add('no-scroll');
         });
     }
 

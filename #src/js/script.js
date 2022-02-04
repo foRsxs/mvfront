@@ -125,8 +125,8 @@ document.addEventListener('DOMContentLoaded', () => {
     tabs();
     seoBtn();
     tabsFunc('.tabs-wrapper', '.tabs-parent', '.tabs-tab', '.tabs-content');
-    ratingFunc('.rating__item');
-    ratingFunc('.revmodal__rating_item');
+    ratingFunc('.rating__item', '.rating__value');
+    ratingFunc('.revmodal__rating_item', '.revmodal__rating_total');
     textareaAutoHeight('.autoheight');
     mobileRatingModal();
 

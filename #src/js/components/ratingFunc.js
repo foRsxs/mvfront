@@ -1,5 +1,6 @@
-export function ratingFunc(el) {
+export function ratingFunc(el, num) {
     const stars = document.querySelectorAll(el);
+    const valueNum = document.querySelector(num);
 
     if(stars.length > 0) {
         const starsArr = Array.prototype.slice.call(stars);
@@ -8,6 +9,7 @@ export function ratingFunc(el) {
             i.addEventListener('click', () => {
                 const { rateValue } = i.dataset;
                 i.parentNode.dataset.rateTotal = rateValue;
+                valueNum.innerHTML = rateValue;
             });
         });
     }
