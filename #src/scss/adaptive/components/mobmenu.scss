@@ -100,11 +100,24 @@
         }
 
         &_item_drop {
+            @include def-anim;
+
+            
             a {
                 position: relative;
+                @include def-anim;
+
+                &:after {
+                    @include def-anim;
+                }
             }
             svg {
-                display: none;
+                position: absolute;
+                left: 20px;
+                
+                width: 0;
+                opacity: 0;
+                @include def-anim;
             }
         }
 
@@ -119,9 +132,10 @@
             }
             
             svg {
-                display: block;
-                position: absolute;
-                left: 20px;
+                opacity: 1;
+                width: 25px;
+                
+                
 
             }
         }
@@ -133,6 +147,7 @@
         height: 0;
         overflow: hidden;
         box-sizing: content-box;
+        @include def-anim;
     }
 
     &__subnav {

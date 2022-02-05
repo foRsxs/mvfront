@@ -10,10 +10,12 @@ export function seoBtn() {
 
             if(seoEx.classList.contains('active')) {
                 seoEx.style.height = `${seoEx.scrollHeight}px`;
+                btnEl.innerHTML = 'СВЕРНУТЬ'
             }
 
             if(!seoEx.classList.contains('active')) {
                 seoEx.style.height = '0';
+                btnEl.innerHTML = 'ПОДРОБНЕЕ';
             }
         });
     }

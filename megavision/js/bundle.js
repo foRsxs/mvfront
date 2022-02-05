@@ -42,7 +42,7 @@
 /*!**************************************!*\
   !*** ./#src/js/components/seoBtn.js ***!
   \**************************************/
-/*! exports provided: seoBtn */function(e,t,s){"use strict";function n(){const e=document.querySelector(".seo__more_btn"),t=document.querySelector(".seo__body_ex");window.innerWidth<601&&e&&e.addEventListener("click",()=>{t.classList.toggle("active"),t.classList.contains("active")&&(t.style.height=t.scrollHeight+"px"),t.classList.contains("active")||(t.style.height="0")})}s.r(t),s.d(t,"seoBtn",(function(){return n}))},"./#src/js/components/tabs.js":
+/*! exports provided: seoBtn */function(e,t,s){"use strict";function n(){const e=document.querySelector(".seo__more_btn"),t=document.querySelector(".seo__body_ex");window.innerWidth<601&&e&&e.addEventListener("click",()=>{t.classList.toggle("active"),t.classList.contains("active")&&(t.style.height=t.scrollHeight+"px",e.innerHTML="СВЕРНУТЬ"),t.classList.contains("active")||(t.style.height="0",e.innerHTML="ПОДРОБНЕЕ")})}s.r(t),s.d(t,"seoBtn",(function(){return n}))},"./#src/js/components/tabs.js":
 /*!************************************!*\
   !*** ./#src/js/components/tabs.js ***!
   \************************************/

@@ -2693,11 +2693,30 @@ html {
   text-transform: uppercase;
   border-bottom: 1px solid #E1E5EE;
 }
+.mobmenu__nav_item_drop {
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
 .mobmenu__nav_item_drop a {
   position: relative;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.mobmenu__nav_item_drop a:after {
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .mobmenu__nav_item_drop svg {
-  display: none;
+  position: absolute;
+  left: 20px;
+  width: 0;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .mobmenu__nav_item_drop.active {
   background-color: #F5F6FA;
@@ -2710,9 +2729,8 @@ html {
   left: 55px;
 }
 .mobmenu__nav_item_drop.active svg {
-  display: block;
-  position: absolute;
-  left: 20px;
+  opacity: 1;
+  width: 25px;
 }
 .mobmenu__subnav_wr {
   padding: 0px 12px;
@@ -2720,6 +2738,9 @@ html {
   overflow: hidden;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .mobmenu__subnav {
   margin-bottom: 45px;
