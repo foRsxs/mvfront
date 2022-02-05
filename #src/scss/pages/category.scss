@@ -19,7 +19,66 @@
         &_filter {
             width: 20%;
 
+            &_head {
+                display: none;
+            }
+            &_action {
+                
+                &_tabs {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    margin-bottom: 50px;
+                    
+                }
+                &_tab.active {
+                    color: #fff;
+                    background-color: #414E60;
+                    border-color: #414E60;
+                }
 
+                &_tab {
+                    @include def-anim;
+                    width: 100%;
+                    padding: 10px;
+                    font-size: 15px;
+                    line-height: 16px;
+                    color: $dark_gray;
+                    border: 1px solid $line_gray;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+
+                    &:first-child {
+                        border-top-left-radius: 5px;
+                        border-top-right-radius: 5px;
+                    }
+
+                    &:last-child {
+                        border-bottom-left-radius: 5px;
+                        border-bottom-right-radius: 5px;
+                    }
+                }
+
+                &_btn {
+                    padding: 10px 5px;
+                    display: none;
+                    justify-content: center;
+                    align-items: center;
+                    font-weight: 500;
+                    font-size: 17px;
+                    line-height: 16px;
+                    border: 1px solid $line_gray;
+                    border-radius: 5px;
+
+                    svg {
+                        margin-left: 10px;
+                    }
+                    
+
+                }
+            }
             &_in {
 
                 .filter__item {
@@ -57,8 +116,37 @@
                     .radio {
                         margin-bottom: 10px;
 
+                        label {
+                            
+                        }
                         &:last-child {
-                            margin: 0;
+                            // margin: 0;
+                        }
+                    }
+
+                    &_body.filter__item_body_drop {
+                        height: 0;
+                        overflow: hidden;
+                        @include def-anim;
+
+                    }
+
+                    &_body_drop.active {
+                        
+                        
+                    }
+
+                    &_more {
+                        color: $red;
+                        font-size: 14px;
+                        line-height: normal;
+                        margin-top: 10px;                        
+                    }
+
+                    &_more.active {
+
+                        svg {
+                            transform: rotate(180deg);
                         }
                     }
 

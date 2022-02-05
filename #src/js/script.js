@@ -14,6 +14,8 @@ import { ratingFunc } from './components/ratingFunc';
 import { textareaAutoHeight } from './components/textareaAutoHeight';
 import { mobileRatingModal } from './components/mobileRatingModal';
 import { rangeSlider } from './components/rangeSlider';
+import { filterMore } from './components/filterMore';
+import { filterMobile } from './components/filterMobile';
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -120,6 +122,51 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+
+
+    //filter tabs test
+    const flTabs = document.querySelectorAll('.category__body_filter_action_tab');
+
+    if(flTabs.length > 0) {
+        flTabs.forEach(i => {
+            i.addEventListener('click', () => {
+                flTabs.forEach(item => {
+                    item.classList.remove('active');
+                });
+                i.classList.add('active');
+            })
+        });
+    }
+
+
+
+
+    //card slider test
+
+    
+
+    const cardThumbs = new Swiper('.card__img_thumbs', {
+        slidesPerView: 4,
+        direction: 'horizontal',
+        spaceBetween: 10,
+        slideToClickedSlide: true,
+    });
+
+    const cardSlider = new Swiper('.card__img_slider', {
+        modules: [Thumbs, Pagination],
+        slidesPerView: 1,
+        spaceBetween: 15,
+        pagination: {
+            type: 'bullets',
+            el: '.card__img_pag',
+            bulletActiveClass: 'card__img_pag_item_active',
+            bulletClass: 'card__img_pag_item'
+        },
+        thumbs: {
+            swiper: cardThumbs
+        }
+    });
+
    
     
     
@@ -138,7 +185,8 @@ document.addEventListener('DOMContentLoaded', () => {
     textareaAutoHeight('.autoheight');
     mobileRatingModal();
     rangeSlider();
-
+    filterMore('.filter__item_drop', '.filter__item_body_drop', '.filter__item_more');
+    filterMobile();
 
     
 });

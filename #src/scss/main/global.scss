@@ -50,6 +50,31 @@ body[class="no-scroll"] {
 }
 
 
+html {
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+
+    .header {
+        flex: 0 0 auto;
+    }
+    
+    .main {
+        flex: 1 0 auto;
+    }
+
+    .footer {
+        flex: 0 0 auto;
+    }
+}
+
+
 
 //HELPERS
 .container {
