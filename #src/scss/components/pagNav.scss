@@ -1,0 +1,38 @@
+.rev__nav {
+
+    &_in {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    &_left {
+        transform: rotate(180deg);
+        display: flex;
+        align-items: center;
+    }
+
+    &_right {
+        display: flex;
+        align-items: center;
+    }
+
+    &_body {
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+
+    &_item {
+        display: block;
+        padding: 5px 10px;
+        margin: 0 5px;
+    }
+
+    &_item.active {
+        border-radius: 3px;
+        border: 1px solid $red;
+        height: 100%;
+    }
+}
