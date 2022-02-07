@@ -2673,6 +2673,7 @@ body[class=no-scroll] {
 }
 .mobmenu__content {
   width: 80%;
+  min-height: 100%;
   background-color: #fff;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
@@ -2681,7 +2682,6 @@ body[class=no-scroll] {
       -ms-transform: translateX(-100%);
           transform: translateX(-100%);
   overflow-y: scroll;
-  max-height: 100vh;
   border: 1px solid green;
 }
 .mobmenu__nav_item:nth-child(1) .mobmenu__nav_item_link:after {
@@ -2721,6 +2721,7 @@ body[class=no-scroll] {
   background-color: #fff;
   width: 100%;
   min-height: 100%;
+  overflow-y: scroll;
   -webkit-transform: translateX(-100%);
       -ms-transform: translateX(-100%);
           transform: translateX(-100%);

@@ -20,11 +20,11 @@ export function burgerBtn() {
             burgerButtonEl.classList.toggle('active');      
             
             if(mobMenuEl.classList.contains('is-open')) {
-                disableBodyScroll(scrollTarget);
+                disableBodyScroll(mobMenuContent);
             }
 
             if(!mobMenuEl.classList.contains('is-open')) {
-                enableBodyScroll(scrollTarget);
+                enableBodyScroll();
             }
         });
 

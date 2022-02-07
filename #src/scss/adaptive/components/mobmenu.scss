@@ -38,12 +38,12 @@
 
     &__content {
         width: 80%;
-        // min-height: 100%;
+        min-height: 100%;
         background-color: #fff;
         @include def-anim;
         transform: translateX(-100%);
         overflow-y: scroll;
-        max-height: 100vh;
+        // height: 100%;
         border: 1px solid green;
     }
 
@@ -121,7 +121,7 @@
                 width: 100%;
                 min-height: 100%;
                 
-                // overflow-y: scroll;
+                overflow-y: scroll;
                 transform: translateX(-100%);
                 @include def-anim;
 

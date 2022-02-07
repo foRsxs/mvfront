@@ -19,7 +19,8 @@ export function mobileMenu() {
                 parentEl.classList.add('active');
 
                 if(parentEl.classList.contains('active')) {
-                    disableBodyScroll(submenu);
+                    // clearAllBodyScrollLocks();
+                    // disableBodyScroll(submenu);
                 }
             });
 
@@ -29,8 +30,8 @@ export function mobileMenu() {
                 parentEl.classList.remove('active');
 
                 if(!parentEl.classList.contains('active')) {
-                    clearAllBodyScrollLocks();
-                    disableBodyScroll(scrollTarget);
+                    // clearAllBodyScrollLocks();
+                    // disableBodyScroll(scrollTarget);
                 }
                 
             });
