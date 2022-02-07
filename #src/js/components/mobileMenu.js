@@ -18,7 +18,7 @@ export function mobileMenu() {
                 let submenu = parentEl.querySelector('.mobmenu__nav_item_submenu');
                 parentEl.classList.add('active');
 
-                disableBodyScroll(submenu);
+                // disableBodyScroll(submenu);
             });
 
             elClose.addEventListener('click', (e) => {
@@ -26,7 +26,7 @@ export function mobileMenu() {
                 let submenu = parentEl.querySelector('.mobmenu__nav_item_submenu');
                 parentEl.classList.remove('active');
 
-                enableBodyScroll(submenu);
+                // enableBodyScroll(submenu);
             });
         });
 
