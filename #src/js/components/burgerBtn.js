@@ -1,5 +1,5 @@
 import MicroModal from "micromodal";
-import { disablePageScroll, enablePageScroll } from 'scroll-lock';
+import {  disableBodyScroll ,  enableBodyScroll ,  clearAllBodyScrollLocks } from 'body-scroll-lock';  
 
 export function burgerBtn() {
 
@@ -11,19 +11,20 @@ export function burgerBtn() {
     const mobmenuWrapper = document.querySelector('.mobmenu__wrapper');
 
 
+    const scrollTarget = document.querySelector('.mobmenu__content');
+
+
     if(burgerButtonEl) {
         burgerButtonEl.addEventListener('click', () => {
             mobMenuEl.classList.toggle('is-open');
             burgerButtonEl.classList.toggle('active');      
             
             if(mobMenuEl.classList.contains('is-open')) {
-
-                
-                disablePageScroll(mobMenuEl);
+                disableBodyScroll(scrollTarget);
             }
 
             if(!mobMenuEl.classList.contains('is-open')) {
-                enablePageScroll(mobMenuEl);
+                enableBodyScroll(scrollTarget);
             }
         });
 
@@ -32,7 +33,7 @@ export function burgerBtn() {
             if(e.target.classList.contains('mobmenu__wrapper')) {
                 mobMenuEl.classList.remove('is-open');
                 burgerButtonEl.classList.remove('active');  
-                enablePageScroll(mobMenuEl);
+                enableBodyScroll(scrollTarget);
             }
         });
     }

@@ -1,4 +1,5 @@
-import { disablePageScroll, enablePageScroll } from "scroll-lock";
+
+import {  disableBodyScroll ,  enableBodyScroll ,  clearAllBodyScrollLocks } from 'body-scroll-lock';  
 
 export function mobileMenu() {
 
@@ -17,17 +18,15 @@ export function mobileMenu() {
                 let submenu = parentEl.querySelector('.mobmenu__nav_item_submenu');
                 parentEl.classList.add('active');
 
-                disablePageScroll(submenu);
+                disableBodyScroll(submenu);
             });
 
             elClose.addEventListener('click', (e) => {
                 let parentEl = el.parentElement;
                 let submenu = parentEl.querySelector('.mobmenu__nav_item_submenu');
-                console.log(parentEl);
-
                 parentEl.classList.remove('active');
 
-                enablePageScroll(submenu);
+                enableBodyScroll(submenu);
             });
         });
 
