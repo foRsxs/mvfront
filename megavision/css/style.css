@@ -2721,6 +2721,7 @@ body[class=no-scroll] {
   background-color: #fff;
   width: 100%;
   height: calc(100vh - 80px);
+  overflow-y: scroll;
   -webkit-transform: translateX(-100%);
       -ms-transform: translateX(-100%);
           transform: translateX(-100%);
