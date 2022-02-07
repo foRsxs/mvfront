@@ -19,11 +19,11 @@ export function burgerBtn() {
             if(mobMenuEl.classList.contains('is-open')) {
 
                 
-                disablePageScroll(mobmenuWrapper);
+                disablePageScroll(mobMenuEl);
             }
 
             if(!mobMenuEl.classList.contains('is-open')) {
-                enablePageScroll(mobmenuWrapper);
+                enablePageScroll(mobMenuEl);
             }
         });
 
