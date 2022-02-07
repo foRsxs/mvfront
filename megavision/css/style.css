@@ -1588,7 +1588,7 @@ body[class=no-scroll] {
     background-color: #fff;
     top: 0;
     left: 0;
-    z-index: 100;
+    z-index: 102;
   }
   .revmodal__top {
     position: relative;
@@ -2645,10 +2645,11 @@ body[class=no-scroll] {
 
 .mobmenu {
   position: fixed;
-  top: 80px;
+  top: 0;
   width: 100%;
+  padding-top: 80px;
   z-index: -1;
-  height: calc(100vh - 80px);
+  height: 100vh;
   opacity: 0;
   z-index: -1;
   -webkit-transition: all 0.3s ease;
@@ -3319,7 +3320,7 @@ body[class=no-scroll] {
     left: 0;
     width: 100%;
     background-color: #fff;
-    z-index: 100;
+    z-index: 101;
   }
   .header__logo img {
     height: 46px;
