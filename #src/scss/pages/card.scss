@@ -164,8 +164,22 @@
                         
                     }
 
+                    .tabs-tab {
+                        @include def-anim;
+
+                        &::nth-child(1) {
+                            border-left: none;
+
+                        }
+
+                        &:nth-child(2) {
+                            border-right: none;
+                        }
+                    }
+
                     .tabs-tab.active {
                         background-color: #414E60;
+                        border-color: #414E60;
                         color: #fff;
                     }
                     

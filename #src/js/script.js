@@ -16,6 +16,7 @@ import { mobileRatingModal } from './components/mobileRatingModal';
 import { rangeSlider } from './components/rangeSlider';
 import { filterMore } from './components/filterMore';
 import { filterMobile } from './components/filterMobile';
+import { cardGallery } from './components/cardGallery';
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -187,6 +188,7 @@ document.addEventListener('DOMContentLoaded', () => {
     rangeSlider();
     filterMore('.filter__item_drop', '.filter__item_body_drop', '.filter__item_more');
     filterMobile();
+    cardGallery();
 
     
 });

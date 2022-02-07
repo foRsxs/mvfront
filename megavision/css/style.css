@@ -1993,8 +1993,20 @@ html {
   border: 1px solid #E1E5EE;
   cursor: pointer;
 }
+.card__params_form_item_radio .tabs-tab {
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.card__params_form_item_radio .tabs-tab::nth-child(1) {
+  border-left: none;
+}
+.card__params_form_item_radio .tabs-tab:nth-child(2) {
+  border-right: none;
+}
 .card__params_form_item_radio .tabs-tab.active {
   background-color: #414E60;
+  border-color: #414E60;
   color: #fff;
 }
 .card__params_form_item_radio label[for=same] {

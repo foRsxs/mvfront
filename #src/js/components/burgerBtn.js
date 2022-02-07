@@ -17,6 +17,8 @@ export function burgerBtn() {
             burgerButtonEl.classList.toggle('active');      
             
             if(mobMenuEl.classList.contains('is-open')) {
+
+                
                 disablePageScroll(mobMenuContent);
             }
 
