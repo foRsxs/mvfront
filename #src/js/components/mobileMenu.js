@@ -13,13 +13,14 @@ export function mobileMenu() {
             let elClose = document.querySelector('[data-mobile-close]');
             el.addEventListener('click', (e) => {
                 e.preventDefault();
+                clearAllBodyScrollLocks();
 
                 let parentEl = el.parentElement;
                 let submenu = parentEl.querySelector('.mobmenu__nav_item_submenu');
                 parentEl.classList.add('active');
 
                 if(parentEl.classList.contains('active')) {
-                    // clearAllBodyScrollLocks();
+                    
                     disableBodyScroll(submenu);
                 }
             });
@@ -30,7 +31,6 @@ export function mobileMenu() {
                 parentEl.classList.remove('active');
 
                 if(!parentEl.classList.contains('active')) {
-                    // clearAllBodyScrollLocks();
                     disableBodyScroll(scrollTarget);
                 }
                 
