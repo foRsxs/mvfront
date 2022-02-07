@@ -190,7 +190,7 @@ document.addEventListener('DOMContentLoaded', () => {
     filterMobile();
     cardGallery();
 
-    console.log('test new lib scroll 13');
+    console.log('test new lib scroll 14');
 
 
     
