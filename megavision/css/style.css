@@ -2682,9 +2682,7 @@ body[class=no-scroll] {
           transform: translateX(-100%);
   overflow-y: scroll;
   max-height: 100vh;
-}
-.mobmenu__nav_item_drop {
-  position: relative;
+  border: 1px solid green;
 }
 .mobmenu__nav_item:nth-child(1) .mobmenu__nav_item_link:after {
   position: absolute;
@@ -2716,12 +2714,13 @@ body[class=no-scroll] {
 }
 .mobmenu__nav_item_submenu {
   position: fixed;
+  border: 1px solid red;
   top: 0;
   left: 0;
   z-index: 105;
   background-color: #fff;
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   -webkit-transform: translateX(-100%);
       -ms-transform: translateX(-100%);
           transform: translateX(-100%);
@@ -2783,6 +2782,9 @@ body[class=no-scroll] {
   color: #737783;
   text-transform: unset;
   font-weight: 500;
+}
+.mobmenu__nav_item_drop {
+  position: static !important;
 }
 .mobmenu__nav_item_drop.active .mobmenu__nav_item_submenu {
   -webkit-transform: translate(0);

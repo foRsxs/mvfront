@@ -44,13 +44,14 @@
         transform: translateX(-100%);
         overflow-y: scroll;
         max-height: 100vh;
+        border: 1px solid green;
     }
 
     &__nav {
 
 
         &_item_drop {
-            position: relative;
+            // position: relative;
         }
 
         
@@ -112,12 +113,14 @@
 
             &_submenu {
                 position: fixed;
+                border: 1px solid red;
                 top: 0;
                 left: 0;
                 z-index: 105;
                 background-color: #fff;
                 width: 100%;
-                height: 100%;
+                min-height: 100%;
+                
                 // overflow-y: scroll;
                 transform: translateX(-100%);
                 @include def-anim;
@@ -192,7 +195,7 @@
         }
 
         &_item_drop {
-            
+            position: static !important;
         }
 
         &_item_drop.active {
