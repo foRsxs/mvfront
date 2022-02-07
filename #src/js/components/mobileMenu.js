@@ -4,7 +4,7 @@ import {  disableBodyScroll ,  enableBodyScroll ,  clearAllBodyScrollLocks } fro
 export function mobileMenu() {
 
     const mobileEls = document.querySelectorAll('[data-mobile-drop]');
-
+    const mobMenu = document.querySelector('#mobmenu');
     const scrollTarget = document.querySelector('.mobmenu__content');
 
     if(mobileEls.length > 0) {
@@ -18,7 +18,9 @@ export function mobileMenu() {
                 let submenu = parentEl.querySelector('.mobmenu__nav_item_submenu');
                 parentEl.classList.add('active');
 
-                disableBodyScroll(submenu);
+                if(parentEl.classList.contains('active')) {
+                    disableBodyScroll(parentEl);
+                }
             });
 
             elClose.addEventListener('click', (e) => {
@@ -26,7 +28,11 @@ export function mobileMenu() {
                 let submenu = parentEl.querySelector('.mobmenu__nav_item_submenu');
                 parentEl.classList.remove('active');
 
-                enableBodyScroll(scrollTarget);
+                if(!parentEl.classList.contains('active')) {
+                    clearAllBodyScrollLocks();
+                    disableBodyScroll(scrollTarget);
+                }
+                
             });
         });
 
