@@ -19,7 +19,7 @@ export function mobileMenu() {
                 parentEl.classList.add('active');
 
                 if(parentEl.classList.contains('active')) {
-                    disableBodyScroll(parentEl);
+                    disableBodyScroll(submenu);
                 }
             });
 
