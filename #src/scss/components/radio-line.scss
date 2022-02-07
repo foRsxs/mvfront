@@ -58,6 +58,13 @@
             align-items: center;
             cursor: pointer;
             white-space: nowrap;
+
+            &:hover{
+                &::after {
+
+                    content: url('../img/radio-hover.svg');
+                }
+            }
     
             &:after {
                 position: absolute;

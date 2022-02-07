@@ -6,6 +6,7 @@ export function burgerBtn() {
     const wrapper = document.querySelector('.wrapper');
 
     const mobMenuEl = document.querySelector('#mobmenu');
+    const mobMenuContent = document.querySelector('.mobmenu__content');
     const burgerButtonEl = document.querySelector('.header__burger_btn');
     const mobmenuWrapper = document.querySelector('.mobmenu__wrapper');
 
@@ -16,11 +17,11 @@ export function burgerBtn() {
             burgerButtonEl.classList.toggle('active');      
             
             if(mobMenuEl.classList.contains('is-open')) {
-                disablePageScroll(document.body);
+                disablePageScroll(mobMenuContent);
             }
 
             if(!mobMenuEl.classList.contains('is-open')) {
-                enablePageScroll(document.body);
+                enablePageScroll(mobMenuContent);
             }
         });
 
@@ -29,7 +30,7 @@ export function burgerBtn() {
             if(e.target.classList.contains('mobmenu__wrapper')) {
                 mobMenuEl.classList.remove('is-open');
                 burgerButtonEl.classList.remove('active');  
-                enablePageScroll(document.body);
+                enablePageScroll(mobMenuEl);
             }
         });
     }

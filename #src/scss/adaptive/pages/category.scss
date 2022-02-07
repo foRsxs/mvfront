@@ -133,3 +133,28 @@
         }
     }
 }
+
+@media (max-width: 500px) {
+
+    .category {
+
+        &__body {
+
+            &_filter {
+
+                &_action {
+                    flex-wrap: wrap;
+
+                    &_tabs {
+                        width: 100%;
+                        margin-bottom: 15px;
+                    }
+
+                    &_btn {
+                        width: 100%;
+                    }
+                } 
+            }
+        }
+    }
+}
