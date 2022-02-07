@@ -2714,15 +2714,13 @@ body[class=no-scroll] {
 }
 .mobmenu__nav_item_submenu {
   position: fixed;
-  border: 1px solid black;
+  border: 1px solid purple;
   top: 0;
   left: 0;
   z-index: 105;
   background-color: #fff;
   width: 100%;
-  min-height: calc(100vh - 80px);
-  height: 100%;
-  overflow-y: scroll;
+  min-height: 100%;
   -webkit-transform: translateX(-100%);
       -ms-transform: translateX(-100%);
           transform: translateX(-100%);

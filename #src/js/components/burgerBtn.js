@@ -24,7 +24,7 @@ export function burgerBtn() {
             }
 
             if(!mobMenuEl.classList.contains('is-open')) {
-                enableBodyScroll();
+                enableBodyScroll(mobMenuContent);
             }
         });
 
@@ -33,7 +33,7 @@ export function burgerBtn() {
             if(e.target.classList.contains('mobmenu__wrapper')) {
                 mobMenuEl.classList.remove('is-open');
                 burgerButtonEl.classList.remove('active');  
-                enableBodyScroll(scrollTarget);
+                enableBodyScroll(mobMenuContent);
             }
         });
     }
