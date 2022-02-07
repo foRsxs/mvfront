@@ -35,7 +35,7 @@
 
     &__content {
         width: 80%;
-        height: 100%;
+        min-height: 100%;
         background-color: #fff;
         @include def-anim;
         transform: translateX(-100%);

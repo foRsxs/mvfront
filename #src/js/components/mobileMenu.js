@@ -27,7 +27,7 @@ export function mobileMenu() {
 
                 parentEl.classList.remove('active');
 
-                enablePageScroll(submenu)
+                enablePageScroll(submenu);
             });
         });
 
