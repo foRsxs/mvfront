@@ -20,7 +20,7 @@ export function mobileMenu() {
 
                 
                 if(parentEl.classList.contains('active')) {
-                    scrollTarget.style.cssText = 'overflow-y: hidden';
+                    scrollTarget.style.cssText = 'overflow-y: hidden; -webkit-overflow-scrolling: auto';
                 }
             });
 
@@ -30,7 +30,7 @@ export function mobileMenu() {
                 parentEl.classList.remove('active');
 
                 if(!parentEl.classList.contains('active')) {
-                    scrollTarget.style.cssText = 'overflow-y: auto';
+                    scrollTarget.style.cssText = 'overflow-y: auto; -webkit-overflow-scrolling: touch';
                 }
                 
             });

@@ -40,12 +40,14 @@
         width: 80%;
         // min-height: 100%;
         max-height: calc(100vh - 80px);
+        height: 100%;
         background-color: #fff;
         @include def-anim;
         transform: translateX(-100%);
-        
+        overflow: auto;
+        -webkit-overflow-scrolling:touch;
         // height: 100%;
-        border: 1px solid green;
+        
     }
 
     &__nav {
@@ -114,7 +116,7 @@
 
             &_submenu {
                 position: fixed;
-                border: 1px solid purple;
+                
                 top: 0;
                 left: 0;
                 z-index: 105;
@@ -168,6 +170,13 @@
 
                     &__part {
                         padding: 0 16px;
+
+                        &:last-child {
+
+                            .body__list {
+                                margin: 0;
+                            }
+                        }
                     }   
 
                     &__title {

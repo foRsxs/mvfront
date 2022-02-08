@@ -2674,6 +2674,7 @@ body[class=no-scroll] {
 .mobmenu__content {
   width: 80%;
   max-height: calc(100vh - 80px);
+  height: 100%;
   background-color: #fff;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
@@ -2681,7 +2682,8 @@ body[class=no-scroll] {
   -webkit-transform: translateX(-100%);
       -ms-transform: translateX(-100%);
           transform: translateX(-100%);
-  border: 1px solid green;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
 }
 .mobmenu__nav_item:nth-child(1) .mobmenu__nav_item_link:after {
   position: absolute;
@@ -2713,7 +2715,6 @@ body[class=no-scroll] {
 }
 .mobmenu__nav_item_submenu {
   position: fixed;
-  border: 1px solid purple;
   top: 0;
   left: 0;
   z-index: 105;
@@ -2764,6 +2765,9 @@ body[class=no-scroll] {
 }
 .mobmenu__nav_item_submenu .body__part {
   padding: 0 16px;
+}
+.mobmenu__nav_item_submenu .body__part:last-child .body__list {
+  margin: 0;
 }
 .mobmenu__nav_item_submenu .body__title {
   font-weight: 600;

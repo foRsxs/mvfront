@@ -1,7 +1,10 @@
 import MicroModal from "micromodal";
-import {  disableBodyScroll ,  enableBodyScroll ,  clearAllBodyScrollLocks } from 'body-scroll-lock';  
+import {disableBodyScroll, enableBodyScroll} from 'body-scroll-lock';  
+
+
 
 export function burgerBtn() {
+
 
     const wrapper = document.querySelector('.wrapper');
 
