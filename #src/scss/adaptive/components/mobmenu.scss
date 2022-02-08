@@ -43,7 +43,7 @@
         background-color: #fff;
         @include def-anim;
         transform: translateX(-100%);
-        overflow-y: scroll !important;
+        
         // height: 100%;
         border: 1px solid green;
     }
@@ -123,7 +123,8 @@
                 // min-height: 100%;
                 // min-height: calc(100vh - 80px);
                 height: calc(100vh - 80px);
-                overflow-y: scroll;
+                overflow-y: scroll !important;
+                -webkit-overflow-scrolling: touch;
                 
                 transform: translateX(-100%);
                 @include def-anim;
