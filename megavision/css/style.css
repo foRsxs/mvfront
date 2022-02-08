@@ -2673,7 +2673,7 @@ body[class=no-scroll] {
 }
 .mobmenu__content {
   width: 80%;
-  min-height: 100%;
+  max-height: calc(100vh - 80px);
   background-color: #fff;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;

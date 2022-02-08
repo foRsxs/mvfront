@@ -15,6 +15,8 @@ export function burgerBtn() {
 
 
     if(burgerButtonEl) {
+
+        
         burgerButtonEl.addEventListener('click', () => {
             mobMenuEl.classList.toggle('is-open');
             burgerButtonEl.classList.toggle('active');      

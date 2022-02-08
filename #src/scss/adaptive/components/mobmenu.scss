@@ -38,7 +38,8 @@
 
     &__content {
         width: 80%;
-        min-height: 100%;
+        // min-height: 100%;
+        max-height: calc(100vh - 80px);
         background-color: #fff;
         @include def-anim;
         transform: translateX(-100%);
