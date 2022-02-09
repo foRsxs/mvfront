@@ -25,11 +25,11 @@ export function burgerBtn() {
             burgerButtonEl.classList.toggle('active');      
             
             if(mobMenuEl.classList.contains('is-open')) {
-                disableBodyScroll(mobMenuContent);
+                // disableBodyScroll(mobMenuContent);
             }
 
             if(!mobMenuEl.classList.contains('is-open')) {
-                enableBodyScroll(mobMenuContent);
+                // enableBodyScroll(mobMenuContent);
             }
         });
 
@@ -38,7 +38,7 @@ export function burgerBtn() {
             if(e.target.classList.contains('mobmenu__wrapper')) {
                 mobMenuEl.classList.remove('is-open');
                 burgerButtonEl.classList.remove('active');  
-                enableBodyScroll(mobMenuContent);
+                // enableBodyScroll(mobMenuContent);
             }
         });
     }
