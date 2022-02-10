@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.1/nouislider.min.css" integrity="sha512-qveKnGrvOChbSzAdtSs8p69eoLegyh+1hwOMbmpCViIwj7rn4oJjdmMvWOuyQlTOZgTlZA0N2PXA7iA8/2TUYA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        @@include('./blocks/header.html')
+
+
+        <main class="main">
+            @@include('./blocks/nav.html')
+            @@include('./blocks/bc.html')
+
+            <section class="category" id="access">
+                <div class="container">
+                    <div class="category__in">
+                        <div class="category__head">
+                            <h2 class="category__head_title section__title">аксессуары</h2>
+                        </div>
+
+                        <div class="category__body">
+
+                            <div class="category__body_list">
+                                @@include('./blocks/accessories.html')
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </main>
+        @@include('./blocks/footer.html')
+    </div>
+
+
+    @@include('./blocks/mobile-menu.html')
+
+    
+
+
+    <script src="./js/bundle.js"></script>
+</body>
+
+
+</html>

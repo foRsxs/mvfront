@@ -28,6 +28,12 @@
                 height: 100%;
             }
         }
+
+        &_item.nav__active {
+            border-bottom: 2px solid $red;
+        }
+
+
         &_item {
             position: relative;
             padding: 14px 0;

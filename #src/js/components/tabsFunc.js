@@ -10,6 +10,8 @@ export function tabsFunc(wrapper, parent, tabs, content) {
         function hideTabs() {
             contentEl.forEach(i => {
                 i.style.display = 'none';
+
+                i.classList.remove('active');
             });
 
             tabsEl.forEach(i => {
@@ -19,6 +21,7 @@ export function tabsFunc(wrapper, parent, tabs, content) {
 
         function showTabs(index = 0) {
             contentEl[index].style.display = 'block';
+            contentEl[index].classList.add('active');
             tabsEl[index].classList.add('active');
         }
 

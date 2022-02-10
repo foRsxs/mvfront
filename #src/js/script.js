@@ -17,6 +17,9 @@ import { rangeSlider } from './components/rangeSlider';
 import { filterMore } from './components/filterMore';
 import { filterMobile } from './components/filterMobile';
 import { cardGallery } from './components/cardGallery';
+import { input } from './components/input';
+import { counter } from './components/conuter';
+import { customSelect } from './components/choice';
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -190,6 +193,10 @@ document.addEventListener('DOMContentLoaded', () => {
     filterMobile();
     cardGallery();
 
+    tabsFunc('.del__action', '.del__action_tabs', '.del__action_tab', '.del__action_tabcontent');
+    input();
+    counter();
+    customSelect();
     console.log('test new lib scroll 18');
 
 

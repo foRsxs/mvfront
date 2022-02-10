@@ -1,0 +1,157 @@
+.contacts {
+
+    &__in {
+        padding-bottom: 47px;
+    }
+
+    &__head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 35px;
+
+        &_title {
+
+        }
+
+        &_soc {
+            display: flex;
+            align-items: center;
+
+            &_item {
+                margin: 0 7.5px;
+                width: 48px;
+                height: 48px;
+                background-color: #F5F6FA;
+                border: 1px solid $line_gray;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 6px;
+                @include def-anim;
+
+                &:hover {   
+                    background-color: #000;
+                    border-color: #000;
+
+                    svg {
+
+                        path {
+                            fill: #fff;
+                        }
+                    }
+                }
+
+                svg {
+                    
+                    path {
+                        @include def-anim;
+                        fill: #000;
+                    }
+                }
+            }
+        }
+    }
+
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 48px;
+
+        &_item {
+            width: 48%;
+
+            .head {
+                margin-bottom: 20px;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 24px;
+                text-transform: uppercase;
+            }
+
+            .descr {
+
+                &__item {
+                   display: block;
+                   margin-bottom: 15px; 
+                }
+
+                &__item_geo {
+                    position: relative;
+                    padding-left: 25px;
+
+                    &:after {
+                        position: absolute;
+                        content: url('../img/geo.svg');
+                        top: 0;
+                        left: 0;
+                    }
+                }
+
+                &__item_tel {
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+
+                &__item_mail {
+                    position: relative;
+                    padding-left: 25px;
+                    color: $red;
+                    font-weight: 500;
+
+                    &:after {
+                        position: absolute;
+                        content: url('../img/mail.svg');
+                        top: 0;
+                        left: 0;
+                    }
+                }
+            }
+
+            .btn {
+                display: flex;
+                justify-content: flex-start;
+                margin-top: 19px;
+                button {
+                    border: 1px solid $black_text;
+                    border-radius: 6px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    @include def-anim;
+
+                    &:active {
+                        transform: scale(0.95);
+                    }
+                }
+            }
+        }
+    }
+
+    &__lg {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 24px 20px;
+        border-radius: 10px;
+        border: 1px solid $line_gray;
+
+        &_item {
+            font-size: 15px;
+            line-height: 24px;
+            color: $dark_gray;
+
+            &:first-child {
+                color: $black_text;
+                font-weight: 500;
+                font-size: 17px;
+            }
+
+        }
+    }
+
+    
+}

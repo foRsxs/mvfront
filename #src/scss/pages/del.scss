@@ -1,0 +1,256 @@
+.del {
+
+    &__in {
+        padding-bottom: 90px;
+    }
+
+    &__head {
+        margin-bottom: 35px;
+        &_title {
+
+        }
+    }
+
+    &__main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        &_item {
+            width: 47%;
+            margin-bottom: 60px;
+        }
+
+        &_steps {
+            
+            &_item {
+                padding: 24px 25px;
+                border: 1px solid $line_gray;
+                border-radius: 10px;
+                background-repeat: no-repeat;
+                background-size: contain;
+                margin-bottom: 24px;
+                display: flex;
+
+                &:nth-child(1) {
+                    background-image: url('../img/del-step-1.png');
+                    background-position: 95% 10px;
+                }
+
+                &:nth-child(2) {
+                    background-image: url('../img/del-step-2.png');
+                    background-position: 5% 10px;
+                    justify-content: flex-end;
+                    
+                }
+
+                &:nth-child(3) {
+                    margin: 0;
+                    background-image: url('../img/del-step-3.png');
+                    background-position: 95% 10px;
+                }
+
+                .text {
+                    max-width: 283px;
+                    width: 100%;
+                    font-weight: 500;
+                    font-size: 17px;
+                    line-height: 26px;
+                }
+            }
+        }
+
+        &_img {
+            border-radius: 10px;
+            overflow: hidden;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        &_adv {
+            padding-left: 80px;
+            position: relative;
+
+            &:after {
+                position: absolute;
+                top: 0;
+                left: 0;
+                
+
+            }
+            &_head {
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 16px;
+                margin-bottom: 20px;
+            }
+
+            &_text {
+                line-height: 26px;
+            }
+
+            
+        }
+
+        &_adv_first {
+            &:after {
+                content: url('../img/del-adv-1.svg');
+            }
+        }
+
+        &_adv_second {
+            &:after {
+                content: url('../img/del-adv-2.png');
+            }
+        }
+    }
+
+    &__action {
+
+        &_tabs {
+            display: flex;
+            width: 100%;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            
+
+
+        }
+
+        &_tab.active {
+            color: #fff;
+            background-color: #414E60;
+            border-color: #414E60;
+        }
+
+        &_tab {
+            width: 300px;
+            text-transform: uppercase;
+            color: $dark_gray;
+            padding: 12px 3px;
+            border: 1px solid $line_gray;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 13px;
+            line-height: 16px;
+            &:first-child {
+                border-radius: 10px 0 0 10px;
+            }
+
+            &:last-child {
+                border-radius:  0 10px 10px 0; 
+            }
+
+            @include def-anim;
+
+            &:hover {
+                color: #fff;
+                background-color: #414E60;
+                border-color: #414E60;
+            }
+        }
+
+        &_tabcontents {
+
+        }
+
+        &_tabcontent {
+
+            .head {
+                margin-bottom: 30px;
+                font-weight: 500;
+                font-size: 17px;
+                line-height: 16px;
+            }   
+
+            .body {
+                display: flex;
+                &__part {
+                    padding: 0 30px;
+                    width: calc(100% / 3);
+                    border-right: 1px solid $line_gray;
+
+                    &:first-child {
+                        padding-left: 0;
+                    }
+                    &:last-child {
+                        padding-right: 0;
+                        border: none;
+                    }
+                    &_head {
+                        margin-bottom: 16px;
+                        font-weight: 500;
+                        font-size: 17px;
+                        line-height: 16px;
+                    }
+
+                    
+                }
+
+                &__list {
+                    padding-left: 20px;
+                    &_item {
+                        list-style: disc;
+                        margin-bottom: 19px;
+                        &:last-child {
+                            margin: 0;
+                        }
+                        
+                        color: $red;
+
+                        span {
+                            color: $dark_gray;
+                        }
+                    }
+                }
+            }
+
+            
+
+
+        }
+
+        .mp.active {
+            display: flex !important;
+        }
+
+        .mp {
+            display: flex;
+            justify-content: space-between;
+            &__item {
+                width: 48%;
+            }
+
+            &__descr {
+
+            }
+
+            &__head {
+                font-weight: 500;
+                font-size: 17px;
+                line-height: normal;
+                margin-bottom: 16px;
+            }
+
+            &__list {
+                padding-left: 20px;
+                &_item {
+                    list-style: disc;
+                    color: $red;
+
+                    span {
+                        color: $dark_gray;font-size: 15px;
+                        line-height: 24px;
+                    }
+                }
+            }
+            
+        }
+    }
+}

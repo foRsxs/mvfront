@@ -1,0 +1,137 @@
+@media (max-width: 1000px) {
+    .del {
+
+        &__in {
+            padding-bottom: 67px;
+        }
+    
+        &__head {
+            
+            &_title {
+
+            }
+        }
+    
+        &__main {
+            flex-wrap: wrap;
+
+            &_item {
+                width: 100%;
+                margin-bottom: 15px;
+            }
+            &_steps {
+
+                &_item {
+
+                }
+            }
+
+
+            &_img {
+                height: 350px;
+                margin-bottom: 30px;
+            }
+
+            &_adv {
+                margin-bottom: 30px;
+            }
+        }
+
+        &__action {
+            
+            &_tabs {
+                // flex-wrap: wrap;
+
+                
+            }
+            &_tab{
+                // width: 100%;
+                // border-radius: 10px !important;
+                // margin-bottom: 5px;
+            }
+            &_tabcontent {
+
+                .body {
+                    flex-wrap: wrap;
+                    
+                    &__part {
+                        width: 100%;
+                        padding-left: 0 !important;
+                        border: none;
+                        padding-bottom: 15px;
+                        padding-top: 15px;
+                        border-bottom: 1px solid $line_gray;
+                    }
+                }
+            }
+
+            .mp {
+
+                flex-wrap: wrap;
+
+                &__item {
+                    width: 100%;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 765px) {
+
+    .del {
+
+        &__action {
+            &_tabs {
+                flex-wrap: wrap;
+
+                
+            }
+            &_tab{
+                width: 100%;
+                border-radius: 10px !important;
+                margin-bottom: 5px;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+
+    .del {
+
+        &__head {
+            margin-bottom: 16px;
+        }
+
+        &__main {
+
+            &_item {
+
+            }
+
+            &_steps {
+
+                &_item {
+                    margin-bottom: 15px;
+                    padding: 15px;
+                    height: 100px;
+                }
+            }
+
+            &_img {
+                height: 170px;
+            }
+
+            &_adv {
+                padding-left: 65px;
+            }
+        }
+
+        &__action {
+
+        }
+    }
+}

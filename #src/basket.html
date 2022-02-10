@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        @@include('./blocks/header.html')
+
+
+        <main class="main">
+            @@include('./blocks/nav.html')
+            @@include('./blocks/bc.html')
+            <section class="basket">
+                <div class="container">
+                    <div class="basket__in">
+                        <div class="basket__head">
+                            <h2 class="basket__head_title section__title">
+                                корзина
+                            </h2>
+                            <button class="basket__head_btn">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.5 5H17.5" stroke="#737783" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M6.66602 4.99984V3.33317C6.66602 2.89114 6.84161 2.46722 7.15417 2.15466C7.46673 1.8421 7.89066 1.6665 8.33268 1.6665H11.666C12.108 1.6665 12.532 1.8421 12.8445 2.15466C13.1571 2.46722 13.3327 2.89114 13.3327 3.33317V4.99984M15.8327 4.99984V16.6665C15.8327 17.1085 15.6571 17.5325 15.3445 17.845C15.032 18.1576 14.608 18.3332 14.166 18.3332H5.83268C5.39065 18.3332 4.96673 18.1576 4.65417 17.845C4.34161 17.5325 4.16602 17.1085 4.16602 16.6665V4.99984H15.8327Z" stroke="#737783" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8.33398 9.1665V14.1665" stroke="#737783" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M11.666 9.1665V14.1665" stroke="#737783" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <span>Очистить корзину   </span>                             
+                            </button>
+                        </div>
+
+                        <div class="basket__body">
+                            <div class="basket__body_item basket__body_cnt">
+                                <div class="basket__body_item_head">
+                                    Контактные данные
+                                </div>
+
+                                <form class="cnt__form">
+                                    <div class="cnt__form_inpts">
+                                        <div class="cnt__form_inpt">
+                                            <input type="email" id="email" class="customField">
+                                            <label for="email"><span>Введите e-mail</span></label>
+                                        </div>
+                                        <div class="cnt__form_inpt">
+                                            <input type="text" id="fn" class="customField">
+                                            <label for="fn"><span>ФИО</span></label>
+                                        </div>
+                                        <div class="cnt__form_inpt">
+                                            <input type="text" id="tel" class="customField">
+                                            <label for="tel"><span>Телефон</span></label>
+                                        </div>
+                                    </div>
+                                    <div class="cnt__form_field">
+                                        <textarea class="customField"></textarea>
+                                        <label for="msg"><span>Комментарий к заказу</span></label>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div class="basket__body_item basket__body_prs">
+                                <div class="basket__body_prs_item">
+                                    <button class="close">
+                                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.9779 4.99934L8.96112 2.02262C9.09176 1.89196 9.16516 1.71474 9.16516 1.52997C9.16516 1.34519 9.09176 1.16797 8.96112 1.03731C8.83048 0.906655 8.6533 0.833252 8.46854 0.833252C8.28379 0.833252 8.10661 0.906655 7.97597 1.03731L4.99967 4.02097L2.02338 1.03731C1.89274 0.906655 1.71556 0.833252 1.5308 0.833252C1.34605 0.833252 1.16887 0.906655 1.03822 1.03731C0.907585 1.16797 0.834192 1.34519 0.834192 1.52997C0.834192 1.71474 0.907585 1.89196 1.03822 2.02262L4.02145 4.99934L1.03822 7.97606C0.973199 8.04056 0.921586 8.1173 0.886364 8.20186C0.851142 8.28641 0.833008 8.37711 0.833008 8.46871C0.833008 8.56031 0.851142 8.651 0.886364 8.73555C0.921586 8.82011 0.973199 8.89685 1.03822 8.96136C1.10272 9.02639 1.17945 9.07801 1.264 9.11324C1.34854 9.14847 1.43922 9.1666 1.5308 9.1666C1.62239 9.1666 1.71307 9.14847 1.79761 9.11324C1.88216 9.07801 1.95889 9.02639 2.02338 8.96136L4.99967 5.9777L7.97597 8.96136C8.04046 9.02639 8.11719 9.07801 8.20174 9.11324C8.28628 9.14847 8.37696 9.1666 8.46854 9.1666C8.56013 9.1666 8.65081 9.14847 8.73535 9.11324C8.8199 9.07801 8.89663 9.02639 8.96112 8.96136C9.02615 8.89685 9.07776 8.82011 9.11299 8.73555C9.14821 8.651 9.16634 8.56031 9.16634 8.46871C9.16634 8.37711 9.14821 8.28641 9.11299 8.20186C9.07776 8.1173 9.02615 8.04056 8.96112 7.97606L5.9779 4.99934Z" fill="#9497A3"/>
+                                            </svg>
+                                            
+                                    </button>
+                                    <div class="img">
+                                        <picture>
+                                            <source srcset="" type="image/webp">
+                                            <img src="./img/thumb-test.png" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="body">
+                                        <div class="body__name">Acuvue 1-day TruEye days one</div>
+                                        <div class="body__act">
+                                            <div class="body__act_price">
+                                                <div class="name">Стоимость:</div>
+                                                <div class="value">12000₸</div>
+                                            </div>
+
+                                            <div class="body__act_count">
+                                                <div class="name">Кол-во</div>
+                                                <div class="value counter">
+                                                    <button class="value__btn" data-dir="minus">
+                                                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M0.696237 5.70345C0.31056 5.31378 0.31056 4.68622 0.696237 4.29655L4.28926 0.666294C4.91772 0.0313225 6 0.476354 6 1.36975L6 8.63026C6 9.52365 4.91772 9.96868 4.28926 9.33371L0.696237 5.70345Z" fill="#1F1F1F"/>
+                                                            </svg>
+                                                            
+                                                    </button>
+                                                    <input class="value__inp" type="text" value="0">
+                                                    <button class="value__btn" data-dir="plus">
+                                                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M5.30376 5.70345C5.68944 5.31378 5.68944 4.68622 5.30376 4.29655L1.71074 0.666294C1.08228 0.0313225 0 0.476354 0 1.36975L0 8.63026C0 9.52365 1.08228 9.96868 1.71074 9.33371L5.30376 5.70345Z" fill="#1F1F1F"/>
+                                                            </svg>
+                                                            
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>   
+                                <div class="basket__body_prs_item">
+                                    <button class="close">
+                                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.9779 4.99934L8.96112 2.02262C9.09176 1.89196 9.16516 1.71474 9.16516 1.52997C9.16516 1.34519 9.09176 1.16797 8.96112 1.03731C8.83048 0.906655 8.6533 0.833252 8.46854 0.833252C8.28379 0.833252 8.10661 0.906655 7.97597 1.03731L4.99967 4.02097L2.02338 1.03731C1.89274 0.906655 1.71556 0.833252 1.5308 0.833252C1.34605 0.833252 1.16887 0.906655 1.03822 1.03731C0.907585 1.16797 0.834192 1.34519 0.834192 1.52997C0.834192 1.71474 0.907585 1.89196 1.03822 2.02262L4.02145 4.99934L1.03822 7.97606C0.973199 8.04056 0.921586 8.1173 0.886364 8.20186C0.851142 8.28641 0.833008 8.37711 0.833008 8.46871C0.833008 8.56031 0.851142 8.651 0.886364 8.73555C0.921586 8.82011 0.973199 8.89685 1.03822 8.96136C1.10272 9.02639 1.17945 9.07801 1.264 9.11324C1.34854 9.14847 1.43922 9.1666 1.5308 9.1666C1.62239 9.1666 1.71307 9.14847 1.79761 9.11324C1.88216 9.07801 1.95889 9.02639 2.02338 8.96136L4.99967 5.9777L7.97597 8.96136C8.04046 9.02639 8.11719 9.07801 8.20174 9.11324C8.28628 9.14847 8.37696 9.1666 8.46854 9.1666C8.56013 9.1666 8.65081 9.14847 8.73535 9.11324C8.8199 9.07801 8.89663 9.02639 8.96112 8.96136C9.02615 8.89685 9.07776 8.82011 9.11299 8.73555C9.14821 8.651 9.16634 8.56031 9.16634 8.46871C9.16634 8.37711 9.14821 8.28641 9.11299 8.20186C9.07776 8.1173 9.02615 8.04056 8.96112 7.97606L5.9779 4.99934Z" fill="#9497A3"/>
+                                            </svg>
+                                            
+                                    </button>
+                                    <div class="img">
+                                        <picture>
+                                            <source srcset="" type="image/webp">
+                                            <img src="./img/thumb-test.png" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="body">
+                                        <div class="body__name">Acuvue 1-day TruEye days one</div>
+                                        <div class="body__act">
+                                            <div class="body__act_price">
+                                                <div class="name">Стоимость:</div>
+                                                <div class="value">12000₸</div>
+                                            </div>
+
+                                            <div class="body__act_count">
+                                                <div class="name">Кол-во</div>
+                                                <div class="value counter">
+                                                    <button class="value__btn" data-dir="minus">
+                                                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M0.696237 5.70345C0.31056 5.31378 0.31056 4.68622 0.696237 4.29655L4.28926 0.666294C4.91772 0.0313225 6 0.476354 6 1.36975L6 8.63026C6 9.52365 4.91772 9.96868 4.28926 9.33371L0.696237 5.70345Z" fill="#1F1F1F"/>
+                                                            </svg>
+                                                            
+                                                    </button>
+                                                    <input class="value__inp" type="text" value="0">
+                                                    <button class="value__btn" data-dir="plus">
+                                                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M5.30376 5.70345C5.68944 5.31378 5.68944 4.68622 5.30376 4.29655L1.71074 0.666294C1.08228 0.0313225 0 0.476354 0 1.36975L0 8.63026C0 9.52365 1.08228 9.96868 1.71074 9.33371L5.30376 5.70345Z" fill="#1F1F1F"/>
+                                                            </svg>
+                                                            
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>     
+                            </div>
+
+                            <div class="basket__body_item basket__body_form">
+                                <form class="basket__body_form_item">
+                                    <div class="basket__body_item_head">
+                                        Доставка
+                                    </div>
+
+                                    <div class="basket__body_form_row">
+                                        <div class="form__input">
+                                            <select class="choices custom__select" name="" id="">
+                                                <option value="Выберите город"></option>
+                                                <option value="Выберите город"></option>
+                                                <option value="Выберите город"></option>
+                                            </select>
+                                        </div>
+                                        <div class="form__input custom_field">
+                                            <input id="strt" type="text" class="customField">
+                                            <label for="strt"><span>Улицы, № дома, № квартиры</span></label>
+                                        </div>
+
+                                        
+                                    </div>
+                                    <div class="basket__body_form_row">
+                                        <div class="form__input radio">
+                                            <input type="radio" id="del1" name="del">
+                                            <label for="del1">Самовывоз</label>
+                                        </div>    
+                                        <div class="form__input radio">
+                                            <input type="radio" id="del2" name="del">
+                                            <label for="del2">Курьерская доставка</label>
+                                        </div>
+                                    </div>
+                                </form>
+
+                                <form class="basket__body_form_item">
+                                    <div class="basket__body_item_head">
+                                        Способ оплаты
+                                    </div>
+                                    <div class="basket__body_form_row">
+                                        <div class="radio">
+                                            <input type="radio" name="pay">
+                                            <label for="">Наличными</label>
+                                        </div>
+                                        <div class="radio">
+                                            <input type="radio" name="pay">
+                                            <label for="">Банковской картой</label>
+                                        </div>
+                                        <div class="radio">
+                                            <input type="radio" name="pay">
+                                            <label for="">Использовать CashBack Баллы</label>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="basket__body_form_row">
+                                        <div class="form__input">
+                                            <select class="choices custom__select" name="" id="">
+                                                <option value="Выберите город"></option>
+                                                <option value="Выберите город"></option>
+                                                <option value="Выберите город"></option>
+                                            </select>
+                                        </div>
+                                        <div class="form__input custom_field">
+                                            <input id="strt" type="text" class="customField">
+                                            <label for="strt"><span>Улицы, № дома, № квартиры</span></label>
+                                        </div>
+
+                                        
+                                    </div>
+                                    <div class="basket__body_form_row">
+                                        <div class="form__input radio">
+                                            <input type="radio" id="del1" name="del">
+                                            <label for="del1">Самовывоз</label>
+                                        </div>    
+                                        <div class="form__input radio">
+                                            <input type="radio" id="del2" name="del">
+                                            <label for="del2">Курьерская доставка</label>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </section>
+            
+        </main>
+        @@include('./blocks/footer.html')
+    </div>
+
+
+    @@include('./blocks/mobile-menu.html')
+
+
+    <script src="./js/bundle.js"></script>
+</body>
+
+
+</html>

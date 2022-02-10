@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        @@include('./blocks/header.html')
+
+
+        <main class="main">
+            @@include('./blocks/nav.html')
+            @@include('./blocks/bc.html')
+            <section class="del">
+                <div class="container">
+                    <div class="del__in">
+                        <div class="del__head">
+                            <h2 class="del__head_title section__title">Доставка и оплата</h2>
+                        </div>
+
+                        <div class="del__main">
+                            <div class="del__main_item del__main_steps">
+                                <div class="del__main_steps_item">
+                                    <div class="text">
+                                        Мы доставляем линзы 
+                                        в любую точку Казахстана!
+                                    </div>
+                                </div>
+                                <div class="del__main_steps_item">
+                                    <div class="text">
+                                        У наших курьеров всегда есть сдача и лифтовые карточки :)
+                                    </div>
+                                </div>
+                                <div class="del__main_steps_item">
+                                    <div class="text">
+                                        Мы доставляем линзы в кратчайшие сроки!
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="del__main_item del__main_img">
+                                <picture>
+                                    <source srcset="" type="image/webp">
+                                    <img src="./img/del-img.png" alt=""> 
+                                </picture>
+                            </div>
+                            <div class="del__main_item del__main_adv del__main_adv_first">
+                                <div class="del__main_adv_head">
+                                    Гарантии и качество
+                                </div>
+                                <div class="del__main_adv_text">
+                                    Мы дорожим своей репутацией и заботимся о Вашем зрении!Мы работаем только с известными, мировыми производителями контактных линз и сопутствующих товаров.
+                                </div>
+                            </div>
+                            <div class="del__main_item del__main_adv del__main_adv_second">
+                                <div class="del__main_adv_head">
+                                    Условия возврата
+                                </div>
+                                <div class="del__main_adv_text">
+                                    Товары медицинского назначения, линзы очковые возврату 
+                                    и обмену не подлежат. Приказ Минздрава Республики Казахстан от 21.05.2008 г. №289 «Об утверждении
+                                    Правил выписывания рецептов и отпуска лекарственных форм», п. 22
+                                </div>
+                            </div>
+                        </div>
+                        <div class="del__action">
+                            <div class="del__action_tabs">
+                                <div class="del__action_tab" data-tab>Доставка по Астане</div>
+                                <div class="del__action_tab" data-tab>доставка по алматы</div>
+                                <div class="del__action_tab" data-tab>доставка по рк</div>
+                                <div class="del__action_tab" data-tab>самовывоз</div>
+                            </div>
+                            <div class="del__action_tabcontents">
+                                <div class="del__action_tabcontent">
+                                    <div class="head">
+                                        Наши менеджеры и курьеры предварительно связываются с клиентом и уточняют адрес и время доставки!
+                                    </div>
+                                    <div class="body">
+                                        <div class="body__part">
+                                            <div class="body__part_head">
+                                                Стоимость доставки
+                                            </div>
+                                            <ul class="body__list">
+                                                <li class="body__list_item"><span>При сумме заказа от 5000 ₸. Бесплатная доставка</span></li>
+                                                <li class="body__list_item"><span>При сумме заказа до 5000 ₸. - 800 ₸</span></li>
+                                                
+                                            </ul>
+                                        </div>
+                                        <div class="body__part">
+                                            <div class="body__part_head">
+                                                Сроки доставки
+                                            </div>
+                                            <ul class="body__list">
+                                                <li class="body__list_item"><span>Заказы принятые до 15.00 доставляются в этот же день!</span></li>
+                                                <li class="body__list_item"><span>Заказы принятые после 15.00 доставляются на следующий день!</span></li>
+                                                <li class="body__list_item"><span>Доставка работает 7 дней в неделю 360 дней в году!</span></li>
+                                            </ul>
+                                        </div>
+                                        <div class="body__part">
+                                            <div class="body__part_head">
+                                                Способы оплаты
+                                            </div>
+                                            <ul class="body__list">
+                                                <li class="body__list_item"><span>Наличными курьеру (кассовый чек обязательно прилагается)</span></li>
+                                                <li class="body__list_item"><span>Онлайн оплата (Visa, MasterCard). Безопасно, быстро и удобно! Безопасность гарантируем Казкоммерцбанк</span></li>
+                                                <li class="body__list_item"><span>QIWI Кошелек. Пополнение кошелька в терминалах QIWI или онлайн на сайте qiwi.ru</span></li>
+                                                <li class="body__list_item"><span>Банковским переводом на расчетный счет</span></li>
+                                                <li class="body__list_item"><span>Перевод с карты на карту (в банкомате или интернет-банкинге): АО «Сбербанк», 
+                                                    АО «Народный банк», АО «ATF Банк», 
+                                                    АО «Kaspi» банк</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="del__action_tabcontent">
+                                    <div class="head">
+                                        Наши менеджеры и курьеры предварительно связываются с клиентом и уточняют адрес и время доставки!
+                                    </div>
+                                    <div class="body">
+                                        <div class="body__part">
+                                            <div class="body__part_head">
+                                                Стоимость доставки
+                                            </div>
+                                            <ul class="body__list">
+                                                <li class="body__list_item"><span>При сумме заказа от 5000 ₸. Бесплатная доставка</span></li>
+                                                <li class="body__list_item"><span>При сумме заказа до 5000 ₸. - 800 ₸</span></li>
+                                                
+                                            </ul>
+                                        </div>
+                                        <div class="body__part">
+                                            <div class="body__part_head">
+                                                Сроки доставки
+                                            </div>
+                                            <ul class="body__list">
+                                                <li class="body__list_item"><span>Заказы принятые до 15.00 доставляются в этот же день!</span></li>
+                                                <li class="body__list_item"><span>Заказы принятые после 15.00 доставляются на следующий день!</span></li>
+                                                <li class="body__list_item"><span>Доставка работает 7 дней в неделю 360 дней в году!</span></li>
+                                            </ul>
+                                        </div>
+                                        <div class="body__part">
+                                            <div class="body__part_head">
+                                                Способы оплаты
+                                            </div>
+                                            <ul class="body__list">
+                                                <li class="body__list_item"><span>Наличными курьеру (кассовый чек обязательно прилагается)</span></li>
+                                                <li class="body__list_item"><span>Онлайн оплата (Visa, MasterCard). Безопасно, быстро и удобно! Безопасность гарантируем Казкоммерцбанк</span></li>
+                                                <li class="body__list_item"><span>QIWI Кошелек. Пополнение кошелька в терминалах QIWI или онлайн на сайте qiwi.ru</span></li>
+                                                <li class="body__list_item"><span>Банковским переводом на расчетный счет</span></li>
+                                                <li class="body__list_item"><span>Перевод с карты на карту (в банкомате или интернет-банкинге): АО «Сбербанк», 
+                                                    АО «Народный банк», АО «ATF Банк», 
+                                                    АО «Kaspi» банк</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="del__action_tabcontent">
+                                    <div class="head">
+                                        Наши менеджеры и курьеры предварительно связываются с клиентом и уточняют адрес и время доставки!
+                                    </div>
+                                    <div class="body">
+                                        <div class="body__part">
+                                            <div class="body__part_head">
+                                                Стоимость доставки
+                                            </div>
+                                            <ul class="body__list">
+                                                <li class="body__list_item"><span>При сумме заказа от 5000 ₸. Бесплатная доставка</span></li>
+                                                <li class="body__list_item"><span>При сумме заказа до 5000 ₸. - 800 ₸</span></li>
+                                                
+                                            </ul>
+                                        </div>
+                                        <div class="body__part">
+                                            <div class="body__part_head">
+                                                Сроки доставки
+                                            </div>
+                                            <ul class="body__list">
+                                                <li class="body__list_item"><span>Заказы принятые до 15.00 доставляются в этот же день!</span></li>
+                                                <li class="body__list_item"><span>Заказы принятые после 15.00 доставляются на следующий день!</span></li>
+                                                <li class="body__list_item"><span>Доставка работает 7 дней в неделю 360 дней в году!</span></li>
+                                            </ul>
+                                        </div>
+                                        <div class="body__part">
+                                            <div class="body__part_head">
+                                                Способы оплаты
+                                            </div>
+                                            <ul class="body__list">
+                                                <li class="body__list_item"><span>Наличными курьеру (кассовый чек обязательно прилагается)</span></li>
+                                                <li class="body__list_item"><span>Онлайн оплата (Visa, MasterCard). Безопасно, быстро и удобно! Безопасность гарантируем Казкоммерцбанк</span></li>
+                                                <li class="body__list_item"><span>QIWI Кошелек. Пополнение кошелька в терминалах QIWI или онлайн на сайте qiwi.ru</span></li>
+                                                <li class="body__list_item"><span>Банковским переводом на расчетный счет</span></li>
+                                                <li class="body__list_item"><span>Перевод с карты на карту (в банкомате или интернет-банкинге): АО «Сбербанк», 
+                                                    АО «Народный банк», АО «ATF Банк», 
+                                                    АО «Kaspi» банк</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="del__action_tabcontent mp">
+                                    <div class="mp__item">
+                                        <div class="mp__descr">
+                                            <div class="mp__head">Астана</div>
+                                            <ul class="mp__list">
+                                                <li class="mp__list_item">
+                                                    <span>Будни с 09:15 до 20:00</span>
+                                                </li>
+                                                <li class="mp__list_item">
+                                                    <span>Выходные с 10:00 до 20:00</span>
+                                                </li>
+                                                <li class="mp__list_item">
+                                                    <span>г.Астана, пр. Республики 5 (ориентир Аптека "Феникс")</span>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="mp__item">
+                                        <div class="mp__descr">
+                                            <div class="mp__head">Алматы</div>
+                                            <ul class="mp__list">
+                                                <li class="mp__list_item">
+                                                    <span>Будни с 09:15 до 20:00</span>
+                                                </li>
+                                                <li class="mp__list_item">
+                                                    <span>Выходные с 10:00 до 20:00</span>
+                                                </li>
+                                                <li class="mp__list_item">
+                                                    <span>г. Алматы, ул. Розыбакиева 136/1 (угол ул. Сатпаева)</span>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        </main>
+        @@include('./blocks/footer.html')
+    </div>
+
+
+    @@include('./blocks/mobile-menu.html')
+
+
+    <script src="./js/bundle.js"></script>
+</body>
+
+
+</html>
