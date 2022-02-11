@@ -2750,6 +2750,15 @@ html {
   background-color: #414E60;
   border-color: #414E60;
 }
+.del__action_tabcontent .zone_map {
+  width: 100%;
+  margin-top: 60px;
+}
+.del__action_tabcontent .zone_map iframe {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #E1E5EE;
+}
 .del__action_tabcontent .head {
   margin-bottom: 30px;
   font-weight: 500;
@@ -2808,6 +2817,14 @@ html {
 }
 .del__action .mp__item {
   width: 48%;
+}
+.del__action .mp__item .map iframe {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #E1E5EE;
+}
+.del__action .mp__descr {
+  margin-bottom: 41px;
 }
 .del__action .mp__head {
   font-weight: 500;
@@ -2895,6 +2912,15 @@ html {
 }
 .contacts__body_item {
   width: 48%;
+}
+.contacts__body_item .map {
+  overflow: hidden;
+}
+.contacts__body_item .map iframe {
+  border-radius: 10px;
+  border: 1px solid #E1E5EE;
+  overflow: hidden;
+  width: 100%;
 }
 .contacts__body_item .head {
   margin-bottom: 20px;
@@ -5047,6 +5073,10 @@ html {
   }
   .del__main_adv {
     margin-bottom: 30px;
+  }
+  .del__action_tabcontent .zone_map {
+    margin-top: 30px;
+    overflow: hidden;
   }
   .del__action_tabcontent .body {
     -ms-flex-wrap: wrap;

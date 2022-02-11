@@ -162,6 +162,15 @@
 
         &_tabcontent {
 
+            .zone_map {
+                width: 100%;
+                margin-top: 60px;
+                iframe {
+                    width: 100%;
+                    border-radius: 10px;
+                    border: 1px solid $line_gray;
+                }
+            }
             .head {
                 margin-bottom: 30px;
                 font-weight: 500;
@@ -225,10 +234,21 @@
             justify-content: space-between;
             &__item {
                 width: 48%;
+
+                .map  {
+
+                    iframe {
+                        width: 100%;
+                        border-radius: 10px;
+                        border: 1px solid $line_gray;
+                    }
+                }   
             }
 
-            &__descr {
+            
 
+            &__descr {
+                margin-bottom: 41px;
             }
 
             &__head {

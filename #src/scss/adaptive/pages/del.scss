@@ -51,6 +51,16 @@
             }
             &_tabcontent {
 
+                .zone_map {
+                    margin-top: 30px;
+                    overflow: hidden;
+                    
+
+                }
+
+                .zone_map > div {
+                    
+                }
                 .body {
                     flex-wrap: wrap;
                     
