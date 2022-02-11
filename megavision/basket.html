@@ -407,47 +407,90 @@
                                     <div class="basket__body_item_head">
                                         Способ оплаты
                                     </div>
-                                    <div class="basket__body_form_row">
+                                    <div class="basket__body_form_row mc_cb">
                                         <div class="radio">
-                                            <input type="radio" name="pay">
-                                            <label for="">Наличными</label>
+                                            <input type="radio" id="pay1" name="pay">
+                                            <label for="pay1">Наличными</label>
                                         </div>
                                         <div class="radio">
-                                            <input type="radio" name="pay">
-                                            <label for="">Банковской картой</label>
+                                            <input type="radio" id="pay2" name="pay">
+                                            <label for="pay2">Банковской картой</label>
                                         </div>
-                                        <div class="radio">
-                                            <input type="radio" name="pay">
-                                            <label for="">Использовать CashBack Баллы</label>
+                                        <div class="radio mob-hide">
+                                            <input type="radio" id="pay3" name="pay">
+                                            <label for="pay3">Использовать CashBack Баллы</label>
                                         </div>
                                         
                                     </div>
-                                    <div class="basket__body_form_row">
+                                    <div class="basket__body_form_row mc_cb">
+                                        <div class="radio non-label">
+                                            <input type="checkbox" id="sw1" name="switch">
+                                            <label for="sw1"></label>
+                                        </div>
                                         <div class="form__input">
-                                            <select class="choices custom__select" name="" id="">
-                                                <option value="Выберите город"></option>
-                                                <option value="Выберите город"></option>
-                                                <option value="Выберите город"></option>
+                                            <select id="switchable" class="choices custom__select" name="" id="">
+                                                <option value="Банковский перевод"></option>
+                                                <option value="Банковский перевод"></option>
+                                                <option value="Банковский перевод"></option>
                                             </select>
                                         </div>
-                                        <div class="form__input custom_field">
-                                            <input id="strt" type="text" class="customField">
-                                            <label for="strt"><span>Улицы, № дома, № квартиры</span></label>
+                                        <div class="form__input mob-show radio">
+                                            <input type="radio" id="pay4" name="pay">
+                                            <label for="pay4">Использовать CashBack Баллы</label>
                                         </div>
-
-                                        
-                                    </div>
-                                    <div class="basket__body_form_row">
-                                        <div class="form__input radio">
-                                            <input type="radio" id="del1" name="del">
-                                            <label for="del1">Самовывоз</label>
+                                        <div class="form__input cb">
+                                            <div class="cashback">
+                                                <div class="name">Доступный бонус</div>
+                                                <div class="value">3000 ₸</div>
+                                            </div>
+                                            
                                         </div>    
-                                        <div class="form__input radio">
-                                            <input type="radio" id="del2" name="del">
-                                            <label for="del2">Курьерская доставка</label>
-                                        </div>
                                     </div>
                                 </form>
+                            </div>
+
+                            <div class="basket__body_item basket__body_total">
+                                <div class="basket__body_total_c">
+                                    <input type="text" placeholder="№ Скидочного купона">
+                                    <button type="button">применить</button>
+                                </div>
+
+                                <div class="basket__body_total_p">
+                                    <div class="info">
+                                        <div class="info__item">
+                                            <div class="name">Всего</div>
+                                            <div class="value">48000₸</div>
+                                        </div>
+                                        <div class="info__item">
+                                            <div class="name">Стоимость Доставки</div>
+                                            <div class="value">0</div>
+                                        </div>
+                                        <div class="info__item">
+                                            <div class="name">Сумма скидки</div>
+                                            <div class="value">- 8000₸</div>
+                                        </div>
+                                        <div class="info__item bonus">
+                                            <div class="name">Бонус на ваш счет</div>
+                                            <div class="value">+ 1440</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="total">
+                                        <div class="total__item">
+                                            <div class="name">ИТОГО к оплате</div>
+                                            <div class="value">48000₸</div>
+                                        </div>
+                                        <div class="total__btn">
+                                            <button class="button">оформить заказ</button>
+                                        </div>
+                                        <div class="total__ch radio">
+                                            <input type="checkbox" id="agree">
+                                            <label for="agree">
+                                                Я согласен на <a href="#">обработку персональных данных</a>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 

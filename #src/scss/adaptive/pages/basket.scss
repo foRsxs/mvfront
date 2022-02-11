@@ -1,0 +1,389 @@
+@media (max-width: 1120px) {
+
+    .basket {
+
+        &__in {
+
+        }
+
+        &__head {
+            margin-bottom: 15px;
+            &_title {
+
+            }
+
+            &_btn {
+                font-size: 12px;
+                line-height: 16px;
+            }
+        }
+
+        &__body {
+            align-items: stretch;
+            &_item {
+                width: 100%;
+            }
+
+            &_cnt {
+                order: 2;
+                width: 48%;
+
+                .basket__body_item_head {
+
+                }
+
+                .cnt__form {
+                    flex-wrap: wrap;
+
+                    &_field {
+                        width: 100%;
+                        height: 256px;
+                    }   
+
+                    &_field.active {
+
+                    }
+
+                    &_inpts {
+                        width: 100%;
+                        margin-bottom: 15px;
+                    }
+
+                    &_inpt.active {
+
+                    }
+
+                    &_inpt {
+
+                    }
+                }
+            }
+
+            &_prs {
+                order: 1;
+
+                &_item {
+
+                    .img {
+                        flex: 1 0 auto;
+                    }
+                    .body {
+                        width: 100%;
+                        
+                        &__act {
+
+                            &_count {
+                                padding: 2px 4px;
+                                margin-right: 42px;
+                                .value.counter {
+
+                                    .value__btn {
+                                        &:first-child {
+                                            padding-left: 12px;
+                                        }
+
+                                        &:last-child {
+                                            padding-right: 12px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &_form {
+                order: 3;
+                width: 48%;
+
+                &_row {
+                    flex-wrap: wrap;
+                    
+                    &:last-child {
+                        margin: 0;
+                    }
+
+                    .form__input {
+                        margin-bottom: 15px;
+                        width: 100%;
+                        &:last-child {
+                            margin: 0;
+                        }
+                    }
+
+                    .form__input.radio {
+                        width: 50%;
+                        margin: 0;
+                        
+                    }
+                }
+
+                &_row.mc_cb {
+
+                    .radio.mob-hide {
+                        display: none;
+                    }
+                    .radio {
+                        width: 50%;
+                        margin: 0;
+                    }
+
+                    .radio.non-label {
+                        width: 10%;
+                    }
+
+                    .form__input {
+                        width: 90%;
+                    }
+
+                    .form__input.cb {
+                        width: 100%;
+                        margin-left: 0;
+
+                        .name {
+                            font-size: 14px;
+                            line-height: 16px;
+                        }
+
+                        .value {
+                            font-size: 16px;
+                        }
+                    }
+
+                    .form__input.mob-show {
+                        display: block;
+                        margin-bottom: 20px;
+                    }
+                }
+
+                &_item {
+                    &:last-child {
+                        margin: 0;
+                    }
+                }
+            }
+
+            &_total {
+                order: 4;
+                
+
+                &_c {
+                    input {
+                        width: 80%;
+                        border-radius: 6px 0 0 6px;
+                    }
+    
+                    button {
+                        width: 20%;
+                        border-radius: 0 6px 6px 0;
+                    }
+                }
+
+                &_p {
+
+                    .total {
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        &__item {
+                            width: 100%;
+                            order: 1;
+                        }
+
+                        &__btn {
+                            order: 3;
+                            margin: 0;
+                        }
+
+                        &__ch {
+                            order: 2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 800px) {
+
+    .basket {
+
+        &__in {
+
+        }
+
+        &__head {
+
+            &_title {
+
+            }
+
+            &_btn {
+                span {
+                    display: none;
+                }
+
+                svg {
+                    margin: 0;
+                }
+            }
+        }
+
+
+        &__body {
+
+            &_item {
+                width: 100%;
+                margin-bottom: 15px;
+            }
+
+            &_prs {
+
+                &_item {
+                    padding: 10px 15px;
+
+                    .close {
+                        top: 12px;
+                    }
+                    .img {
+                        width: 94px;
+                        height: 94px;
+                        margin-right: 20px;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: contain;
+                        }
+                    }
+
+                    .body {
+                        &__name {
+                            padding-right: 22px;
+                            margin-bottom: 15px;
+                        }
+                        &__act {
+                            flex-wrap: wrap;
+
+                            &_price {
+                                width: 100%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                                margin-bottom: 8px;
+                            }
+                            &_count {
+                                width: 100%;
+                                border: none;
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                margin-right: 0;
+                                padding: 0;
+
+                                .name {
+                                    display: block;
+                                    color: $light_gray;
+                                }
+
+                                .value {
+                                    border: 1px solid $line_gray;
+                                    border-radius: 5px;
+                                    padding: 2px 4px;
+                                    
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &_cnt {
+
+                padding: 20px 15px;
+                
+                .cnt__form {
+
+                    &_field {
+                        height: 84px;
+                    }
+                }
+            }
+
+            &_form {
+
+                &_item {
+                    margin-bottom: 15px;
+                    padding: 20px 15px;
+
+                    &:last-child {
+                        margin: 0;
+                    }
+                }
+
+                &_row {
+
+                    .form__input.radio {
+                        width: auto;
+                    }
+                }
+
+                &_row.mc_cb {
+                    justify-content: space-between;
+                    .radio {
+                        width: auto;
+                    }
+
+                    .radio.non-label {
+                        label {
+                            &:after {
+                                top: -12px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &_total {
+
+                &_c {
+
+                    input {
+                        width: 60%;
+
+                    }
+
+                    button {
+                        width: 40%;
+                    }
+                }
+
+                &_p {
+                    .info {
+                        padding: 20px 15px;
+                    }
+                    .total {
+                        &__item {
+                            order: 1;
+                        }
+
+                        &__ch {
+                            order: 3;
+                        }
+
+                        &__btn {
+                            order: 2;
+                            width: 100%;
+                            margin-bottom: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

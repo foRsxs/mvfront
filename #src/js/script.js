@@ -20,6 +20,7 @@ import { cardGallery } from './components/cardGallery';
 import { input } from './components/input';
 import { counter } from './components/conuter';
 import { customSelect } from './components/choice';
+import { switchBasket } from './components/switchBasket';
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -197,6 +198,7 @@ document.addEventListener('DOMContentLoaded', () => {
     input();
     counter();
     customSelect();
+    switchBasket();
     console.log('test new lib scroll 18');
 
 

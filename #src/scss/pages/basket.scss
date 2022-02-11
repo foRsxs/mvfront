@@ -421,6 +421,68 @@
 
             }
 
+            &_row.mc_cb {
+                justify-content: flex-start;
+                .radio {
+                    margin-right: 24px;
+
+                    &:last-child {
+                        margin: 0;
+                    }
+
+                    label[for="sw1"] {
+                        &:after {
+                            top: -5px;
+                        }
+                    }
+                }
+
+
+                .form__input.mob-show {
+                    display: none;
+                }
+                
+
+                .form__input {
+                    width: 45%;
+
+                    .choices.disabled {
+                        pointer-events: none !important;
+                        color: #ccc !important;
+                        
+                        &__inner {
+                            background-color: $light_gray; 
+                        }
+                    }
+                }
+
+                .form__input.cb {
+                    margin-left: 25px;
+                    .cashback {
+                        font-weight: 500;
+                        font-size: 17px;
+                        line-height: 17px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 15px 20px;
+                        border-radius: 4px;
+                        
+
+                        background-image: url('../img/b-c-bg.svg');
+                        background-size: contain;
+                        background-position: left;
+                        background-repeat: no-repeat;
+                        background-color: #fff;
+
+                        .name {
+                            color: #fff;
+                        }
+                    }
+                }
+                
+            }
+
             &_row {
                 display: flex;
                 align-items: center;
@@ -448,7 +510,15 @@
                         width: 100%;
                         display: block;
                     }
+                    .choices.is-open {
+                        .choices__inner {
+                            border-color: $black_text;
+                            z-index: 5;
+                            position: relative;
+                        }
 
+                        
+                    }
                     .choices {
 
                         &__inner {
@@ -457,6 +527,8 @@
                             border-radius: 4px;
                             min-height: unset;
                             padding: 15px 20px;
+                            font-size: 13px !important;
+                            line-height: 16px !important;
 
                             .choices__list--single {
                                 padding: 0;
@@ -531,6 +603,131 @@
 
                         &:after {
                             opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+
+        &_total {
+            width: 40%;
+
+            &_c {
+                margin-bottom: 30px;
+                display: flex;
+                input {
+                    display: flex;
+                    width: 60%;
+                    align-items: center;
+                    border: 1px solid $line_gray;
+                    border-radius: 10px 0 0 10px;
+                    padding: 16px 13px;font-weight: 500;
+                    font-size: 13px;
+                    line-height: 16px;
+                    border-right: none;
+
+                    &:focus {
+                        outline: none;
+                        border-color: $black_text;
+                    }
+                }
+
+                button {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 40%;
+                    padding: 16px;
+                    color: #fff;
+                    text-transform: uppercase;
+                    background-color: $dark_gray;
+                    border-radius: 0 10px 10px 0;font-weight: 600;
+                    font-size: 13px;
+                    line-height: 16px;
+
+                    @include def-anim;
+
+                    &:hover {
+                        background-color: #414E60;
+                    }
+                }
+            }
+
+            &_p {
+                border-radius: 10px;
+                border: 1px solid $line_gray;
+                .info {
+                    padding: 25px;
+                    border-bottom: 1px solid $line_gray;
+
+                    &__item {
+                        display: flex;
+                        justify-content: space-between;
+                        margin-bottom: 18px;
+
+                        &:last-child {
+                            margin: 0;
+                        }
+                        .name {
+                            font-size: 15px;
+                            line-height: 16px;
+                            color: $dark_gray;
+                        }
+
+                        .value {
+                            font-weight: 500;
+                            font-size: 17px;
+                            line-height: 16px;
+                            text-align: right;
+                        }
+                    }
+
+                    &__item.bonus {
+
+                        .name, .value {
+                            color: $red;
+                            font-weight: 400;
+                        }
+                    }
+                }
+
+                .total {
+                    padding: 25px;
+
+                    &__item {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-bottom: 25px;
+
+                        .name {
+                            font-size: 17px;
+                            line-height: 16px;
+                        }
+
+                        .value {
+                            font-weight: 700;
+                            font-size: 17px;
+                            line-height: 16px;
+                        }
+                    }
+
+                    &__btn {
+                        margin-bottom: 14px;
+                        button {
+                            width: 100%;
+                        }
+                    }
+
+                    &__ch {
+
+                        label {
+                            font-size: 13px;
+                            color: $dark_gray;
+                            a {
+                                text-decoration: underline;
+                                text-decoration-style: dotted;
+                            }
                         }
                     }
                 }
