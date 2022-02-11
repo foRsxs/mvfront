@@ -96,7 +96,7 @@
                 &_field.active {
                     label {
                         padding: 0 9px;
-                        color: $black_text;
+                        color: #737783;;
                         font-size: 12px;
                         top: -8px;
 
@@ -131,7 +131,7 @@
                         position: absolute;
                         top: 15px;
                         left: 20px;
-                        font-weight: 500;
+                        font-weight: 300;
                         font-size: 13px;
                         line-height: 16px;
                         color: #9497A3;
@@ -178,7 +178,7 @@
 
                     label {
                         padding: 0 9px;
-                        color: $black_text;
+                        color:#737783;;
                         font-size: 12px;
                         top: -8px;
 
@@ -218,7 +218,7 @@
                         position: absolute;
                         top: calc(50% - 8px);
                         left: 20px;
-                        font-weight: 500;
+                        font-weight: 300;
                         font-size: 13px;
                         line-height: 16px;
                         color: #9497A3;
@@ -247,7 +247,7 @@
 
                     input:focus ~ label {
                         padding: 0 9px;
-                        color: $black_text;
+                        color: #737783;
                         font-size: 12px;
                         top: -8px;
 
@@ -492,7 +492,7 @@
                 .form__input.custom_field.active {
                     label {
                         padding: 0 9px;
-                        color: $black_text;
+                        color: #737783;
                         font-size: 12px;
                         top: -8px;
 
@@ -540,6 +540,7 @@
                         .choices__list--dropdown{
                             border: 1px solid $line_gray !important;
                             background-color: #fff;
+                            z-index: 5;
                         }
                     }
                     
@@ -568,10 +569,10 @@
                         position: absolute;
                         top: calc(50% - 8px);
                         left: 20px;
-                        font-weight: 500;
+                        font-weight: 300;
                         font-size: 13px;
                         line-height: 16px;
-                        color: #9497A3;
+                        color: #737783;
                         font-size: 13px;
                         @include def-anim;
                         
@@ -597,7 +598,7 @@
 
                     input[type="text"]:focus ~ label {
                         padding: 0 9px;
-                        color: $black_text;
+                        color: #737783;
                         font-size: 12px;
                         top: -8px;
 
@@ -630,6 +631,11 @@
                         outline: none;
                         border-color: $black_text;
                     }
+
+                    &::placeholder {
+                        font-weight: 300;
+                        color: #737783;
+                    } 
                 }
 
                 button {
