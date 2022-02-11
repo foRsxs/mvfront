@@ -310,6 +310,7 @@
                 }
                 .img {
                     margin-right: 23px;
+                    display: block;
                 }
 
                 .body {
@@ -319,6 +320,14 @@
                         font-size: 17px;
                         line-height: 24px;
                         margin-bottom: 20px;
+                        display: block;
+
+                        span {
+                            display: block;
+                            color: $dark_gray;
+                            font-size: 12px;
+                            line-height: 16px;
+                        }
                     }   
 
                     &__act {
