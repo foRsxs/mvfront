@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        @@include('./blocks/header.html')
+
+
+        <main class="main">
+            @@include('./blocks/nav.html')
+            @@include('./blocks/bc.html')
+            <section class="bonus">
+                <div class="container">
+                    <div class="bonus__in">
+                        <div class="bonus__head">
+                            <h2 class="bonus__head_title section__title">
+                                бонусная программа
+                            </h2>
+                        </div>
+
+                        <div class="bonus__body">
+                            <div class="bonus__left">
+                                <div class="bonus__body_title">
+                                    Общая информация
+                                </div>
+                                <div class="bonus__left_descr">
+                                    Бонусная программа <span>CASH BACK</span> (кэш бэк) - возврат вознаграждений на ваш личный счет. Вознаграждения расчитываются в баллах <span>(1 балл = 1 тенге)</span>.
+                                </div>
+                                <div class="bonus__left_main">
+                                    <div class="bonus__left_title">
+                                        Условия бонусной программы:
+                                    </div>
+                                    <ul class="bonus__left_list">
+                                        <li class="bonus__left_list_item">
+                                            <span>Вознаграждения (кэш бэк) начисляются после завершения заказа, статус заказа должен быть "Завершен"</span>
+                                        </li>
+                                        <li class="bonus__left_list_item">
+                                            <span>Начисленные баллы действуют бессрочно и могут использоваться только при покупке товара в нашем магазине</span>
+                                        </li>
+                                        <li class="bonus__left_list_item">
+                                            <span>При списании баллов начисление баллов по текущему заказу 
+                                                не производится</span>
+                                        </li>
+                                        <li class="bonus__left_list_item">
+                                            <span>Вознаграждения (кэш бэк) не выплачиваются в наличной 
+                                                или безналичной форме</span>
+                                        </li>
+                                        <li class="bonus__left_list_item">
+                                            <span>Использование бонусов разрешено не более 20% от общей суммы заказа</span>
+                                        </li>
+                                        <li class="bonus__left_list_item">
+                                            <span>Процент вознаграждения может изменяться и зависит 
+                                                от внешних факторов (например: повышение цен 
+                                                от производителя, изменение курса валют)</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="bonus__right">
+                                <div class="bonus__right_img">
+                                    <div class="bonus__right_img_panel">
+                                        <div class="name">CashBack до</div>
+                                        <div class="value">10%</div>
+                                    </div>
+                                    <picture>
+                                        <source srcset="" type="image/webp">
+                                        <img src="./img/bonus-test.png" alt="">
+                                    </picture>
+                                </div>
+
+                                <div class="bonus__body_title">
+                                    Система бонусов CASH BACK (кэш бэк)
+                                </div>
+
+                                <div class="bonus__right_main">
+                                    <div class="bonus__right_title">
+                                        Cashback 3% - На любую покупку
+                                    </div>
+                                    <div class="bonus__right_text">
+                                        C 1 февраля 2021 устанавливается единый Кешбэк 3%. В связи 
+с повышением цен от производителей наша компания не повышала розничные цены, но вынуждена сократить размер кешбэков.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        </main>
+        @@include('./blocks/footer.html')
+    </div>
+
+
+    @@include('./blocks/mobile-menu.html')
+
+
+    <script src="./js/bundle.js"></script>
+</body>
+
+
+</html>
