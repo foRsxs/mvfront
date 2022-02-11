@@ -3700,6 +3700,9 @@ html {
 .success__head {
   margin-bottom: 25px;
 }
+.success__in {
+  padding-bottom: 60px;
+}
 .success__body {
   display: -webkit-box;
   display: -ms-flexbox;
