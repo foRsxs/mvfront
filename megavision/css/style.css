@@ -2701,7 +2701,7 @@ html {
   content: url("../img/del-adv-1.svg");
 }
 .del__main_adv_second:after {
-  content: url("../img/del-adv-2.png");
+  content: url("../img/del-adv-2.svg");
 }
 .del__action_tabs {
   display: -webkit-box;
