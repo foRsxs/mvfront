@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        @@include('./blocks/header.html')
+
+
+        <main class="main">
+            @@include('./blocks/nav.html')
+            @@include('./blocks/bc.html')
+            <section class="success">
+                <div class="container">
+                    <div class="success__in">
+                        <div class="success__head">
+                            <h2 class="success__head_title section__title">
+                                корзина
+                            </h2>
+
+                        </div>
+
+                        <div class="success__body">
+                            <div class="success__push">
+                                <div class="success__push_head">
+                                    <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M32.8956 12.5278C33.0631 12.3607 33.263 12.228 33.4837 12.1373C33.7043 12.0467 33.9412 12 34.1805 12C34.4198 12 34.6567 12.0467 34.8774 12.1373C35.098 12.228 35.2979 12.3607 35.4654 12.5278C36.1674 13.2214 36.1772 14.3422 35.49 15.0478L20.9766 31.8238C20.8118 32.0008 20.6119 32.143 20.389 32.2417C20.1661 32.3405 19.9249 32.3938 19.6802 32.3983C19.4355 32.4028 19.1924 32.3584 18.9659 32.2679C18.7393 32.1774 18.5341 32.0426 18.3626 31.8718L9.53138 23.1214C9.19078 22.7818 9 22.3251 9 21.8494C9 21.3738 9.19078 20.9171 9.53138 20.5774C9.69888 20.4103 9.89881 20.2776 10.1194 20.1869C10.3401 20.0963 10.577 20.0496 10.8163 20.0496C11.0556 20.0496 11.2925 20.0963 11.5132 20.1869C11.7338 20.2776 11.9337 20.4103 12.1012 20.5774L19.5923 28.0006L32.8465 12.5806C32.8618 12.5621 32.8782 12.5445 32.8956 12.5278Z" fill="#1ABE6F"/>
+                                        <circle cx="21.5" cy="21.5" r="21" stroke="#1ABE6F"/>
+                                        </svg>
+                                        
+                                    Заказ успешно создан
+                                </div>
+                                <div class="success__push_info">
+                                    <div class="name">Номер заказа:</div>
+                                    <div class="value">1232456</div>
+                                    <div class="message">спасибо за покупку!</div>
+                                </div>
+
+                                <div class="success__push_btn">
+                                    <button class="button">
+                                        посмотреть заказ
+                                    </button>
+                                </div>
+                            </div>
+
+                            <form class="success__form">
+                                <div class="success__form_head">
+                                    Автоповтор заказа
+                                </div>
+
+                                <div class="success__form_descr">
+                                    Для вашего удобства мы можем выслать напоминание или автоматически повторить ваш заказ Мы заботимся о вас и вашем времени.
+                                </div>
+                                <div class="success__form_row">
+                                    <div class="success__form_row_item radio">
+                                        <input type="radio" name="rep" id="rep1">
+                                        <label for="rep1">Автоповтор заказа</label>
+                                    </div>
+                                    <div class="success__form_row_item radio">
+                                        <input type="radio" name="rep" id="rep2">
+                                        <label for="rep2">Отправлять только напоминания</label>
+                                    </div>
+                                </div>
+                                <div class="success__form_action">
+                                    <div class="success__form_action_info">
+                                        <div class="name">Повтор заказа через</div>
+                                        <div class="value">14 дней</div>
+                                    </div>
+                                    <button class="success__form_action_btn button">Добавить</button>
+                                </div>
+                            </form>
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </section>
+            
+        </main>
+        @@include('./blocks/footer.html')
+    </div>
+
+
+    @@include('./blocks/mobile-menu.html')
+
+
+    <script src="./js/bundle.js"></script>
+</body>
+
+
+</html>
