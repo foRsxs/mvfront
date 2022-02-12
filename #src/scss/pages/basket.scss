@@ -56,8 +56,16 @@
         display: flex;
         flex-wrap: wrap;
         align-items: flex-start;
+
+        &_col {
+            width: 43%;
+
+            &:first-child {
+                width: 55%;
+            }
+        }
         &_item {
-            width: 48.5%;
+            width: 100% !important;
             margin-bottom: 30px;
 
             &_head {

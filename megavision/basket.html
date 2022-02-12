@@ -256,246 +256,253 @@
                         </div>
 
                         <div class="basket__body">
-                            <div class="basket__body_item basket__body_cnt">
-                                <div class="basket__body_item_head">
-                                    Контактные данные
-                                </div>
-
-                                <form class="cnt__form">
-                                    <div class="cnt__form_inpts">
-                                        <div class="cnt__form_inpt">
-                                            <input type="email" id="email" class="customField">
-                                            <label for="email"><span>Введите e-mail</span></label>
-                                        </div>
-                                        <div class="cnt__form_inpt">
-                                            <input type="text" id="fn" class="customField">
-                                            <label for="fn"><span>ФИО</span></label>
-                                        </div>
-                                        <div class="cnt__form_inpt">
-                                            <input type="text" id="tel" class="customField">
-                                            <label for="tel"><span>Телефон</span></label>
-                                        </div>
+                            <div class="basket__body_col">
+                                <div class="basket__body_item basket__body_cnt">
+                                    <div class="basket__body_item_head">
+                                        Контактные данные
                                     </div>
-                                    <div class="cnt__form_field">
-                                        <textarea class="customField"></textarea>
-                                        <label for="msg"><span>Комментарий к заказу</span></label>
-                                    </div>
-                                </form>
-                            </div>
-
-                            <div class="basket__body_item basket__body_prs">
-                                <div class="basket__body_prs_item">
-                                    <button class="close">
-                                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M5.9779 4.99934L8.96112 2.02262C9.09176 1.89196 9.16516 1.71474 9.16516 1.52997C9.16516 1.34519 9.09176 1.16797 8.96112 1.03731C8.83048 0.906655 8.6533 0.833252 8.46854 0.833252C8.28379 0.833252 8.10661 0.906655 7.97597 1.03731L4.99967 4.02097L2.02338 1.03731C1.89274 0.906655 1.71556 0.833252 1.5308 0.833252C1.34605 0.833252 1.16887 0.906655 1.03822 1.03731C0.907585 1.16797 0.834192 1.34519 0.834192 1.52997C0.834192 1.71474 0.907585 1.89196 1.03822 2.02262L4.02145 4.99934L1.03822 7.97606C0.973199 8.04056 0.921586 8.1173 0.886364 8.20186C0.851142 8.28641 0.833008 8.37711 0.833008 8.46871C0.833008 8.56031 0.851142 8.651 0.886364 8.73555C0.921586 8.82011 0.973199 8.89685 1.03822 8.96136C1.10272 9.02639 1.17945 9.07801 1.264 9.11324C1.34854 9.14847 1.43922 9.1666 1.5308 9.1666C1.62239 9.1666 1.71307 9.14847 1.79761 9.11324C1.88216 9.07801 1.95889 9.02639 2.02338 8.96136L4.99967 5.9777L7.97597 8.96136C8.04046 9.02639 8.11719 9.07801 8.20174 9.11324C8.28628 9.14847 8.37696 9.1666 8.46854 9.1666C8.56013 9.1666 8.65081 9.14847 8.73535 9.11324C8.8199 9.07801 8.89663 9.02639 8.96112 8.96136C9.02615 8.89685 9.07776 8.82011 9.11299 8.73555C9.14821 8.651 9.16634 8.56031 9.16634 8.46871C9.16634 8.37711 9.14821 8.28641 9.11299 8.20186C9.07776 8.1173 9.02615 8.04056 8.96112 7.97606L5.9779 4.99934Z" fill="#9497A3"/>
-                                            </svg>
-                                            
-                                    </button>
-                                    <a href="#" class="img">
-                                        <picture>
-                                            <source srcset="" type="image/webp">
-                                            <img src="./img/thumb-test.png" alt="">
-                                        </picture>
-                                    </a>
-                                    <div class="body">
-                                        <a href="#" class="body__name">Acuvue 1-day TruEye days one
-                                            <span>Диоптрия: -0.5 ; BC: 8.5 </span>
-                                        </a>
-                                        <div class="body__act">
-                                            <div class="body__act_price">
-                                                <div class="name">Стоимость:</div>
-                                                <div class="value">12000₸</div>
+    
+                                    <form class="cnt__form">
+                                        <div class="cnt__form_inpts">
+                                            <div class="cnt__form_inpt">
+                                                <input type="email" id="email" class="customField">
+                                                <label for="email"><span>Введите e-mail</span></label>
                                             </div>
-
-                                            <div class="body__act_count">
-                                                <div class="name">Кол-во</div>
-                                                <div class="value counter">
-                                                    <button class="value__btn" data-dir="minus">
-                                                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M0.696237 5.70345C0.31056 5.31378 0.31056 4.68622 0.696237 4.29655L4.28926 0.666294C4.91772 0.0313225 6 0.476354 6 1.36975L6 8.63026C6 9.52365 4.91772 9.96868 4.28926 9.33371L0.696237 5.70345Z" fill="#1F1F1F"/>
-                                                            </svg>
-                                                            
-                                                    </button>
-                                                    <input class="value__inp" type="text" value="0">
-                                                    <button class="value__btn" data-dir="plus">
-                                                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M5.30376 5.70345C5.68944 5.31378 5.68944 4.68622 5.30376 4.29655L1.71074 0.666294C1.08228 0.0313225 0 0.476354 0 1.36975L0 8.63026C0 9.52365 1.08228 9.96868 1.71074 9.33371L5.30376 5.70345Z" fill="#1F1F1F"/>
-                                                            </svg>
-                                                            
-                                                    </button>
+                                            <div class="cnt__form_inpt">
+                                                <input type="text" id="fn" class="customField">
+                                                <label for="fn"><span>ФИО</span></label>
+                                            </div>
+                                            <div class="cnt__form_inpt">
+                                                <input type="text" id="tel" class="customField">
+                                                <label for="tel"><span>Телефон</span></label>
+                                            </div>
+                                        </div>
+                                        <div class="cnt__form_field">
+                                            <textarea class="customField"></textarea>
+                                            <label for="msg"><span>Комментарий к заказу</span></label>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="basket__body_item basket__body_form">
+                                    <form class="basket__body_form_item">
+                                        <div class="basket__body_item_head">
+                                            Доставка
+                                        </div>
+    
+                                        <div class="basket__body_form_row">
+                                            <div class="form__input">
+                                                <select class="choices custom__select" name="" id="">
+                                                    <option value="Выберите город"></option>
+                                                    <option value="Выберите город"></option>
+                                                    <option value="Выберите город"></option>
+                                                </select>
+                                            </div>
+                                            <div class="form__input custom_field">
+                                                <input id="strt" type="text" class="customField">
+                                                <label for="strt"><span>Улицы, № дома, № квартиры</span></label>
+                                            </div>
+    
+                                            
+                                        </div>
+                                        <div class="basket__body_form_row">
+                                            <div class="form__input radio">
+                                                <input type="radio" id="del1" name="del">
+                                                <label for="del1">Самовывоз</label>
+                                            </div>    
+                                            <div class="form__input radio">
+                                                <input type="radio" id="del2" name="del">
+                                                <label for="del2">Курьерская доставка</label>
+                                            </div>
+                                        </div>
+                                    </form>
+    
+                                    <form class="basket__body_form_item">
+                                        <div class="basket__body_item_head">
+                                            Способ оплаты
+                                        </div>
+                                        <div class="basket__body_form_row mc_cb">
+                                            <div class="radio">
+                                                <input type="radio" id="pay1" name="pay">
+                                                <label for="pay1">Наличными</label>
+                                            </div>
+                                            <div class="radio">
+                                                <input type="radio" id="pay2" name="pay">
+                                                <label for="pay2">Банковской картой</label>
+                                            </div>
+                                            <div class="radio mob-hide">
+                                                <input type="radio" id="pay3" name="pay">
+                                                <label for="pay3">Использовать CashBack Баллы</label>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="basket__body_form_row mc_cb">
+                                            <div class="radio non-label">
+                                                <input type="checkbox" id="sw1" name="switch">
+                                                <label for="sw1"></label>
+                                            </div>
+                                            <div class="form__input">
+                                                <select id="switchable" class="choices custom__select" name="" id="">
+                                                    <option value="Банковский перевод"></option>
+                                                    <option value="Банковский перевод"></option>
+                                                    <option value="Банковский перевод"></option>
+                                                </select>
+                                            </div>
+                                            <div class="form__input mob-show radio">
+                                                <input type="radio" id="pay4" name="pay">
+                                                <label for="pay4">Использовать CashBack Баллы</label>
+                                            </div>
+                                            <div class="form__input cb">
+                                                <div class="cashback">
+                                                    <div class="name">Доступный бонус</div>
+                                                    <div class="value">3000 ₸</div>
+                                                </div>
+                                                
+                                            </div>    
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="basket__body_col">
+                                <div class="basket__body_item basket__body_prs">
+                                    <div class="basket__body_prs_item">
+                                        <button class="close">
+                                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M5.9779 4.99934L8.96112 2.02262C9.09176 1.89196 9.16516 1.71474 9.16516 1.52997C9.16516 1.34519 9.09176 1.16797 8.96112 1.03731C8.83048 0.906655 8.6533 0.833252 8.46854 0.833252C8.28379 0.833252 8.10661 0.906655 7.97597 1.03731L4.99967 4.02097L2.02338 1.03731C1.89274 0.906655 1.71556 0.833252 1.5308 0.833252C1.34605 0.833252 1.16887 0.906655 1.03822 1.03731C0.907585 1.16797 0.834192 1.34519 0.834192 1.52997C0.834192 1.71474 0.907585 1.89196 1.03822 2.02262L4.02145 4.99934L1.03822 7.97606C0.973199 8.04056 0.921586 8.1173 0.886364 8.20186C0.851142 8.28641 0.833008 8.37711 0.833008 8.46871C0.833008 8.56031 0.851142 8.651 0.886364 8.73555C0.921586 8.82011 0.973199 8.89685 1.03822 8.96136C1.10272 9.02639 1.17945 9.07801 1.264 9.11324C1.34854 9.14847 1.43922 9.1666 1.5308 9.1666C1.62239 9.1666 1.71307 9.14847 1.79761 9.11324C1.88216 9.07801 1.95889 9.02639 2.02338 8.96136L4.99967 5.9777L7.97597 8.96136C8.04046 9.02639 8.11719 9.07801 8.20174 9.11324C8.28628 9.14847 8.37696 9.1666 8.46854 9.1666C8.56013 9.1666 8.65081 9.14847 8.73535 9.11324C8.8199 9.07801 8.89663 9.02639 8.96112 8.96136C9.02615 8.89685 9.07776 8.82011 9.11299 8.73555C9.14821 8.651 9.16634 8.56031 9.16634 8.46871C9.16634 8.37711 9.14821 8.28641 9.11299 8.20186C9.07776 8.1173 9.02615 8.04056 8.96112 7.97606L5.9779 4.99934Z" fill="#9497A3"/>
+                                                </svg>
+                                                
+                                        </button>
+                                        <a href="#" class="img">
+                                            <picture>
+                                                <source srcset="" type="image/webp">
+                                                <img src="./img/thumb-test.png" alt="">
+                                            </picture>
+                                        </a>
+                                        <div class="body">
+                                            <a href="#" class="body__name">Acuvue 1-day TruEye days one
+                                                <span>Диоптрия: -0.5 ; BC: 8.5 </span>
+                                            </a>
+                                            <div class="body__act">
+                                                <div class="body__act_price">
+                                                    <div class="name">Стоимость:</div>
+                                                    <div class="value">12000₸</div>
+                                                </div>
+    
+                                                <div class="body__act_count">
+                                                    <div class="name">Кол-во</div>
+                                                    <div class="value counter">
+                                                        <button class="value__btn" data-dir="minus">
+                                                            <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M0.696237 5.70345C0.31056 5.31378 0.31056 4.68622 0.696237 4.29655L4.28926 0.666294C4.91772 0.0313225 6 0.476354 6 1.36975L6 8.63026C6 9.52365 4.91772 9.96868 4.28926 9.33371L0.696237 5.70345Z" fill="#1F1F1F"/>
+                                                                </svg>
+                                                                
+                                                        </button>
+                                                        <input class="value__inp" type="text" value="0">
+                                                        <button class="value__btn" data-dir="plus">
+                                                            <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M5.30376 5.70345C5.68944 5.31378 5.68944 4.68622 5.30376 4.29655L1.71074 0.666294C1.08228 0.0313225 0 0.476354 0 1.36975L0 8.63026C0 9.52365 1.08228 9.96868 1.71074 9.33371L5.30376 5.70345Z" fill="#1F1F1F"/>
+                                                                </svg>
+                                                                
+                                                        </button>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>   
-                                <div class="basket__body_prs_item">
-                                    <button class="close">
-                                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M5.9779 4.99934L8.96112 2.02262C9.09176 1.89196 9.16516 1.71474 9.16516 1.52997C9.16516 1.34519 9.09176 1.16797 8.96112 1.03731C8.83048 0.906655 8.6533 0.833252 8.46854 0.833252C8.28379 0.833252 8.10661 0.906655 7.97597 1.03731L4.99967 4.02097L2.02338 1.03731C1.89274 0.906655 1.71556 0.833252 1.5308 0.833252C1.34605 0.833252 1.16887 0.906655 1.03822 1.03731C0.907585 1.16797 0.834192 1.34519 0.834192 1.52997C0.834192 1.71474 0.907585 1.89196 1.03822 2.02262L4.02145 4.99934L1.03822 7.97606C0.973199 8.04056 0.921586 8.1173 0.886364 8.20186C0.851142 8.28641 0.833008 8.37711 0.833008 8.46871C0.833008 8.56031 0.851142 8.651 0.886364 8.73555C0.921586 8.82011 0.973199 8.89685 1.03822 8.96136C1.10272 9.02639 1.17945 9.07801 1.264 9.11324C1.34854 9.14847 1.43922 9.1666 1.5308 9.1666C1.62239 9.1666 1.71307 9.14847 1.79761 9.11324C1.88216 9.07801 1.95889 9.02639 2.02338 8.96136L4.99967 5.9777L7.97597 8.96136C8.04046 9.02639 8.11719 9.07801 8.20174 9.11324C8.28628 9.14847 8.37696 9.1666 8.46854 9.1666C8.56013 9.1666 8.65081 9.14847 8.73535 9.11324C8.8199 9.07801 8.89663 9.02639 8.96112 8.96136C9.02615 8.89685 9.07776 8.82011 9.11299 8.73555C9.14821 8.651 9.16634 8.56031 9.16634 8.46871C9.16634 8.37711 9.14821 8.28641 9.11299 8.20186C9.07776 8.1173 9.02615 8.04056 8.96112 7.97606L5.9779 4.99934Z" fill="#9497A3"/>
-                                            </svg>
-                                            
-                                    </button>
-                                    <a href="#" class="img">
-                                        <picture>
-                                            <source srcset="" type="image/webp">
-                                            <img src="./img/thumb-test.png" alt="">
-                                        </picture>
-                                    </a>
-                                    <div class="body">
-                                        <a href="#" class="body__name">Acuvue 1-day TruEye days one
-                                            <span>Диоптрия: -0.5 ; BC: 8.5 </span>
+                                    </div>   
+                                    <div class="basket__body_prs_item">
+                                        <button class="close">
+                                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M5.9779 4.99934L8.96112 2.02262C9.09176 1.89196 9.16516 1.71474 9.16516 1.52997C9.16516 1.34519 9.09176 1.16797 8.96112 1.03731C8.83048 0.906655 8.6533 0.833252 8.46854 0.833252C8.28379 0.833252 8.10661 0.906655 7.97597 1.03731L4.99967 4.02097L2.02338 1.03731C1.89274 0.906655 1.71556 0.833252 1.5308 0.833252C1.34605 0.833252 1.16887 0.906655 1.03822 1.03731C0.907585 1.16797 0.834192 1.34519 0.834192 1.52997C0.834192 1.71474 0.907585 1.89196 1.03822 2.02262L4.02145 4.99934L1.03822 7.97606C0.973199 8.04056 0.921586 8.1173 0.886364 8.20186C0.851142 8.28641 0.833008 8.37711 0.833008 8.46871C0.833008 8.56031 0.851142 8.651 0.886364 8.73555C0.921586 8.82011 0.973199 8.89685 1.03822 8.96136C1.10272 9.02639 1.17945 9.07801 1.264 9.11324C1.34854 9.14847 1.43922 9.1666 1.5308 9.1666C1.62239 9.1666 1.71307 9.14847 1.79761 9.11324C1.88216 9.07801 1.95889 9.02639 2.02338 8.96136L4.99967 5.9777L7.97597 8.96136C8.04046 9.02639 8.11719 9.07801 8.20174 9.11324C8.28628 9.14847 8.37696 9.1666 8.46854 9.1666C8.56013 9.1666 8.65081 9.14847 8.73535 9.11324C8.8199 9.07801 8.89663 9.02639 8.96112 8.96136C9.02615 8.89685 9.07776 8.82011 9.11299 8.73555C9.14821 8.651 9.16634 8.56031 9.16634 8.46871C9.16634 8.37711 9.14821 8.28641 9.11299 8.20186C9.07776 8.1173 9.02615 8.04056 8.96112 7.97606L5.9779 4.99934Z" fill="#9497A3"/>
+                                                </svg>
+                                                
+                                        </button>
+                                        <a href="#" class="img">
+                                            <picture>
+                                                <source srcset="" type="image/webp">
+                                                <img src="./img/thumb-test.png" alt="">
+                                            </picture>
                                         </a>
-                                        <div class="body__act">
-                                            <div class="body__act_price">
-                                                <div class="name">Стоимость:</div>
-                                                <div class="value">12000₸</div>
-                                            </div>
-
-                                            <div class="body__act_count">
-                                                <div class="name">Кол-во</div>
-                                                <div class="value counter">
-                                                    <button class="value__btn" data-dir="minus">
-                                                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M0.696237 5.70345C0.31056 5.31378 0.31056 4.68622 0.696237 4.29655L4.28926 0.666294C4.91772 0.0313225 6 0.476354 6 1.36975L6 8.63026C6 9.52365 4.91772 9.96868 4.28926 9.33371L0.696237 5.70345Z" fill="#1F1F1F"/>
-                                                            </svg>
-                                                            
-                                                    </button>
-                                                    <input class="value__inp" type="text" value="0">
-                                                    <button class="value__btn" data-dir="plus">
-                                                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M5.30376 5.70345C5.68944 5.31378 5.68944 4.68622 5.30376 4.29655L1.71074 0.666294C1.08228 0.0313225 0 0.476354 0 1.36975L0 8.63026C0 9.52365 1.08228 9.96868 1.71074 9.33371L5.30376 5.70345Z" fill="#1F1F1F"/>
-                                                            </svg>
-                                                            
-                                                    </button>
+                                        <div class="body">
+                                            <a href="#" class="body__name">Acuvue 1-day TruEye days one
+                                                <span>Диоптрия: -0.5 ; BC: 8.5 </span>
+                                            </a>
+                                            <div class="body__act">
+                                                <div class="body__act_price">
+                                                    <div class="name">Стоимость:</div>
+                                                    <div class="value">12000₸</div>
+                                                </div>
+    
+                                                <div class="body__act_count">
+                                                    <div class="name">Кол-во</div>
+                                                    <div class="value counter">
+                                                        <button class="value__btn" data-dir="minus">
+                                                            <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M0.696237 5.70345C0.31056 5.31378 0.31056 4.68622 0.696237 4.29655L4.28926 0.666294C4.91772 0.0313225 6 0.476354 6 1.36975L6 8.63026C6 9.52365 4.91772 9.96868 4.28926 9.33371L0.696237 5.70345Z" fill="#1F1F1F"/>
+                                                                </svg>
+                                                                
+                                                        </button>
+                                                        <input class="value__inp" type="text" value="0">
+                                                        <button class="value__btn" data-dir="plus">
+                                                            <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M5.30376 5.70345C5.68944 5.31378 5.68944 4.68622 5.30376 4.29655L1.71074 0.666294C1.08228 0.0313225 0 0.476354 0 1.36975L0 8.63026C0 9.52365 1.08228 9.96868 1.71074 9.33371L5.30376 5.70345Z" fill="#1F1F1F"/>
+                                                                </svg>
+                                                                
+                                                        </button>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
+                                    </div>     
+                                </div>
+    
+                                
+    
+                                <div class="basket__body_item basket__body_total">
+                                    <div class="basket__body_total_c">
+                                        <input type="text" placeholder="№ Скидочного купона">
+                                        <button type="button">применить</button>
                                     </div>
-                                </div>     
-                            </div>
-
-                            <div class="basket__body_item basket__body_form">
-                                <form class="basket__body_form_item">
-                                    <div class="basket__body_item_head">
-                                        Доставка
-                                    </div>
-
-                                    <div class="basket__body_form_row">
-                                        <div class="form__input">
-                                            <select class="choices custom__select" name="" id="">
-                                                <option value="Выберите город"></option>
-                                                <option value="Выберите город"></option>
-                                                <option value="Выберите город"></option>
-                                            </select>
-                                        </div>
-                                        <div class="form__input custom_field">
-                                            <input id="strt" type="text" class="customField">
-                                            <label for="strt"><span>Улицы, № дома, № квартиры</span></label>
-                                        </div>
-
-                                        
-                                    </div>
-                                    <div class="basket__body_form_row">
-                                        <div class="form__input radio">
-                                            <input type="radio" id="del1" name="del">
-                                            <label for="del1">Самовывоз</label>
-                                        </div>    
-                                        <div class="form__input radio">
-                                            <input type="radio" id="del2" name="del">
-                                            <label for="del2">Курьерская доставка</label>
-                                        </div>
-                                    </div>
-                                </form>
-
-                                <form class="basket__body_form_item">
-                                    <div class="basket__body_item_head">
-                                        Способ оплаты
-                                    </div>
-                                    <div class="basket__body_form_row mc_cb">
-                                        <div class="radio">
-                                            <input type="radio" id="pay1" name="pay">
-                                            <label for="pay1">Наличными</label>
-                                        </div>
-                                        <div class="radio">
-                                            <input type="radio" id="pay2" name="pay">
-                                            <label for="pay2">Банковской картой</label>
-                                        </div>
-                                        <div class="radio mob-hide">
-                                            <input type="radio" id="pay3" name="pay">
-                                            <label for="pay3">Использовать CashBack Баллы</label>
-                                        </div>
-                                        
-                                    </div>
-                                    <div class="basket__body_form_row mc_cb">
-                                        <div class="radio non-label">
-                                            <input type="checkbox" id="sw1" name="switch">
-                                            <label for="sw1"></label>
-                                        </div>
-                                        <div class="form__input">
-                                            <select id="switchable" class="choices custom__select" name="" id="">
-                                                <option value="Банковский перевод"></option>
-                                                <option value="Банковский перевод"></option>
-                                                <option value="Банковский перевод"></option>
-                                            </select>
-                                        </div>
-                                        <div class="form__input mob-show radio">
-                                            <input type="radio" id="pay4" name="pay">
-                                            <label for="pay4">Использовать CashBack Баллы</label>
-                                        </div>
-                                        <div class="form__input cb">
-                                            <div class="cashback">
-                                                <div class="name">Доступный бонус</div>
-                                                <div class="value">3000 ₸</div>
+    
+                                    <div class="basket__body_total_p">
+                                        <div class="info">
+                                            <div class="info__item">
+                                                <div class="name">Всего</div>
+                                                <div class="value">48000₸</div>
                                             </div>
-                                            
-                                        </div>    
-                                    </div>
-                                </form>
-                            </div>
-
-                            <div class="basket__body_item basket__body_total">
-                                <div class="basket__body_total_c">
-                                    <input type="text" placeholder="№ Скидочного купона">
-                                    <button type="button">применить</button>
-                                </div>
-
-                                <div class="basket__body_total_p">
-                                    <div class="info">
-                                        <div class="info__item">
-                                            <div class="name">Всего</div>
-                                            <div class="value">48000₸</div>
+                                            <div class="info__item">
+                                                <div class="name">Стоимость Доставки</div>
+                                                <div class="value">0</div>
+                                            </div>
+                                            <div class="info__item">
+                                                <div class="name">Сумма скидки</div>
+                                                <div class="value">- 8000₸</div>
+                                            </div>
+                                            <div class="info__item bonus">
+                                                <div class="name">Бонус на ваш счет</div>
+                                                <div class="value">+ 1440</div>
+                                            </div>
                                         </div>
-                                        <div class="info__item">
-                                            <div class="name">Стоимость Доставки</div>
-                                            <div class="value">0</div>
-                                        </div>
-                                        <div class="info__item">
-                                            <div class="name">Сумма скидки</div>
-                                            <div class="value">- 8000₸</div>
-                                        </div>
-                                        <div class="info__item bonus">
-                                            <div class="name">Бонус на ваш счет</div>
-                                            <div class="value">+ 1440</div>
-                                        </div>
-                                    </div>
-
-                                    <div class="total">
-                                        <div class="total__item">
-                                            <div class="name">ИТОГО к оплате</div>
-                                            <div class="value">48000₸</div>
-                                        </div>
-                                        <div class="total__btn">
-                                            <button class="button">оформить заказ</button>
-                                        </div>
-                                        <div class="total__ch radio">
-                                            <input type="checkbox" id="agree">
-                                            <label for="agree">
-                                                Я согласен на <a href="#">обработку персональных данных</a>
-                                            </label>
+    
+                                        <div class="total">
+                                            <div class="total__item">
+                                                <div class="name">ИТОГО к оплате</div>
+                                                <div class="value">48000₸</div>
+                                            </div>
+                                            <div class="total__btn">
+                                                <button class="button">оформить заказ</button>
+                                            </div>
+                                            <div class="total__ch radio">
+                                                <input type="checkbox" id="agree">
+                                                <label for="agree">
+                                                    Я согласен на <a href="#">обработку персональных данных</a>
+                                                </label>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            
+
+                            
                         </div>
 
                         

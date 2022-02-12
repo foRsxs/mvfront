@@ -1,4 +1,4 @@
-@media (max-width: 1120px) {
+@media (max-width: 1180px) {
 
     .basket {
 
@@ -19,7 +19,20 @@
         }
 
         &__body {
-            align-items: stretch;
+           align-items: center;
+           flex-direction: column;
+
+            &_col {
+                width: 100% !important;
+
+                &:first-child {
+                    display: flex;
+                    justify-content: space-between;
+                    .basket__body_item {
+                        width: 49% !important;
+                    }
+                }
+            }
             &_item {
                 width: 100%;
             }
@@ -73,7 +86,7 @@
                         &__name {
 
                             span {
-                                display: none;
+                                // display: none;
                             }
                         }
                         
@@ -244,6 +257,16 @@
 
         &__body {
 
+            &_col {
+
+                &:first-child {
+                    flex-direction: column;
+
+                    .basket__body_item {
+                        width: 100% !important;
+                    }
+                }
+            }
             &_item {
                 width: 100%;
                 margin-bottom: 15px;
