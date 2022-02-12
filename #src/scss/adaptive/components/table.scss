@@ -1,0 +1,41 @@
+@media (max-width: 900px) {
+
+    .table {
+
+        &__headrow {
+            display: none;
+
+            &_item {
+                padding: 16px 15px;
+            }
+        }
+
+        &__row {
+            &:hover {
+                
+                background-color: transparent;
+                border-color: $line_gray;
+
+                .table__row_item {
+                    color: $black_text;
+                }
+            }
+            &_item {
+                display: flex;
+                justify-content: space-between;
+                padding: 7px 15px;
+
+                
+
+                .name {
+                    display: block;
+                }
+
+                &:first-child {
+                    background-color: #F5F6FA;
+                    border-bottom: 1px solid $line_gray;
+                }
+            }
+        }
+    }
+}

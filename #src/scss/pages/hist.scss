@@ -1,0 +1,111 @@
+.hist {
+
+    &__in {
+
+    }
+
+    &__head {
+
+        display: flex;
+        align-items: center;
+        margin-bottom: 41px;
+        position: relative;
+
+        &_title {
+            margin-right: 56px;
+        }
+
+        &_btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 5px 10px;
+            border: 1px solid $line_gray;
+            font-size: 15px;
+            line-height: 16px;
+            color: $dark_gray;
+            border-radius: 5px;
+
+            svg {
+                margin-right: 10px;
+            }
+        }
+
+        &_ch {
+            position: absolute;
+            right: 0;
+            top: 0;
+            padding: 12px 20px;
+            border-radius: 10px;
+            background-color: #F5F6FA;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 277px;
+
+            background-image: url('../img/b-c-bg.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: -150px;
+
+            &_name {
+                max-width: 120px;
+                font-size: 14px;
+                line-height: 24px;
+                color: #fff;
+                span {
+                    color: $black_text;
+                    font-weight: 600;
+                    font-size: 17px;
+                    line-height: normal;
+                }
+            }
+
+            &_value {
+                font-weight: 700;
+                font-size: 38px;
+                line-height: 46px;
+            }
+        }
+    }
+
+    &__content {
+
+        &_tabs {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+            
+        }
+
+
+        &_tab.active {
+            background-color: #414E60;
+            border-color: #414E60;
+            color: #fff;
+        }
+        &_tab {
+            cursor: pointer;
+            @include def-anim;
+            width: 277px;
+            padding: 11px 10px;
+            border: 1px solid $line_gray;
+            font-weight: 600;
+            font-size: 13px;
+            line-height: 16px;
+            color: $dark_gray;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-transform: uppercase;
+
+            &:first-child {
+                border-radius: 10px 0 0 10px;
+            }
+
+            &:last-child {
+                border-radius: 0 10px 10px 0;
+            }
+        }
+    }
+}

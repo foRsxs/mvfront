@@ -1,0 +1,118 @@
+.table_wr {
+    border-radius: 10px;
+    border: 1px solid $line_gray;
+    overflow: hidden;
+}
+
+.table {
+    
+    
+    border-collapse: collapse;
+    border-spacing: none;
+    width: 100%;
+    &__headrow {
+        border-bottom: 1px solid $line_gray;
+        background-color: #F5F6FA;
+
+        
+        &_item {
+            padding: 20px 25px;
+            text-align: left;
+            color: $dark_gray;
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+
+    &__row {
+        border-bottom: 1px solid $line_gray;
+        @include def-anim;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $red;
+            border-color: $red;
+
+            .table__row_item {
+                color: #fff;
+            }
+
+        }
+
+        &_item {
+            padding: 20px 25px;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            
+
+            .name {
+                display: none;
+            }
+        }
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: center;
+        padding: 30px 0;
+
+        &_btn {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            svg {
+                path {
+                    @include def-anim;
+                }
+            }
+
+            &:first-child {
+                transform: rotate(180deg);
+            }
+
+            &:hover {
+                svg {
+                    path {
+                        stroke: #000;
+                    }
+                }
+            }
+        }
+
+        &_list {
+            display: flex;
+        }
+
+        &_item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            @include def-anim;
+            font-weight: 500;
+            font-size: 17px;
+            line-height: 16px;
+            margin: 0 5px;
+        }
+
+        .bc {
+            display: flex;
+            width: 40px;
+            height: 40px;
+            align-items: center;
+            justify-content: center;
+            font-weight: 500;
+        }
+
+        &_item.active {
+            border-color: $red;
+        }
+    }
+}

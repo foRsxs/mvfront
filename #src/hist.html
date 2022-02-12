@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        @@include('./blocks/header.html')
+
+
+        <main class="main">
+            @@include('./blocks/nav.html')
+            @@include('./blocks/bc.html')
+            <section class="hist">
+                <div class="container">
+                    <div class="hist__in">
+                        <div class="hist__head">
+                            <h2 class="hist__head_title section__title">Личный кабинет</h2>
+                            <button class="hist__head_btn">
+                                <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_434_9243)">
+                                    <path d="M14.9902 14.8776L19.0217 10.7143L14.9902 6.55103" stroke="#737783" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M19.022 10.7144H6.53223" stroke="#737783" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M14.858 1L3.75598 1.00278C2.2239 1.00416 0.980469 2.24621 0.980469 3.77829V17.6489C0.980469 18.385 1.27289 19.091 1.7934 19.6115C2.31391 20.132 3.01987 20.4244 3.75598 20.4244H14.9899" stroke="#737783" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_434_9243">
+                                    <rect width="20" height="21.4286" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                    </svg>
+                                    
+                                Выйти
+                            </button>
+                            <div class="hist__head_ch">
+                                <div class="hist__head_ch_name">
+                                    Ваш <span>CashBack</span> составляет
+                                </div>
+                                <div class="hist__head_ch_value">3%</div>
+                            </div>
+                        </div>
+
+                        <div class="hist__content">
+                            <div class="hist__content_tabs">
+                                <div class="hist__content_tab active" data-tab>
+                                    Личные данные
+                                </div>
+                                <div class="hist__content_tab" data-tab>
+                                    история заказов
+                                </div>
+                                <div class="hist__content_tab" data-tab>
+                                    автоповтор заказа
+                                </div>
+                            </div>
+
+                            <div class="hist__content_list">
+                                <div class="hist__content_item">
+                                    <div class="table_wr">
+                                        <table class="table">
+                                            <tr class="table__headrow">
+                                                <th class="table__headrow_item">№ Заказа</th>
+                                                <th class="table__headrow_item">Дата заказа</th>
+                                                <th class="table__headrow_item">Статус</th>
+                                                <th class="table__headrow_item">Способ оплаты</th>
+                                                <th class="table__headrow_item">Тип доставки</th>
+                                                <th class="table__headrow_item">Стоимость</th>
+                                            </tr>
+                                            <tr class="table__row">
+                                                <td class="table__row_item">
+                                                    <div class="name">№ Заказа</div>
+                                                    <div class="value">№1232456</div>
+                                                </td>
+                                                <td class="table__row_item">
+                                                    <div class="name">Дата заказа</div>
+                                                    <div class="value">27.02.2021г. </div>
+                                                </td>
+                                                <td class="table__row_item">
+                                                    <div class="name">Статус</div>
+                                                    <div class="value">Открыт</div>
+                                                </td>
+                                                <td class="table__row_item">
+                                                     <div class="name">Способ оплаты</div>
+                                                    <div class="value">Наличными</div>
+                                                </td>
+                                                <td class="table__row_item">
+                                                     <div class="name">Тип доставки</div>
+                                                    <div class="value">Самовывоз</div>
+                                                </td>
+                                                <td class="table__row_item">
+                                                     <div class="name">Стоимость</div>
+                                                    <div class="value">24000₸</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="table__row">
+                                                <td class="table__row_item">
+                                                    <div class="name">№ Заказа</div>
+                                                    <div class="value">№1232456</div>
+                                                </td>
+                                                <td class="table__row_item">
+                                                    <div class="name">Дата заказа</div>
+                                                    <div class="value">27.02.2021г. </div>
+                                                </td>
+                                                <td class="table__row_item">
+                                                    <div class="name">Статус</div>
+                                                    <div class="value">Открыт</div>
+                                                </td>
+                                                <td class="table__row_item">
+                                                     <div class="name">Способ оплаты</div>
+                                                    <div class="value">Наличными</div>
+                                                </td>
+                                                <td class="table__row_item">
+                                                     <div class="name">Тип доставки</div>
+                                                    <div class="value">Самовывоз</div>
+                                                </td>
+                                                <td class="table__row_item">
+                                                     <div class="name">Стоимость</div>
+                                                    <div class="value">24000₸</div>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                        <div class="table__nav">
+                                            <a href="#" class="table__nav_btn">
+                                                <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.59961 1.19995L6.39961 5.99995L1.59961 10.8" stroke="#9497A3" stroke-width="1.52" stroke-linecap="round"/>
+                                                    </svg>
+                                                    
+                                            </a>
+                                            <div class="table__nav_list">
+                                                <a href="#" class="table__nav_item active">1</a>
+                                                <a href="#" class="table__nav_item">2</a>
+                                                <a href="#" class="table__nav_item">3</a>
+                                                <a href="#" class="table__nav_item">4</a>
+                                                <div class="bc">...</div>
+                                                <a href="#" class="table__nav_item">10</a>
+                                            </div>
+                                            <a href="#" class="table__nav_btn">
+                                                <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.59961 1.19995L6.39961 5.99995L1.59961 10.8" stroke="#9497A3" stroke-width="1.52" stroke-linecap="round"/>
+                                                    </svg>
+                                                    
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="hist__content_item">
+                                    <div class="table_wr">
+                                        <table class="table">
+                                            <tr class="table__headrow">
+                                                <th class="table__headrow_item">№ Заказа</th>
+                                                <th class="table__headrow_item">Дата заказа</th>
+                                                <th class="table__headrow_item">Статус</th>
+                                                <th class="table__headrow_item">Способ оплаты</th>
+                                                <th class="table__headrow_item">Тип доставки</th>
+                                                <th class="table__headrow_item">Стоимость</th>
+                                            </tr>
+                                            <tr class="table__row">
+                                                <td class="table__row_item">
+                                                    <div class="name">№ Заказа</div>
+                                                    <div class="value">№1232456</div>
+                                                </td>
+                                                <td class="table__row_item">
+                                                    <div class="name">Дата заказа</div>
+                                                    <div class="value">27.02.2021г. </div>
+                                                </td>
+                                                <td class="table__row_item">
+                                                    <div class="name">Статус</div>
+                                                    <div class="value">Открыт</div>
+                                                </td>
+                                                <td class="table__row_item">
+                                                     <div class="name">Способ оплаты</div>
+                                                    <div class="value">Наличными</div>
+                                                </td>
+                                                <td class="table__row_item">
+                                                     <div class="name">Тип доставки</div>
+                                                    <div class="value">Самовывоз</div>
+                                                </td>
+                                                <td class="table__row_item">
+                                                     <div class="name">Стоимость</div>
+                                                    <div class="value">24000₸</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="table__row">
+                                                <td class="table__row_item">
+                                                    <div class="name">№ Заказа</div>
+                                                    <div class="value">№1232456</div>
+                                                </td>
+                                                <td class="table__row_item">
+                                                    <div class="name">Дата заказа</div>
+                                                    <div class="value">27.02.2021г. </div>
+                                                </td>
+                                                <td class="table__row_item">
+                                                    <div class="name">Статус</div>
+                                                    <div class="value">Открыт</div>
+                                                </td>
+                                                <td class="table__row_item">
+                                                     <div class="name">Способ оплаты</div>
+                                                    <div class="value">Наличными</div>
+                                                </td>
+                                                <td class="table__row_item">
+                                                     <div class="name">Тип доставки</div>
+                                                    <div class="value">Самовывоз</div>
+                                                </td>
+                                                <td class="table__row_item">
+                                                     <div class="name">Стоимость</div>
+                                                    <div class="value">24000₸</div>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                        <div class="table__nav">
+                                            <a href="#" class="table__nav_btn">
+                                                <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.59961 1.19995L6.39961 5.99995L1.59961 10.8" stroke="#9497A3" stroke-width="1.52" stroke-linecap="round"/>
+                                                    </svg>
+                                                    
+                                            </a>
+                                            <div class="table__nav_list">
+                                                <a href="#" class="table__nav_item active">1</a>
+                                                <a href="#" class="table__nav_item">2</a>
+                                                <a href="#" class="table__nav_item">3</a>
+                                                <a href="#" class="table__nav_item">4</a>
+                                                <div class="bc">...</div>
+                                                <a href="#" class="table__nav_item">10</a>
+                                            </div>
+                                            <a href="#" class="table__nav_btn">
+                                                <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.59961 1.19995L6.39961 5.99995L1.59961 10.8" stroke="#9497A3" stroke-width="1.52" stroke-linecap="round"/>
+                                                    </svg>
+                                                    
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="hist__content_item">
+                                    <div class="table_wr">
+                                        <table class="table">
+                                            <tr class="table__headrow">
+                                                <th class="table__headrow_item">№ Заказа</th>
+                                                <th class="table__headrow_item">Дата заказа</th>
+                                                <th class="table__headrow_item">Статус</th>
+                                                <th class="table__headrow_item">Способ оплаты</th>
+                                                <th class="table__headrow_item">Тип доставки</th>
+                                                <th class="table__headrow_item">Стоимость</th>
+                                            </tr>
+                                            <tr class="table__row">
+                                                <td class="table__row_item">
+                                                    <div class="name">№ Заказа</div>
+                                                    <div class="value">№1232456</div>
+                                                </td>
+                                                <td class="table__row_item">
+                                                    <div class="name">Дата заказа</div>
+                                                    <div class="value">27.02.2021г. </div>
+                                                </td>
+                                                <td class="table__row_item">
+                                                    <div class="name">Статус</div>
+                                                    <div class="value">Открыт</div>
+                                                </td>
+                                                <td class="table__row_item">
+                                                     <div class="name">Способ оплаты</div>
+                                                    <div class="value">Наличными</div>
+                                                </td>
+                                                <td class="table__row_item">
+                                                     <div class="name">Тип доставки</div>
+                                                    <div class="value">Самовывоз</div>
+                                                </td>
+                                                <td class="table__row_item">
+                                                     <div class="name">Стоимость</div>
+                                                    <div class="value">24000₸</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="table__row">
+                                                <td class="table__row_item">
+                                                    <div class="name">№ Заказа</div>
+                                                    <div class="value">№1232456</div>
+                                                </td>
+                                                <td class="table__row_item">
+                                                    <div class="name">Дата заказа</div>
+                                                    <div class="value">27.02.2021г. </div>
+                                                </td>
+                                                <td class="table__row_item">
+                                                    <div class="name">Статус</div>
+                                                    <div class="value">Открыт</div>
+                                                </td>
+                                                <td class="table__row_item">
+                                                     <div class="name">Способ оплаты</div>
+                                                    <div class="value">Наличными</div>
+                                                </td>
+                                                <td class="table__row_item">
+                                                     <div class="name">Тип доставки</div>
+                                                    <div class="value">Самовывоз</div>
+                                                </td>
+                                                <td class="table__row_item">
+                                                     <div class="name">Стоимость</div>
+                                                    <div class="value">24000₸</div>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                        <div class="table__nav">
+                                            <a href="#" class="table__nav_btn">
+                                                <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.59961 1.19995L6.39961 5.99995L1.59961 10.8" stroke="#9497A3" stroke-width="1.52" stroke-linecap="round"/>
+                                                    </svg>
+                                                    
+                                            </a>
+                                            <div class="table__nav_list">
+                                                <a href="#" class="table__nav_item active">1</a>
+                                                <a href="#" class="table__nav_item">2</a>
+                                                <a href="#" class="table__nav_item">3</a>
+                                                <a href="#" class="table__nav_item">4</a>
+                                                <div class="bc">...</div>
+                                                <a href="#" class="table__nav_item">10</a>
+                                            </div>
+                                            <a href="#" class="table__nav_btn">
+                                                <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.59961 1.19995L6.39961 5.99995L1.59961 10.8" stroke="#9497A3" stroke-width="1.52" stroke-linecap="round"/>
+                                                    </svg>
+                                                    
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        </main>
+        @@include('./blocks/footer.html')
+    </div>
+
+
+    @@include('./blocks/mobile-menu.html')
+
+
+    <script src="./js/bundle.js"></script>
+</body>
+
+
+</html>

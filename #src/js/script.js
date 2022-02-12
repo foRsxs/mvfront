@@ -199,7 +199,9 @@ document.addEventListener('DOMContentLoaded', () => {
     counter();
     customSelect();
     switchBasket();
-    console.log('test new lib scroll 18');
+
+
+    tabsFunc('.hist__content', '.hist__content_tabs', '.hist__content_tab', '.hist__content_item');
 
 
     
