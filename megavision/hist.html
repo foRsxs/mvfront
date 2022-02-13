@@ -280,6 +280,8 @@
                             </div>
 
                             <div class="hist__content_list">
+
+
                                 <div class="hist__content_item">
                                     <div class="table_wr">
                                         <table class="table">
@@ -370,8 +372,6 @@
                                     </div>
                                 </div>
 
-
-
                                 <div class="hist__content_item">
                                     <form class="hist__content_item_form show">
                                         <div class="part">
@@ -385,7 +385,7 @@
                                                         E-mail
                                                     </div>
                                                     <div class="part__body_item_value">
-                                                        test3megavision.kz
+                                                        <span>test3megavision.kz</span>
                                                     </div>
                                                 </div>
 
@@ -394,7 +394,7 @@
                                                         Телефон
                                                     </div>
                                                     <div class="part__body_item_value">
-                                                        +77773899983
+                                                        <span>+77773899983</span>
                                                     </div>
                                                 </div>
 
@@ -504,24 +504,32 @@
                                                 <th class="table__headrow_item">Интервал доставки</th>
                                                 <th class="table__headrow_item">Тип оповещений</th>
                                                 <th class="table__headrow_item">Способ оплаты</th>
-                                                <th class="table__headrow_item"></th>
+                                                <th class="table__headrow_item close_btn"></th>
                                             </tr>
-                                            <tr class="table__row">
+                                            <tr class="table__row tableDrop">
                                                 <td class="table__row_item">
-                                                    <div class="name">№ Заказа</div>
+                                                    <div class="mob__close">
+                                                        <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M6.93887 4.99929L10.5965 1.42723C10.7567 1.27044 10.8467 1.05779 10.8467 0.836054C10.8467 0.614319 10.7567 0.401665 10.5965 0.244875C10.4364 0.0880841 10.2191 0 9.99259 0C9.76607 0 9.54883 0.0880841 9.38866 0.244875L5.7395 3.82526L2.09035 0.244875C1.93017 0.0880841 1.71293 -1.65206e-09 1.48641 0C1.25989 1.65206e-09 1.04265 0.0880841 0.882471 0.244875C0.722296 0.401665 0.632311 0.614319 0.632311 0.836054C0.632311 1.05779 0.722296 1.27044 0.882471 1.42723L4.54013 4.99929L0.882471 8.57135C0.802744 8.64875 0.739463 8.74084 0.696278 8.84231C0.653093 8.94377 0.630859 9.05261 0.630859 9.16253C0.630859 9.27244 0.653093 9.38128 0.696278 9.48274C0.739463 9.58421 0.802744 9.6763 0.882471 9.7537C0.961547 9.83175 1.05563 9.89369 1.15928 9.93596C1.26294 9.97824 1.37412 10 1.48641 10C1.5987 10 1.70988 9.97824 1.81354 9.93596C1.91719 9.89369 2.01127 9.83175 2.09035 9.7537L5.7395 6.17332L9.38866 9.7537C9.46773 9.83175 9.56181 9.89369 9.66547 9.93596C9.76912 9.97824 9.8803 10 9.99259 10C10.1049 10 10.2161 9.97824 10.3197 9.93596C10.4234 9.89369 10.5175 9.83175 10.5965 9.7537C10.6763 9.6763 10.7395 9.58421 10.7827 9.48274C10.8259 9.38128 10.8481 9.27244 10.8481 9.16253C10.8481 9.05261 10.8259 8.94377 10.7827 8.84231C10.7395 8.74084 10.6763 8.64875 10.5965 8.57135L6.93887 4.99929Z" fill="#9497A3"/>
+                                                            </svg>
+                                                            
+                                                    </div>
+                                                    <div class="name">№ Заказа
+                                                    </div>
                                                     <div class="value">
-                                                        <span>№1232456</span>
+                                                        <span class="head__num"><span>№</span> 1232456</span>
                                                         <a href="#">подробнее</a>
                                                     </div>
                                                 </td>
-                                                <td class="table__row_item">
+                                                <td class="table__row_item drop_row">
                                                     <div class="name">Адрес доставки</div>
                                                     <div class="value">
                                                         <span>г.Алматы, ул. Розыбакиева 136/1</span>
                                                         <span>(угол ул. Сатпаева)</span>
+                                                        <a class="mob_link" href="#">подробнее</a>
                                                     </div>
                                                 </td>
-                                                <td class="table__row_item">
+                                                <td class="table__row_item w-l drop_row">
                                                     <div class="name">Интервал доставки</div>
                                                     <div class="value">
                                                         <select class="choices custom__select">
@@ -529,7 +537,7 @@
                                                         </select>
                                                     </div>
                                                 </td>
-                                                <td class="table__row_item">
+                                                <td class="table__row_item w-s drop_row">
                                                      <div class="name">Тип оповещений</div>
                                                     <div class="value">
                                                         <select class="choices custom__select">
@@ -537,15 +545,37 @@
                                                         </select>
                                                     </div>
                                                 </td>
-                                                <td class="table__row_item">
+                                                <td class="table__row_item fsd drop_row">
                                                      <div class="name">Способ оплаты</div>
-                                                    <div class="value">
-                                                        <select class="choices custom__select">
-                                                            <option value="lorem ipsum"></option>
-                                                        </select>
+                                                    <div class="value fsd__sel">
+                                                        <div class="dropdown">
+                                                            <div data-current="**** **** **** 4657" class="dropdown__head">
+                                                                <div class="card">
+                                                                    <img src="./img/master-l.svg" alt="">
+                                                                </div>
+                                                                <span>**** **** **</span>** 4657
+                                                            </div>
+                                                            <div class="dropdown__list">
+                                                                <div data-value="cash" class="dropdown__list_item">
+                                                                    Оплатить наличными
+                                                                </div>
+                                                                <div data-value="**** **** **** 4657" class="dropdown__list_item">
+                                                                    <div class="card">
+                                                                        <img src="./img/master-l.svg" alt="">
+                                                                    </div>
+                                                                    <span>**** **** **</span>** 4657
+                                                                </div>
+                                                                <div data-value="**** **** **** 4658" class="dropdown__list_item">
+                                                                    <div class="card">
+                                                                        <img src="./img/visa-l.svg" alt="">
+                                                                    </div>
+                                                                    <span>**** **** **</span>** 4658
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </td>
-                                                <td class="table__row_item">
+                                                <td class="table__row_item close_btn">
                                                     <button>
                                                         <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <path d="M6.93887 4.99929L10.5965 1.42723C10.7567 1.27044 10.8467 1.05779 10.8467 0.836054C10.8467 0.614319 10.7567 0.401665 10.5965 0.244875C10.4364 0.0880841 10.2191 0 9.99259 0C9.76607 0 9.54883 0.0880841 9.38866 0.244875L5.7395 3.82526L2.09035 0.244875C1.93017 0.0880841 1.71293 -1.65206e-09 1.48641 0C1.25989 1.65206e-09 1.04265 0.0880841 0.882471 0.244875C0.722296 0.401665 0.632311 0.614319 0.632311 0.836054C0.632311 1.05779 0.722296 1.27044 0.882471 1.42723L4.54013 4.99929L0.882471 8.57135C0.802744 8.64875 0.739463 8.74084 0.696278 8.84231C0.653093 8.94377 0.630859 9.05261 0.630859 9.16253C0.630859 9.27244 0.653093 9.38128 0.696278 9.48274C0.739463 9.58421 0.802744 9.6763 0.882471 9.7537C0.961547 9.83175 1.05563 9.89369 1.15928 9.93596C1.26294 9.97824 1.37412 10 1.48641 10C1.5987 10 1.70988 9.97824 1.81354 9.93596C1.91719 9.89369 2.01127 9.83175 2.09035 9.7537L5.7395 6.17332L9.38866 9.7537C9.46773 9.83175 9.56181 9.89369 9.66547 9.93596C9.76912 9.97824 9.8803 10 9.99259 10C10.1049 10 10.2161 9.97824 10.3197 9.93596C10.4234 9.89369 10.5175 9.83175 10.5965 9.7537C10.6763 9.6763 10.7395 9.58421 10.7827 9.48274C10.8259 9.38128 10.8481 9.27244 10.8481 9.16253C10.8481 9.05261 10.8259 8.94377 10.7827 8.84231C10.7395 8.74084 10.6763 8.64875 10.5965 8.57135L6.93887 4.99929Z" fill="#9497A3"/>
@@ -553,8 +583,12 @@
                                                             
                                                     </button>
                                                 </td>
+                                                <td class="table__row_item">
+                                                    <span data-drop>Подробнее</span>
+                                                </td>
                                                 
                                             </tr>
+                                            
                                             
                                         </table>
 

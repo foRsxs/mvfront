@@ -1,4 +1,59 @@
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
+    .table {
+        &__row.hover {
+            &:hover {
+                
+                background-color: #fff !important;
+                border-color: $line_gray;
+
+                .table__row_item {
+                    color: $black_text;
+                }
+            }
+        }
+        &__row {
+
+            &_item {
+                padding-left: 7px;
+                padding-right: 7px;
+            }
+
+            &_item.w-l {
+                min-width: unset !important;
+            }
+            &_item.w-s {
+                min-width: unset !important;
+            }
+            &_item.fsd {
+                width: auto;
+                max-width: unset;
+                .fsd__sel {
+
+                    .dropdown {
+                        width: auto;
+                        &__head {
+                            padding-right: 22px;
+                            span {
+                                display: none !important;
+                            }
+                        }
+
+                        &__list {
+
+                            &_item {
+                                span {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 945px) {
 
     .table {
 
@@ -10,23 +65,21 @@
             }
         }
 
-        &__row {
-            &:hover {
-                
-                background-color: transparent;
-                border-color: $line_gray;
+        
 
-                .table__row_item {
-                    color: $black_text;
-                }
-            }
+        &__row {
+            
+
+            
             &_item {
                 display: flex;
                 justify-content: space-between;
                 padding: 7px 15px;
 
                 
-
+                span {
+                    text-align: right;
+                }
                 .name {
                     display: block;
                 }

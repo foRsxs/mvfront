@@ -1,0 +1,404 @@
+@media (max-width: 1015px) {
+
+    .hist {
+
+        &__content {
+
+            &_item {
+
+                &_form {
+
+                    flex-wrap: wrap;
+
+                    .part {
+                        width: 100%;
+
+                        &__body {
+                            display: flex;
+                            justify-content: space-between;
+                            flex-wrap: wrap;
+
+                            &_item {
+                                width: 48%;
+                            }
+
+                            &_v {
+                                width: 100%;
+                                display: flex;  
+                                align-items: center;
+
+                                .name {
+                                    
+                                    margin: 0;
+                                    margin-right: 60px;
+                                }
+                            }
+
+                            &_link {
+                                margin: 0;
+                                display: inline-flex;
+                                align-items: center;
+                                border: none;
+                                text-decoration: underline;
+                                text-decoration-style: dotted;
+                                text-decoration-color: $line_gray;
+
+                            }
+
+                            &_btn {
+                                width: 48%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 945px) {
+
+    .hist {
+
+        &__head {
+            justify-content: space-between;
+
+            &_title {
+                margin: 0;
+            }
+            &_btn {
+                display: none;
+            }
+
+            &_ch {
+                position: static;
+                width: unset;
+                background-position: -100px;
+                padding-top: 6px;
+                padding-bottom: 6px;
+                &_name {
+                    max-width: unset;
+                    margin-right: 50px;
+                }
+            }
+        }
+        &__content {
+
+            &_tabs {
+
+                width: 100%;
+            }
+
+            &_tab {
+                width: calc(100% / 3);
+            }
+            &_item {
+
+            }
+
+            &_item {
+
+
+                .table {
+
+                    &__headrow {
+
+                        &_item.close_btn {
+                            display: none;
+                        }
+                    }
+                    &__row {
+
+                        &_item.close_btn {
+                            display: none;
+                        }
+
+                        &_item.fsd {
+                            // width: 100%;
+                            .fsd__sel {
+            
+                                .dropdown {
+                                    // width: 100%;
+
+                                    &__head {
+                                        span {
+                                            display: inline !important;
+                                        }
+                                    }
+
+                                    &__list {
+
+                                        &_item {
+                                            span {
+                                                display: inline !important;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            
+            
+        }
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .hist {
+
+
+        &__head {
+            flex-wrap: wrap;
+
+            &_title {
+                margin-bottom: 16px;
+            }
+
+            &_ch {
+                width: 100%;
+
+                &_name {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        &__content {
+
+            &_item {
+
+                &_form {
+                    padding: 15px;
+                    .part {
+
+                        &__body {
+                            
+                            &_item {
+                                width: 100%;
+                            }
+
+                            &_v {
+                                justify-content: space-between;
+                                .name {
+                                    margin: 0;
+
+                                }
+                            }
+
+                            &_link {
+                                width: 100%;
+                                margin-bottom: 33px;
+                            }
+
+                            &_btn {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 600px) {
+
+    .hist {
+
+        &__in {
+
+        }
+
+        
+
+        &__content {
+
+            &_tabs {
+                flex-wrap: wrap;
+            }
+
+            &_tab {
+                width: 100%;
+                margin-bottom: 5px;
+                border-radius: 6px !important;
+            }
+
+            &_item {
+
+                &:last-child {
+                    .table_wr {
+                        border-radius: 10px;
+                        overflow: hidden;
+                        
+                    }
+                    .table {
+                        
+                        &__headrow {
+
+                        }
+
+                        
+
+                        &__row.active {
+
+                            .table__row_item {
+                                background-color: #F5F6FA;
+                                @include def-anim;
+
+                                .mob__close {
+                                    border-color: #fff;
+                                    svg {
+                                        path {
+                                            fill: #fff;
+                                        }
+                                    }
+                                }
+                                &:first-child {
+                                    background-color: $red;
+                                    // border-color: $red;
+                                    border-bottom: 1px solid $red;
+                                    
+                                    a {
+                                        color: #fff;
+                                    }
+
+                                    .name {
+                                        color: #fff;
+                                    }
+
+                                    .value {
+                                        color: #fff;
+                                    }
+                                }
+
+                                &:last-child {
+
+                                    padding-top: 10px;
+
+                                }
+
+                                
+                            }
+                        }
+
+                        &__row.tableDrop {
+
+                            
+                        }
+
+                        &__row {
+                            
+                            border: none;
+                            
+
+
+
+                            &_item.drop_row {
+                                @include def-anim;
+                            }
+                            
+                            &_item {
+                                border: none !important;
+                                position: relative;
+
+                                .mob__close {
+                                    display: block;
+                                    position: absolute;
+                                    top: calc(50% - 10px);
+                                    right: 16px;
+                                    width: 20px;
+                                    height: 20px;
+                                    border: 1px solid $line_gray;
+                                    border-radius: 100%;
+
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                }
+
+                                span[data-drop] {
+                                    text-align: left;
+                                    display: inline-block;
+                                    color: $red;
+                                }
+                                background-color: #fff;
+
+
+                                &:first-child {
+                                    
+                                    padding-top: 20px;
+                                    padding-bottom: 20px;
+
+                                    .value {
+
+                                        a {
+                                            display: none;
+                                        }
+
+                                        .head__num {
+                                            font-weight: 600;
+                                            padding-right: 80px;
+                                            span {
+                                                display: none;
+                                            }
+                                        }
+                                    }
+                                }
+                                &:not(:first-child) {
+                                    flex-direction: column;
+                                    height: 0;
+                                    overflow: hidden;
+                                    padding: 0 15px;
+                                    
+                                }
+
+                                &:last-child {
+                                    display: block;
+                                    height: auto !important;
+                                    padding: 20px 15px;
+                                    padding-top: 0;
+                                    border-bottom: 1px solid $line_gray !important;
+                                }
+
+                                
+                                
+                                .name {
+                                    color: $dark_gray;
+
+                                    .drop_btn {
+                                        display: block;
+                                        color: $red;
+                                    }
+                                }
+
+                                .value {
+
+                                    span {
+                                        text-align: left;
+                                    }
+
+                                    .mob_link {
+                                        display: block;
+                                    }
+                                }
+                            }
+
+                            &_item.fsd {
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

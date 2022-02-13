@@ -128,13 +128,52 @@
                 //     width: 40%;
                 // }
                 .part {
+
+                    &:nth-child(1) {
+
+                        .part__head {
+
+                            &:after {
+                                position: absolute;
+                                content: url('../img/user.svg');
+                                top: calc(50% - 11px);
+                                left: 0;
+                            }
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        .part__head {
+
+                            &:after {
+                                position: absolute;
+                                content: url('../img/truck.svg');
+                                top: calc(50% - 11px);
+                                left: 0;
+                            }
+                        }
+                    }
+
+                    &:nth-child(3) {
+                        .part__head {
+
+                            &:after {
+                                position: absolute;
+                                content: url('../img/coin.svg');
+                                top: calc(50% - 11px);
+                                left: 0;
+                            }
+                        }
+                    }
+
+
                     width: 31%;
                     &__head {
                         font-weight: 500;
                         font-size: 17px;
                         line-height: 16px;
                         margin-bottom: 26px;
-                        padding-left: 40px;
+                        padding-left: 30px;
                         position: relative;
 
                         span {
@@ -158,6 +197,13 @@
                                 font-weight: 500;
                                 font-size: 14px;
                                 line-height: 16px;
+
+
+                                span {
+                                    font-weight: 500;
+                                    font-size: 14px;
+                                    line-height: 16px;
+                                }
 
 
                             }
@@ -419,6 +465,36 @@
                     }
                 }
             }
+
+            .table {
+
+
+                &__row {
+
+                    &_item {
+                        vertical-align: top;
+                    }
+                }
+            }
+
+            &:last-child {
+
+                .table {
+
+
+                    &__row {
+
+                        &_item {
+
+                            &:last-child {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
         }
+
+        
     }
 }

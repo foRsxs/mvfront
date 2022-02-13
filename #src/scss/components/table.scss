@@ -1,7 +1,7 @@
 .table_wr {
     border-radius: 10px;
     border: 1px solid $line_gray;
-    overflow: hidden;
+    // overflow: hidden;
 }
 
 .table {
@@ -43,11 +43,34 @@
 
         
 
+        &_item.fsd {
+
+            max-width: 280px;
+
+            
+        }
+
+        &_item.w-l {
+            min-width: 193px !important;
+        }
+
+        &_item.w-s {
+            min-width: 180px !important;
+        }
+
+        &_item.fsd {
+
+        }
+
         &_item {
             padding: 20px 25px;
             font-weight: 500;
             font-size: 14px;
             line-height: 24px;
+
+            .mob__close {
+                display: none;
+            }
 
             
 
@@ -67,7 +90,8 @@
                     background-color: #fff;
                     border-radius: 4px;
                     min-height: unset;
-                    padding: 15px 20px;
+                    padding: 10px 10px;
+                    padding-right: 22px;
                     font-size: 13px !important;
                     line-height: 16px !important;
 
@@ -82,16 +106,40 @@
                     border: 1px solid $line_gray !important;
                     background-color: #fff;
                     z-index: 5;
+
+                    .choices__list {
+                        .choices__item {
+                            padding: 7.5px;
+                        }
+                    }
                 }
             }
             
 
             .name {
                 display: none;
+
+                .drop_btn {
+                    display: none;
+                }
+            }
+
+            .value {
+
+                .mob_link {
+                    display: none;
+                }
+
+                .head__num {
+                    span {
+                        display: inline;
+                    }
+                }
             }
 
             span {
                 display: block;
+                
             }
 
             a {

@@ -21,6 +21,8 @@ import { input } from './components/input';
 import { counter } from './components/conuter';
 import { customSelect } from './components/choice';
 import { switchBasket } from './components/switchBasket';
+import { selectCard } from './components/selectCard';
+import { tableDrop } from './components/tableDrop';
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -202,6 +204,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     tabsFunc('.hist__content', '.hist__content_tabs', '.hist__content_tab', '.hist__content_item');
+
+    selectCard();
+
+    tableDrop();
 
 
     
