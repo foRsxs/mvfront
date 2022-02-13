@@ -1,7 +1,7 @@
 .hist {
 
     &__in {
-
+        padding-bottom: 90px;
     }
 
     &__head {
@@ -105,6 +105,319 @@
 
             &:last-child {
                 border-radius: 0 10px 10px 0;
+            }
+        }
+
+
+        &_item {
+
+
+            &_form.show {
+                display: flex;
+            }
+            &_form {
+                display: none;
+                padding: 25px;
+                width: 100%;
+                border: 1px solid $line_gray;
+                border-radius: 10px;
+                justify-content: space-between;
+
+
+                // .part.auth {
+                //     width: 40%;
+                // }
+                .part {
+                    width: 31%;
+                    &__head {
+                        font-weight: 500;
+                        font-size: 17px;
+                        line-height: 16px;
+                        margin-bottom: 26px;
+                        padding-left: 40px;
+                        position: relative;
+
+                        span {
+                            color: $red;
+                        }
+                    }
+
+                    &__body {
+
+                        &_item {
+                            margin-bottom: 23px;
+                            &_name {
+                                font-weight: 500;
+                                font-size: 14px;
+                                line-height: 16px;
+                                color: $light_gray;
+                                margin-bottom: 5px;
+                            }
+
+                            &_value {
+                                font-weight: 500;
+                                font-size: 14px;
+                                line-height: 16px;
+
+
+                            }
+
+                            &_value.select {
+                                .choices.is-open {
+                                    .choices__inner {
+                                        border-color: $black_text;
+                                        z-index: 5;
+                                        position: relative;
+                                    }
+            
+                                    
+                                }
+                                .choices {
+            
+                                    &__inner {
+                                        border: 1px solid $line_gray;
+                                        background-color: #fff;
+                                        border-radius: 4px;
+                                        min-height: unset;
+                                        padding: 15px 20px;
+                                        font-size: 13px !important;
+                                        line-height: 16px !important;
+            
+                                        .choices__list--single {
+                                            padding: 0;
+                                            padding-right: 5px;
+                                        }
+            
+                                        
+                                    }
+                                    .choices__list--dropdown{
+                                        border: 1px solid $line_gray !important;
+                                        background-color: #fff;
+                                        z-index: 5;
+                                    }
+                                }
+                            }
+
+                            &_value.input {
+
+                                input {
+                                    display: block;
+                                    width: 100%;
+                                    border: 1px solid $line_gray;
+                                    padding: 15px;
+                                    border-radius: 4px;
+
+                                    &:focus {
+                                        border-color: $black_text;
+                                    }
+                                }
+
+                                
+                            }
+
+                            &_value.input-c.active {
+                                label {
+                                    padding: 0 9px;
+                                    color:#737783;;
+                                    font-size: 12px;
+                                    top: -8px;
+            
+                                    &:after {
+                                        opacity: 1;
+                                    }
+                                }
+                            }
+
+
+                            &_value.input-c {
+                                position: relative;
+                                input {
+                                    display: block;
+                                    width: 100%;
+                                    background-color: #fff;
+                                    padding: 15px 20px;
+                                    font-weight: 500;
+                                    font-size: 13px;
+                                    line-height: 16px;
+                                    border-radius: 4px;
+                                    border: 1px solid $line_gray;
+            
+                                    &:focus {
+                                        outline: none;
+                                        border-color: $black_text;
+                                    }
+            
+                                }
+            
+                                label {
+                                    position: absolute;
+                                    top: calc(50% - 8px);
+                                    left: 20px;
+                                    font-weight: 300;
+                                    font-size: 13px;
+                                    line-height: 16px;
+                                    color: #9497A3;
+                                    font-size: 13px;
+                                    @include def-anim;
+                                    
+                                    // border-bottom: 2px solid #fff;
+                                    span {
+                                        position: relative;
+                                        z-index: 2;
+                                    }
+                                    &:after {
+                                        position: absolute;
+                                        content: '';
+                                        bottom: 0;
+                                        left: 0;
+                                        width: 100%;
+                                        height: 8px;
+                                        background-color: #fff;
+                                        opacity: 0;
+                                        @include def-anim;
+                                        z-index: 1;
+                                    }
+            
+                                }
+            
+                                input:focus ~ label {
+                                    padding: 0 9px;
+                                    color: #737783;
+                                    font-size: 12px;
+                                    top: -8px;
+            
+                                    &:after {
+                                        opacity: 1;
+                                    }
+                                }
+                            }
+
+                            &_check {
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+
+                                .fix {
+                                    flex: 1 0 auto;
+                                    margin-right: 15px;
+                                }
+
+                                &_inp.active {
+                                    label {
+                                        padding: 0 9px;
+                                        color:#737783;;
+                                        font-size: 12px;
+                                        top: -8px;
+                
+                                        &:after {
+                                            opacity: 1;
+                                        }
+                                    }
+                                }
+
+                                &_inp {
+                                    position: relative;
+                                    // width: 217px;
+                                    input {
+                                        display: block;
+                                        width: 100%;
+                                        background-color: #fff;
+                                        padding: 15px 20px;
+                                        font-weight: 500;
+                                        font-size: 13px;
+                                        line-height: 16px;
+                                        border-radius: 4px;
+                                        border: 1px solid $line_gray;
+                
+                                        &:focus {
+                                            outline: none;
+                                            border-color: $black_text;
+                                        }
+                
+                                    }
+                
+                                    label {
+                                        position: absolute;
+                                        top: calc(50% - 8px);
+                                        left: 20px;
+                                        font-weight: 300;
+                                        font-size: 13px;
+                                        line-height: 16px;
+                                        color: #9497A3;
+                                        font-size: 13px;
+                                        @include def-anim;
+                                        
+                                        
+                                        // border-bottom: 2px solid #fff;
+                                        span {
+                                            position: relative;
+                                            z-index: 2;
+                                        }
+                                        &:after {
+                                            position: absolute;
+                                            content: '';
+                                            bottom: 0;
+                                            left: 0;
+                                            width: 100%;
+                                            height: 8px;
+                                            background-color: #fff;
+                                            opacity: 0;
+                                            @include def-anim;
+                                            z-index: 1;
+                                        }
+                
+                                    }
+                
+                                    input:focus ~ label {
+                                        padding: 0 9px;
+                                        color: #737783;
+                                        font-size: 12px;
+                                        top: -8px;
+                
+                                        &:after {
+                                            opacity: 1;
+                                        }
+                                    }
+
+
+                                    .info {
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+
+
+                        &_v {
+                            margin-bottom: 16px;
+                            .name {
+                                font-weight: 500;
+                                font-size: 17px;
+                                line-height: 16px;
+                                margin-bottom: 9px;
+                            }
+
+                            .value {
+                                font-weight: 700;
+                                font-size: 32px;
+                                line-height: 39px;
+                            }
+                        }
+
+                        &_link {
+                            display: inline-block;
+                            margin-bottom: 45px;
+                            color: $red;
+                            border-bottom: 1px dotted #959595;
+                        }
+
+                        &_btn {
+                            button {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
             }
         }
     }

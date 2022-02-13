@@ -22,6 +22,10 @@ input, button, textarea {
     line-height: inherit;
     font-weight: inherit;
     cursor: pointer;
+
+    &:focus {
+        outline: none;
+    }
 }
 
 *, html {
