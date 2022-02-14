@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        @@include('./blocks/header.html')
+
+
+        <main class="main">
+            @@include('./blocks/nav.html')
+            @@include('./blocks/bc.html')
+            <section class="hist">
+                <div class="container">
+                    <div class="hist__in">
+                        <div class="hist__head">
+                            <h2 class="hist__head_title section__title">Личный кабинет</h2>
+                            <button class="hist__head_btn">
+                                <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_434_9243)">
+                                    <path d="M14.9902 14.8776L19.0217 10.7143L14.9902 6.55103" stroke="#737783" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M19.022 10.7144H6.53223" stroke="#737783" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M14.858 1L3.75598 1.00278C2.2239 1.00416 0.980469 2.24621 0.980469 3.77829V17.6489C0.980469 18.385 1.27289 19.091 1.7934 19.6115C2.31391 20.132 3.01987 20.4244 3.75598 20.4244H14.9899" stroke="#737783" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_434_9243">
+                                    <rect width="20" height="21.4286" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                    </svg>
+                                    
+                                Выйти
+                            </button>
+                            <div class="hist__head_ch">
+                                <div class="hist__head_ch_name">
+                                    Ваш <span>CashBack</span> составляет
+                                </div>
+                                <div class="hist__head_ch_value">3%</div>
+                            </div>
+                        </div>
+
+                        <div class="hist__content">
+                            <div class="hist__content_tabs">
+                                <div class="hist__content_tab active" data-tab>
+                                    Личные данные
+                                </div>
+                                <div class="hist__content_tab" data-tab>
+                                    история заказов
+                                </div>
+                                <div class="hist__content_tab" data-tab>
+                                    автоповтор заказа
+                                </div>
+                            </div>
+
+                            <div class="hist__content_list">
+
+
+                                <div class="hist__content_item">
+                                    <div class="table_wr">
+                                        <table class="table">
+                                            <tr class="table__headrow">
+                                                <th class="table__headrow_item">№ Заказа</th>
+                                                <th class="table__headrow_item">Дата заказа</th>
+                                                <th class="table__headrow_item">Статус</th>
+                                                <th class="table__headrow_item">Способ оплаты</th>
+                                                <th class="table__headrow_item">Тип доставки</th>
+                                                <th class="table__headrow_item">Стоимость</th>
+                                            </tr>
+                                            <tr class="table__row hover">
+                                                <td class="table__row_item">
+                                                    <div class="name">№ Заказа</div>
+                                                    <div class="value">№1232456</div>
+                                                </td>
+                                                <td class="table__row_item">
+                                                    <div class="name">Дата заказа</div>
+                                                    <div class="value">27.02.2021г. </div>
+                                                </td>
+                                                <td class="table__row_item">
+                                                    <div class="name">Статус</div>
+                                                    <div class="value">Открыт</div>
+                                                </td>
+                                                <td class="table__row_item">
+                                                     <div class="name">Способ оплаты</div>
+                                                    <div class="value">Наличными</div>
+                                                </td>
+                                                <td class="table__row_item">
+                                                     <div class="name">Тип доставки</div>
+                                                    <div class="value">Самовывоз</div>
+                                                </td>
+                                                <td class="table__row_item">
+                                                     <div class="name">Стоимость</div>
+                                                    <div class="value">24000₸</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="table__row hover">
+                                                <td class="table__row_item">
+                                                    <div class="name">№ Заказа</div>
+                                                    <div class="value">№1232456</div>
+                                                </td>
+                                                <td class="table__row_item">
+                                                    <div class="name">Дата заказа</div>
+                                                    <div class="value">27.02.2021г. </div>
+                                                </td>
+                                                <td class="table__row_item">
+                                                    <div class="name">Статус</div>
+                                                    <div class="value">Открыт</div>
+                                                </td>
+                                                <td class="table__row_item">
+                                                     <div class="name">Способ оплаты</div>
+                                                    <div class="value">Наличными</div>
+                                                </td>
+                                                <td class="table__row_item">
+                                                     <div class="name">Тип доставки</div>
+                                                    <div class="value">Самовывоз</div>
+                                                </td>
+                                                <td class="table__row_item">
+                                                     <div class="name">Стоимость</div>
+                                                    <div class="value">24000₸</div>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                        <div class="table__nav">
+                                            <a href="#" class="table__nav_btn">
+                                                <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.59961 1.19995L6.39961 5.99995L1.59961 10.8" stroke="#9497A3" stroke-width="1.52" stroke-linecap="round"/>
+                                                    </svg>
+                                                    
+                                            </a>
+                                            <div class="table__nav_list">
+                                                <a href="#" class="table__nav_item active">1</a>
+                                                <a href="#" class="table__nav_item">2</a>
+                                                <a href="#" class="table__nav_item">3</a>
+                                                <a href="#" class="table__nav_item">4</a>
+                                                <div class="bc">...</div>
+                                                <a href="#" class="table__nav_item">10</a>
+                                            </div>
+                                            <a href="#" class="table__nav_btn">
+                                                <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.59961 1.19995L6.39961 5.99995L1.59961 10.8" stroke="#9497A3" stroke-width="1.52" stroke-linecap="round"/>
+                                                    </svg>
+                                                    
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="hist__content_item">
+                                    <div class="hist-item__bc">
+                                        <a href="#">Назад ко всем заказам</a>
+                                    </div>
+                                    <form class="hist-item">
+                                        <div class="hist-item__col">
+                                            <div class="info hist-item__col_item">
+                                                <div class="info__item">
+                                                    <div class="info__item_name">№ Заказа</div>
+                                                    <div class="info__item_value">№1232456</div>
+                                                </div>
+                                                <div class="info__item">
+                                                    <div class="info__item_name">Дата заказа</div>
+                                                    <div class="info__item_value">27.02.2021г. </div>
+                                                </div>
+                                                <div class="info__item">
+                                                    <div class="info__item_name">Статус</div>
+                                                    <div class="info__item_value">Открыт</div>
+                                                </div>
+                                                <div class="info__item">
+                                                    <div class="info__item_name">№ Скидочного купона</div>
+                                                    <div class="info__item_value">9876234</div>
+                                                </div>
+                                                <div class="info__item">
+                                                    <div class="info__item_name">Способ оплаты</div>
+                                                    <div class="info__item_value">Наличными</div>
+                                                </div>
+                                                <div class="info__item">
+                                                    <div class="info__item_name">Тип доставки</div>
+                                                    <div class="info__item_value">Доставка</div>
+                                                </div>
+                                                <div class="info__item">
+                                                    <div class="info__item_name">Стоимость</div>
+                                                    <div class="info__item_value">40000₸</div>
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="cont hist-item__col_item">
+                                                <div class="cont__part">
+                                                    <div class="cont__part_head">
+                                                        Контактные данные
+                                                    </div>
+                                                    <div class="cont__part_list">
+                                                        <div class="cont__part_item">
+                                                            <div class="name">ФИО</div>
+                                                            <div class="value">Иванов Иван Иванович</div>
+                                                        </div>
+                                                        <div class="cont__part_item">
+                                                            <div class="name">E-mail</div>
+                                                            <div class="value">test3megavision.kz</div>
+                                                        </div>
+                                                        <div class="cont__part_item">
+                                                            <div class="name">Телефон</div>
+                                                            <div class="value">+77773899983</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="cont__part">
+                                                    <div class="cont__part_head">
+                                                        Доставка
+                                                    </div>
+                                                    <div class="cont__part_list">
+                                                        <div class="cont__part_item">
+                                                            <div class="name">Адрес доставки</div>
+                                                            <div class="value">г.Алматы, ул. Розыбакиева 136/1 (угол ул. Сатпаева)</div>
+                                                        </div>
+                                                        
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mes hist-item__col_item">
+                                                <div class="mes__item textarea">
+                                                    <textarea placeholder="Текст сообщения оператору"></textarea>
+                                                </div>
+                                                <div class="mes__btn">
+                                                    <button type="button" class="button">отправить</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="hist-item__col">
+                                            <div class="prods hist-item__col_item">
+                                                <div class="prods__item">
+                                                    <div class="prods__item_img">
+                                                        <picture>
+                                                            <source type="image/webp" srcset="">
+                                                            <img src="./img/thumb-test.png" alt="">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="prods__item_body">
+                                                        <div class="head_name">Acuvue 1-day TruEye days one</div>
+                                                        <div class="info">
+                                                            <div class="info__price">
+                                                                <div class="name">Стоимость:</div>
+                                                                <div class="value">12000₸</div>
+                                                            </div>
+                                                            <div class="info__to">
+                                                                <div class="name">Кол-во:</div>
+                                                                <div class="value">2</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="prods__item">
+                                                    <div class="prods__item_img">
+                                                        <picture>
+                                                            <source type="image/webp" srcset="">
+                                                            <img src="./img/thumb-test.png" alt="">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="prods__item_body">
+                                                        <div class="head_name">Acuvue 1-day TruEye days one</div>
+                                                        <div class="info">
+                                                            <div class="info__price">
+                                                                <div class="name">Стоимость:</div>
+                                                                <div class="value">12000₸</div>
+                                                            </div>
+                                                            <div class="info__to">
+                                                                <div class="name">Кол-во:</div>
+                                                                <div class="value">2</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="tot hist-item__col_item">
+                                                <div class="tot__list">
+                                                    <div class="tot__list_item">
+                                                        <div class="name">Всего</div>
+                                                        <div class="value">48000₸</div>
+                                                    </div>
+                                                    <div class="tot__list_item">
+                                                        <div class="name">Стоимость Доставки</div>
+                                                        <div class="value">0</div>
+                                                    </div>
+                                                    <div class="tot__list_item">
+                                                        <div class="name">Сумма скидки</div>
+                                                        <div class="value">- 8000₸</div>
+                                                    </div>
+                                                    <div class="tot__list_item">
+                                                        <div class="name">Бонус на ваш счет</div>
+                                                        <div class="value">+ 1440</div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="tot__main">
+                                                    <div class="tot__main_item">
+                                                        <div class="name">ИТОГО к оплате</div>
+                                                        <div class="value">48000₸</div>
+                                                    </div>
+
+                                                    <div class="tot__main_btn">
+                                                        <button class="button">повторить заказ</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="rep hist-item__col_item radio">
+                                                <input id="rep" type="checkbox">
+                                                <label for="rep">Автоматический повтор заказа</label>
+                                            </div>
+                                        </div>
+                                    </form>
+
+                                    <form class="hist__content_item_form">
+                                        <div class="part">
+                                            <div class="part__head">Авторизация</div>
+
+                                            <div class="part__body">
+                                                <div class="part__body_item">
+                                                    <div class="part__body_item_value input-c">
+                                                        <input id="cz1" type="text" class="customField">
+                                                        <label for="cz1"><span>Введите e-mail</span></label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+
+                                    <form class="hist__content_item_form">
+                                        <div class="part auth">
+                                            <div class="part__head">
+                                                Авторизация
+                                            </div>
+
+                                            <div class="part__body">
+                                                <div class="part__body_item">
+                                                    <div class="part__body_item_value">test3@megavision.kzail.ru</div>
+                                                </div>
+
+                                                <div class="part__body_item">
+                                                    <div class="part__body_item_check">
+                                                        <div class="fix">
+                                                            +7 (777) 389 
+                                                        </div>
+                                                        <div class="part__body_item_check_inp">
+                                                            <input id="cz2" type="text" class="customField">
+                                                            <label for="cz2"><span>Последние 4 цифры</span></label>
+                                                            <div class="info">Напомнить телефон?</div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div class="hist__content_item">
+                                    <div class="table_wr">
+                                        <table class="table">
+                                            <tr class="table__headrow">
+                                                <th class="table__headrow_item">№ Заказа</th>
+                                                <th class="table__headrow_item">Адрес доставки</th>
+                                                <th class="table__headrow_item">Интервал доставки</th>
+                                                <th class="table__headrow_item">Тип оповещений</th>
+                                                <th class="table__headrow_item">Способ оплаты</th>
+                                                <th class="table__headrow_item close_btn"></th>
+                                            </tr>
+                                            <tr class="table__row tableDrop">
+                                                <td class="table__row_item">
+                                                    <div class="mob__close">
+                                                        <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M6.93887 4.99929L10.5965 1.42723C10.7567 1.27044 10.8467 1.05779 10.8467 0.836054C10.8467 0.614319 10.7567 0.401665 10.5965 0.244875C10.4364 0.0880841 10.2191 0 9.99259 0C9.76607 0 9.54883 0.0880841 9.38866 0.244875L5.7395 3.82526L2.09035 0.244875C1.93017 0.0880841 1.71293 -1.65206e-09 1.48641 0C1.25989 1.65206e-09 1.04265 0.0880841 0.882471 0.244875C0.722296 0.401665 0.632311 0.614319 0.632311 0.836054C0.632311 1.05779 0.722296 1.27044 0.882471 1.42723L4.54013 4.99929L0.882471 8.57135C0.802744 8.64875 0.739463 8.74084 0.696278 8.84231C0.653093 8.94377 0.630859 9.05261 0.630859 9.16253C0.630859 9.27244 0.653093 9.38128 0.696278 9.48274C0.739463 9.58421 0.802744 9.6763 0.882471 9.7537C0.961547 9.83175 1.05563 9.89369 1.15928 9.93596C1.26294 9.97824 1.37412 10 1.48641 10C1.5987 10 1.70988 9.97824 1.81354 9.93596C1.91719 9.89369 2.01127 9.83175 2.09035 9.7537L5.7395 6.17332L9.38866 9.7537C9.46773 9.83175 9.56181 9.89369 9.66547 9.93596C9.76912 9.97824 9.8803 10 9.99259 10C10.1049 10 10.2161 9.97824 10.3197 9.93596C10.4234 9.89369 10.5175 9.83175 10.5965 9.7537C10.6763 9.6763 10.7395 9.58421 10.7827 9.48274C10.8259 9.38128 10.8481 9.27244 10.8481 9.16253C10.8481 9.05261 10.8259 8.94377 10.7827 8.84231C10.7395 8.74084 10.6763 8.64875 10.5965 8.57135L6.93887 4.99929Z" fill="#9497A3"/>
+                                                            </svg>
+                                                            
+                                                    </div>
+                                                    <div class="name">№ Заказа
+                                                    </div>
+                                                    <div class="value">
+                                                        <span class="head__num"><span>№</span> 1232456</span>
+                                                        <a href="#">подробнее</a>
+                                                    </div>
+                                                </td>
+                                                <td class="table__row_item drop_row">
+                                                    <div class="name">Адрес доставки</div>
+                                                    <div class="value">
+                                                        <span>г.Алматы, ул. Розыбакиева 136/1</span>
+                                                        <span>(угол ул. Сатпаева)</span>
+                                                        <a class="mob_link" href="#">подробнее</a>
+                                                    </div>
+                                                </td>
+                                                <td class="table__row_item w-l drop_row">
+                                                    <div class="name">Интервал доставки</div>
+                                                    <div class="value">
+                                                        <select class="choices custom__select">
+                                                            <option value="lorem ipsum"></option>
+                                                        </select>
+                                                    </div>
+                                                </td>
+                                                <td class="table__row_item w-s drop_row">
+                                                     <div class="name">Тип оповещений</div>
+                                                    <div class="value">
+                                                        <select class="choices custom__select">
+                                                            <option value="lorem ipsum"></option>
+                                                        </select>
+                                                    </div>
+                                                </td>
+                                                <td class="table__row_item fsd drop_row">
+                                                     <div class="name">Способ оплаты</div>
+                                                    <div class="value fsd__sel">
+                                                        <div class="dropdown">
+                                                            <div data-current="**** **** **** 4657" class="dropdown__head">
+                                                                <div class="card">
+                                                                    <img src="./img/master-l.svg" alt="">
+                                                                </div>
+                                                                <span>**** **** **</span>** 4657
+                                                            </div>
+                                                            <div class="dropdown__list">
+                                                                <div data-value="cash" class="dropdown__list_item">
+                                                                    Оплатить наличными
+                                                                </div>
+                                                                <div data-value="**** **** **** 4657" class="dropdown__list_item">
+                                                                    <div class="card">
+                                                                        <img src="./img/master-l.svg" alt="">
+                                                                    </div>
+                                                                    <span>**** **** **</span>** 4657
+                                                                </div>
+                                                                <div data-value="**** **** **** 4658" class="dropdown__list_item">
+                                                                    <div class="card">
+                                                                        <img src="./img/visa-l.svg" alt="">
+                                                                    </div>
+                                                                    <span>**** **** **</span>** 4658
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="table__row_item close_btn">
+                                                    <button>
+                                                        <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M6.93887 4.99929L10.5965 1.42723C10.7567 1.27044 10.8467 1.05779 10.8467 0.836054C10.8467 0.614319 10.7567 0.401665 10.5965 0.244875C10.4364 0.0880841 10.2191 0 9.99259 0C9.76607 0 9.54883 0.0880841 9.38866 0.244875L5.7395 3.82526L2.09035 0.244875C1.93017 0.0880841 1.71293 -1.65206e-09 1.48641 0C1.25989 1.65206e-09 1.04265 0.0880841 0.882471 0.244875C0.722296 0.401665 0.632311 0.614319 0.632311 0.836054C0.632311 1.05779 0.722296 1.27044 0.882471 1.42723L4.54013 4.99929L0.882471 8.57135C0.802744 8.64875 0.739463 8.74084 0.696278 8.84231C0.653093 8.94377 0.630859 9.05261 0.630859 9.16253C0.630859 9.27244 0.653093 9.38128 0.696278 9.48274C0.739463 9.58421 0.802744 9.6763 0.882471 9.7537C0.961547 9.83175 1.05563 9.89369 1.15928 9.93596C1.26294 9.97824 1.37412 10 1.48641 10C1.5987 10 1.70988 9.97824 1.81354 9.93596C1.91719 9.89369 2.01127 9.83175 2.09035 9.7537L5.7395 6.17332L9.38866 9.7537C9.46773 9.83175 9.56181 9.89369 9.66547 9.93596C9.76912 9.97824 9.8803 10 9.99259 10C10.1049 10 10.2161 9.97824 10.3197 9.93596C10.4234 9.89369 10.5175 9.83175 10.5965 9.7537C10.6763 9.6763 10.7395 9.58421 10.7827 9.48274C10.8259 9.38128 10.8481 9.27244 10.8481 9.16253C10.8481 9.05261 10.8259 8.94377 10.7827 8.84231C10.7395 8.74084 10.6763 8.64875 10.5965 8.57135L6.93887 4.99929Z" fill="#9497A3"/>
+                                                            </svg>
+                                                            
+                                                    </button>
+                                                </td>
+                                                <td class="table__row_item">
+                                                    <span data-drop>Подробнее</span>
+                                                </td>
+                                                
+                                            </tr>
+                                            
+                                            
+                                        </table>
+
+                                        <div class="table__nav">
+                                            <a href="#" class="table__nav_btn">
+                                                <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.59961 1.19995L6.39961 5.99995L1.59961 10.8" stroke="#9497A3" stroke-width="1.52" stroke-linecap="round"/>
+                                                    </svg>
+                                                    
+                                            </a>
+                                            <div class="table__nav_list">
+                                                <a href="#" class="table__nav_item active">1</a>
+                                                <a href="#" class="table__nav_item">2</a>
+                                                <a href="#" class="table__nav_item">3</a>
+                                                <a href="#" class="table__nav_item">4</a>
+                                                <div class="bc">...</div>
+                                                <a href="#" class="table__nav_item">10</a>
+                                            </div>
+                                            <a href="#" class="table__nav_btn">
+                                                <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.59961 1.19995L6.39961 5.99995L1.59961 10.8" stroke="#9497A3" stroke-width="1.52" stroke-linecap="round"/>
+                                                    </svg>
+                                                    
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        </main>
+        @@include('./blocks/footer.html')
+    </div>
+
+
+    @@include('./blocks/mobile-menu.html')
+
+
+    <script src="./js/bundle.js"></script>
+</body>
+
+
+</html>

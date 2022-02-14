@@ -17,12 +17,19 @@ export function selectCard() {
                 if(e.target) {
                     p.classList.toggle('active');
                 }
+
+                items.forEach(i => {
+                    i.addEventListener('click', () => {
+                        head.innerHTML = `${i.innerHTML}`;
+                        head.dataset.current = i.dataset.value;
+                    })
+                })
                 
     
-                if(e.target.classList.contains('dropdown__list_item')) {
-                    head.innerHTML = `${e.target.innerHTML}`;
-                    head.dataset.current = e.target.dataset.value;
-                }
+                // if(e.target.hasAttribute('data-carddrop')) {
+                //     head.innerHTML = `${}`;
+                //     head.dataset.current = e.target.dataset.value;
+                // }
     
             });
         })

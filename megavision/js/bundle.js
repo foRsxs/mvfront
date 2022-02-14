@@ -54,7 +54,7 @@
 /*!******************************************!*\
   !*** ./#src/js/components/selectCard.js ***!
   \******************************************/
-/*! exports provided: selectCard */function(e,t,i){"use strict";function s(){const e=document.querySelectorAll(".dropdown");e.length>0&&e.forEach(e=>{let t=e.querySelector(".dropdown__head");e.querySelector(".dropdown__list").querySelectorAll(".dropdown__list_item");e.addEventListener("click",i=>{i.target&&e.classList.toggle("active"),i.target.classList.contains("dropdown__list_item")&&(t.innerHTML=""+i.target.innerHTML,t.dataset.current=i.target.dataset.value)})})}i.r(t),i.d(t,"selectCard",(function(){return s}))},"./#src/js/components/selectionAcc.js":
+/*! exports provided: selectCard */function(e,t,i){"use strict";function s(){const e=document.querySelectorAll(".dropdown");e.length>0&&e.forEach(e=>{let t=e.querySelector(".dropdown__head"),i=e.querySelector(".dropdown__list").querySelectorAll(".dropdown__list_item");e.addEventListener("click",s=>{s.target&&e.classList.toggle("active"),i.forEach(e=>{e.addEventListener("click",()=>{t.innerHTML=""+e.innerHTML,t.dataset.current=e.dataset.value})})})})}i.r(t),i.d(t,"selectCard",(function(){return s}))},"./#src/js/components/selectionAcc.js":
 /*!********************************************!*\
   !*** ./#src/js/components/selectionAcc.js ***!
   \********************************************/
