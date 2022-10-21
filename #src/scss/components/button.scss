@@ -2,23 +2,20 @@
     padding: 16px 44px;
     border-radius: 8px;
     background-color: $red;
-    border: 1px solid $red;
     color: #fff;
-    text-transform: uppercase;
+    // text-transform: uppercase;
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
     @include def-anim;
 
     &:hover {
-        color: $black_text;
-        background-color: transparent;
+        
+        background-color: #B91935;
     }
 
 
     &:active {
-        color: $black_text;
-        background-color: transparent;
         transform: scale(0.95);
     }
 
@@ -29,3 +26,33 @@
     }
 
 }
+
+.button.button-blue {
+    background-color: #0089D0;
+
+    &:hover {
+        background-color: #009CED;
+    }
+}
+
+.button.button-gray {
+    background-color: #6A6C70;
+
+    &:hover {
+        background-color: #83868C;
+    }
+}
+
+
+.button.button-light {
+    background-color: #F0F0F0;
+    color: var(--text);
+
+    &:hover {
+        background-color: #E8E8E8;
+    }
+}
+
+
+
+

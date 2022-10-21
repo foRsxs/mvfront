@@ -23,6 +23,8 @@ import { customSelect } from './components/choice';
 import { switchBasket } from './components/switchBasket';
 import { selectCard } from './components/selectCard';
 import { tableDrop } from './components/tableDrop';
+import { navbar } from './components/navbar';
+
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -110,22 +112,22 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
-    const products = document.querySelectorAll('.product');
+    // const products = document.querySelectorAll('.product');
 
-    products.forEach(i => {
-        i.addEventListener('mouseover', (e) => {
-            let exBody = e.currentTarget.querySelector('.product__body_action');
+    // products.forEach(i => {
+    //     i.addEventListener('mouseover', (e) => {
+    //         let exBody = e.currentTarget.querySelector('.product__body_action');
 
-            exBody.style.cssText = `height: ${exBody.scrollHeight}px`;
-            i.style.cssText = `height: ${356 + exBody.scrollHeight}px;`;
-        });
+    //         exBody.style.cssText = `height: ${exBody.scrollHeight}px`;
+    //         i.style.cssText = `height: ${356 + exBody.scrollHeight}px;`;
+    //     });
 
-        i.addEventListener('mouseout', (e) => {
-            let exBody = e.currentTarget.querySelector('.product__body_action');
-            exBody.style.cssText = `height: 0px`;
-            i.style.cssText = `height: 356px`;
-        });
-    });
+    //     i.addEventListener('mouseout', (e) => {
+    //         let exBody = e.currentTarget.querySelector('.product__body_action');
+    //         exBody.style.cssText = `height: 0px`;
+    //         i.style.cssText = `height: 356px`;
+    //     });
+    // });
 
 
 
@@ -208,6 +210,7 @@ document.addEventListener('DOMContentLoaded', () => {
     selectCard();
 
     tableDrop();
+    navbar()
 
 
     

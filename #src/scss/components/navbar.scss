@@ -1,0 +1,121 @@
+.navbar {
+    position: fixed;
+    display: none;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 10;
+    
+
+    &__in {
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid #E1E5EE;
+        position: relative;
+        z-index: 10;
+        background-color: #fff;
+    }
+
+    &__item {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__item.active {
+        
+    }
+
+    &__item-more.active {
+        svg {
+            path {
+                fill: red;
+            }
+        }
+    }
+
+    &__more.active {
+        transform: translateY(0);
+        .navbar__more_in {
+            box-shadow: 0px 4px 25px rgba(133, 131, 131, 0.53);
+        }
+    }
+
+    &__more {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 9;
+        display: flex;
+        align-items: flex-end;
+        transform: translateY(100%);
+        @include def-anim;
+
+        &_in {
+            padding: 40px 15px 90px;
+            background-color: #fff;
+            border-radius: 10px 10px 0px 0px;
+            box-shadow: none;
+            @include def-anim;
+            width: 100%;
+            position: relative;
+        }
+
+        &_close {
+            width: 22px;
+            height: 22px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid $black;
+            border-radius: 100%;
+        }
+
+        &_title {
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 18px;
+            margin-bottom: 20px;
+        }
+
+        &_item {
+            display: flex;
+            align-items: center;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 24px;
+            justify-content: center;
+            color: #9497A3;
+
+
+            &_name {
+                margin-right: 15px;
+            }
+
+            &_value {
+                color: $blue;
+                font-weight: 500;
+            }
+        }
+
+
+    }
+}
+
+@media (max-width: 520px) {
+    .navbar {
+        display: block;
+    }
+}

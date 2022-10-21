@@ -1,48 +1,57 @@
 .products {
     display: flex;
-    // justify-content: space-between;
     flex-wrap: wrap;
-    gap: 2%;
-
-    .product_wr {
-        position: relative;
-        max-width: 278px;
-        width: 100%;
-        height: 356px;
-        margin-bottom: 30px;
-        
-
-        &:hover {
-            .product {
-                border-color: #fff;
-                background-color: #fff;
-                box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
-                z-index: 10;
-                width: 300px;
-                left: -11px;
-                
-
-                .product__body_action {
-                    margin-top: 20px;
-                }
-            }
-        }
-    }
+    margin-left: -12.5px;
+    margin-right: -12.5px;
 
     .product {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        // height: 100%;
-        height: 356px;
-        border: 1px solid $line_gray;
         border-radius: 10px;
         padding: 20px;
         cursor: pointer;
         @include def-anim;
+        background: #FFFFFF;
+        border: 1px solid #FFFFFF;
+        box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        position: relative;
+        margin: 0 12.5px 25px 12.5px;
+        width: calc((100% / 4) - 25px);
 
-        
+        &__like {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &__dc {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 45px;
+            height: 45px;
+            border-radius: 100%;
+            background-color: #DE2747;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 15px;
+        }
+
+        &:hover {
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        &__like {
+
+        }
 
         &__img {
             display: flex;
@@ -95,7 +104,7 @@
                     font-weight: bold;
                     font-size: 17px;
                     line-height: 16px;
-                    color: $red;
+                    // color: $red;
                 }
 
                 .old {
@@ -106,41 +115,15 @@
             }
 
             &_action {
-                
-                height: 0;
-                @include def-anim;
-                overflow: hidden;
 
-                &_info {
-                    margin-bottom: 25px;
-                    &_item {
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        margin-bottom: 10px;
-
-                        &:last-child {
-                            margin-bottom: 0;
-                        }
-
-                        .name {
-                            font-size: 14px;
-                            line-height: 14px;
-                            color: $dark_gray;
-                        }
-
-                        .value {
-                            font-weight: 500;
-                            font-size: 14px;
-                            line-height: 14px;
-                        }
-                    }
-                }
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
 
                 &_btn {
-                    width: 100%;
+                    // width: 100%;
                     .button {
-                        width: 100%;
+                        // width: 100%;
                         padding: 11px;
                     }
                 }
