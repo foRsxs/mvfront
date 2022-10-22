@@ -56,11 +56,12 @@
         &_slider {
             margin-bottom: 10px;
             position: relative;
+            
         }
         &_thumb {
             padding: 11px 15px;
             border-radius: 5px;
-            border: 1px solid $line_gray;
+            border: 1px solid transparent;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -99,7 +100,7 @@
         // }
 
         &_thumb.swiper-slide-thumb-active {
-            border-color: $red;
+            border-color: $line_gray;
         }
 
 
@@ -108,7 +109,6 @@
             justify-content: center;
             padding: 105px 49px;
             border-radius: 10px;
-            border: 1px solid $line_gray;
         }
     }
 
@@ -127,17 +127,61 @@
             color: $light_gray;
             margin-bottom: 8px;
         }
+
+        &_opt {
+            margin-bottom: 10px;
+            &_name {
+                font-size: 14px;
+                line-height: 24px;
+                color: #9497A3;
+            }
+            &_value {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 24px;
+                color: #212121;
+            }
+        }
+
+        &_rev {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            &_main {
+                pointer-events: none;
+                touch-action: none;
+
+                
+            }
+
+            &_main .rating__list {
+                padding-bottom: 0;
+            }
+
+            &_value {
+                font-size: 15px;
+                line-height: 18px;
+                border-bottom: 1px dotted #959595;
+            }
+        }
     }
 
     &__params {
         padding: 0 0;
-        
+        margin-top: 20px;
         &_form {
             
             &_item {
                 display: flex;
                 justify-content: space-between;
-                margin-bottom: 8px;
+                
+                &_name {
+                    font-size: 14px;
+                    line-height: 16px;
+
+                    color: #9497A3;
+                }
+
                 &_radio {
                     display: flex;
 
@@ -158,7 +202,7 @@
                         text-align: center;
                         font-size: 15px;
                         line-height: 16px;
-                        border: 1px solid $line_gray;
+                      
                         cursor: pointer;
 
                         
@@ -178,24 +222,23 @@
                     }
 
                     .tabs-tab.active {
-                        background-color: #414E60;
-                        border-color: #414E60;
+                        background-color: $red;
                         color: #fff;
                     }
                     
 
                     label[for="same"] {
                         border-top-left-radius: 4px;
-                        border-bottom-left-radius: 4px;
+                        border-top-right-radius: 4px;
                     }
 
                     label[for="dif"] {
+                        border-top-left-radius: 4px;
                         border-top-right-radius: 4px;
-                        border-bottom-right-radius: 4px;
                     }
 
                     input:checked + label {
-                        background-color: #414E60;
+                        background-color: $red;
                         color: #fff;
                     }
                 }
@@ -357,8 +400,8 @@
                 }
 
                 .old {
-                    font-size: 18px;
-                    line-height: 16px;
+                    font-size: 24px;
+                    line-height: 28px;
                 }
             }
 
@@ -453,21 +496,37 @@
 
         &_head {
             
-
+            
             &_list {
                 display: flex;
-                padding-bottom: 12px;
+                // padding-bottom: 12px;
+
+                position: relative;
+
+                &:after {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 1px;
+                    background-color: $line_gray;
+                    content: '';
+                }
             }
 
             &_item.active {
-                color: #fff;
-                background-color: #414E60;
+                // color: #fff;
+                // background-color: #414E60;
+                border-color: $line_gray;
+                background-color: #fff;
+                color: #0089D0;
             }
 
             &_item {
                 width: 287px;
                 padding: 12px 10px;
-                border: 1px solid $line_gray;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
                 text-align: center;
                 font-weight: 600;
                 font-size: 13px;
@@ -475,17 +534,16 @@
                 color: $dark_gray;
                 text-transform: uppercase;
                 cursor: pointer;
+                background-color: transparent;
+                position: relative;
+                z-index: 3;
+                border: 1px solid transparent;
+                border-bottom: none;
+                @include def-anim;
 
-                
-
-                &:nth-child(1) {
-                    border-top-left-radius: 6px;
-                    border-bottom-left-radius: 6px;
-                }
-
-                &:nth-child(3) {
-                    border-top-right-radius: 6px;
-                    border-bottom-right-radius: 6px;
+                span {
+                    color: $red;
+                    pointer-events: none;
                 }
             }
         }
@@ -499,7 +557,6 @@
             &_item {
                 display: none;
 
-                
                 .item {
                     display: flex;
                     justify-content: space-between;
@@ -563,14 +620,12 @@
             }
 
             &_item.rev {
-                padding-top: 30px;
-                
+                padding-top: 30px; 
                 justify-content: space-between;
 
                 .rev__total {
                     width: 22%;
                     
-
                     &_title {
                         font-size: 18px;
                         line-height: 24px;

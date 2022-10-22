@@ -1,0 +1,58 @@
+.rating__list {
+    display: flex;
+    align-items: center;
+    
+    padding-bottom: 10px;
+    margin-right: 30px;
+    flex-direction: row-reverse;
+}
+
+.rating__list[data-rate-total="1"] .rating__item:nth-child(n + 5),
+.rating__list[data-rate-total="2"] .rating__item:nth-child(n + 4),
+.rating__list[data-rate-total="3"] .rating__item:nth-child(n + 3),
+.rating__list[data-rate-total="4"] .rating__item:nth-child(n + 2),
+.rating__list[data-rate-total="5"] .rating__item:nth-child(n + 1) {
+    svg {
+        path {
+            fill: #FEC057;
+        }
+    }
+}   
+
+.rating__item:hover ~ .rating__item {
+    svg {
+        path {
+            fill: #FEC057;
+        }
+    }
+}
+
+.rating__item {
+    padding: 0 2.5px;
+    cursor: pointer;
+
+    &:hover {
+
+        svg {
+            path {
+                fill: #FEC057;
+            }
+        }
+    }
+
+    &:nth-child(1) {
+
+    }
+    &:nth-child(2) {
+        
+    }
+    &:nth-child(3) {
+        
+    }
+    &:nth-child(4) {
+        
+    }
+    &:nth-child(5) {
+        
+    }
+}

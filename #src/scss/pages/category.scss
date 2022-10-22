@@ -137,10 +137,16 @@
                     }
 
                     &_more {
-                        color: $red;
+                        color: $blue;
                         font-size: 14px;
                         line-height: normal;
-                        margin-top: 10px;                        
+                        margin-top: 10px;  
+                        
+                        svg {
+                            path {
+                                stroke: $blue;
+                            }
+                        }
                     }
 
                     &_more.active {
@@ -157,6 +163,14 @@
 
         &_list {
             width: 73%;
+            
+        }
+
+        &_list .products {
+
+            .product {
+                width: calc((100% / 3) - 25px);
+            }
         }
     }
 }
