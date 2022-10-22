@@ -38,24 +38,16 @@
                 &_action {
                     margin-bottom: 15px;
                     display: flex;
-                    justify-content: space-between;
+                    justify-content: flex-end;
                     
                     &_tabs {
-                        width: 48%;
-                        flex-direction: row;
-                        margin-bottom: 0;
+                        
                     }
 
                     &_tab {
-                        width: 50%;
 
-                        &:first-child {
-                            border-radius: 5px 0 0 5px;
-                        }
 
-                        &:last-child {
-                            border-radius: 0 5px 5px 0;
-                        }
+                        
                     }
 
                     &_btn {

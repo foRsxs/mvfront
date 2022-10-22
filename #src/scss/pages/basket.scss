@@ -196,6 +196,25 @@
                     }
                 }
 
+                &_inpt.cnt__form_inpt-auth {
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+
+                    .cnt__form_inpt_text {
+                        margin-right: 10px;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 16px;
+                    }   
+
+                    .cnt__form_inpt_body {
+                        position: relative;
+                        width: 100px;
+                    }
+                    
+                }
+
                 &_inpt {
                     width: 100%;
                     margin-bottom: 15px;
@@ -273,6 +292,7 @@
             width: 40%;
             border: 1px solid $line_gray;
             border-radius: 10px;
+
             &_item {
                 padding: 30px 20px;
                 display: flex;
@@ -330,6 +350,12 @@
                         margin-bottom: 20px;
                         display: block;
 
+                        @include def-anim;
+
+                        &:hover {
+                            color: $blue;
+                        }
+
                         span {
                             display: block;
                             color: $dark_gray;
@@ -352,12 +378,13 @@
                                 line-height: 24px;
                                 color: $light_gray;
                                 margin-right: 5px;
+                                
                             }
                             .value {
                                 font-weight: 700;
                                 font-size: 17px;
                                 line-height: normal;
-                                color: $red;
+                                // color: $;
                             }
                         }
 
@@ -707,8 +734,8 @@
 
                     &__item.bonus {
 
-                        .name, .value {
-                            color: $red;
+                        .value {
+                            color: #47A12A;
                             font-weight: 400;
                         }
                     }
@@ -744,14 +771,13 @@
 
                     &__ch {
 
-                        label {
-                            font-size: 13px;
+                        font-size: 13px;
                             color: $dark_gray;
+
                             a {
                                 text-decoration: underline;
                                 text-decoration-style: dotted;
                             }
-                        }
                     }
                 }
             }

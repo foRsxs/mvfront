@@ -40,8 +40,8 @@
                                     <span>Очистить корзину   </span>                             
                             </button>
                         </div>
-
-                        <div class="basket__body">
+                        @@include('./blocks/empty.html')
+                        <!-- <div class="basket__body">
                             <div class="basket__body_col">
                                 <div class="basket__body_item basket__body_cnt">
                                     <div class="basket__body_item_head">
@@ -53,6 +53,13 @@
                                             <div class="cnt__form_inpt">
                                                 <input type="email" id="email" class="customField">
                                                 <label for="email"><span>Введите e-mail</span></label>
+                                            </div>
+                                            <div class="cnt__form_inpt cnt__form_inpt-auth">
+                                                <div class="cnt__form_inpt_text">+7 (701) 371</div>
+                                                <div class="cnt__form_inpt_body">
+                                                    <input type="text" id="auth" class="customField">
+                                                    <label for="auth"><span>4 цифры</span></label>
+                                                </div>
                                             </div>
                                             <div class="cnt__form_inpt">
                                                 <input type="text" id="fn" class="customField">
@@ -274,13 +281,10 @@
                                                 <div class="value">48000₸</div>
                                             </div>
                                             <div class="total__btn">
-                                                <button class="button">оформить заказ</button>
+                                                <button class="button button-blue">ОФОРМИТЬ ЗАКАЗ</button>
                                             </div>
                                             <div class="total__ch radio">
-                                                <input type="checkbox" id="agree">
-                                                <label for="agree">
-                                                    Я согласен на <a href="#">обработку персональных данных</a>
-                                                </label>
+                                                Я согласен на <a href="#">обработку персональных данных</a>
                                             </div>
                                         </div>
                                     </div>
@@ -289,7 +293,7 @@
                             
 
                             
-                        </div>
+                        </div> -->
 
                         
                     </div>
