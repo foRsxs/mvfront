@@ -134,7 +134,10 @@
 
 @media (max-width: 600px) {
     .nav {
-        
+        height: 0;
+        overflow: hidden;
+        @include def-anim;
+
         &__menu {
             display: none;
         }
@@ -146,5 +149,10 @@
                 width: 100%;
             }
         }
+    }
+
+    .nav.active {
+        height: 52px;
+        overflow: visible;
     }
 }

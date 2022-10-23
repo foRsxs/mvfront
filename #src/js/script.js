@@ -11,7 +11,7 @@ import { seoBtn } from './components/seoBtn';
 import { tabsFunc } from './components/tabsFunc';
 import { ratingFunc } from './components/ratingFunc';
 import { textareaAutoHeight } from './components/textareaAutoHeight';
-import { mobileRatingModal } from './components/mobileRatingModal';
+
 import { rangeSlider } from './components/rangeSlider';
 import { filterMore } from './components/filterMore';
 import { filterMobile } from './components/filterMobile';
@@ -23,6 +23,9 @@ import { switchBasket } from './components/switchBasket';
 import { selectCard } from './components/selectCard';
 import { tableDrop } from './components/tableDrop';
 import { navbar } from './components/navbar';
+import { mobbasket } from './components/mobbasket';
+import { search } from './components/search';
+import { addRev } from './components/addRev';
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -191,7 +194,6 @@ document.addEventListener('DOMContentLoaded', () => {
     ratingFunc('.rating__item', '.rating__value');
     ratingFunc('.revmodal__rating_item', '.revmodal__rating_total');
     textareaAutoHeight('.autoheight');
-    mobileRatingModal();
     rangeSlider();
     filterMore('.filter__item_drop', '.filter__item_body_drop', '.filter__item_more');
     filterMobile();
@@ -210,7 +212,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     tableDrop();
     navbar()
-
+    mobbasket()
+    search();
+    addRev();
 
     
 });

@@ -27,14 +27,45 @@
         justify-content: center;
     }
 
+    &__item.navbar__item-basket {
+        position: relative;
+
+        .navbar__item_ind {
+            position: absolute;
+            top: -3px;
+            right: -3px;
+            min-width: 20px;
+            height: 20px;
+            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            background-color: $red;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 4px;
+            border: 2px solid #fff;
+        }
+    }
+
     &__item.active {
-        
+        svg {
+            path {
+                fill: $red;
+                
+            }
+
+            rect {
+                fill: $red;
+            }
+        }
     }
 
     &__item-more.active {
         svg {
             path {
-                fill: red;
+                fill: $red;
             }
         }
     }
