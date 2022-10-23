@@ -1,0 +1,119 @@
+.mod-popup.active {
+    z-index: 10000;
+    background: rgba(34, 34, 34, 0.4);
+    backdrop-filter: blur(5px);
+    opacity: 1;
+}
+
+.mod-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: -1;
+    @include def-anim; 
+
+
+    &__wrapper {
+        padding: 20vh 30px 30px 30px;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__body {
+        @include def-anim;
+        max-width: 750px;
+        width: 100%;
+        margin: 0 auto;
+        background-color: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+
+        &_head {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 30px;
+            background-color: #F5F6FA;
+
+            &_label {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 22px;
+
+                span {
+                    color: $blue;
+                }
+            }
+
+            &_close {
+                width: 25px;
+                height: 25px;
+                padding: 5px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid  $light_gray;;
+                border-radius: 100%;
+                @include def-anim;
+
+                &:hover {
+                    border-color: $red;
+
+                    svg {
+                        path {
+                            fill: $red;
+                        }
+                    }
+                }
+                svg {
+                    path {
+                        @include def-anim;
+                        fill: $light_gray;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 620px) {
+    .mod-popup.active {
+
+        .mod-popup__body {
+            transform: translateY(0);
+        }
+
+
+    }
+
+    .mod-popup {
+
+        &__wrapper {
+            display: flex;
+            align-items: flex-end;
+            padding: 0;
+        }
+
+        &__body {
+            border-radius: 10px 10px 0 0;
+            @include def-anim;
+
+            transform: translateY(100%);
+            &_head {
+                padding: 10px 30px;
+                background-color: unset;
+                border: none;
+                justify-content: flex-end;
+                &_label {
+                    display: none;
+                }
+            }
+        }
+    }
+}

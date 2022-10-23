@@ -3,7 +3,6 @@ import Swiper, {Navigation, Pagination, Thumbs} from 'swiper';
 
 import { navMenu } from './components/navMenu';
 import { selectionAcc } from './components/selectionAcc';
-import MicroModal from 'micromodal'; 
 import { burgerBtn } from './components/burgerBtn';
 import { mobileMenu } from './components/mobileMenu';
 import { cardSelects } from './components/cardSelects';

@@ -1,0 +1,219 @@
+
+
+
+.addbasket {
+    
+
+    &__body {
+        
+        
+        
+
+        &_main {    
+            padding: 15px 30px;
+
+            &_list {
+
+            }
+
+            &_item {
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-between;
+                padding: 15px;
+                border-bottom: 1px solid $line_gray;
+
+
+                &_img {
+                    width: 150px;
+                    height: 150px;
+                    flex: 0 0 auto;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                        display: flex;
+                    }
+                }
+
+                &_body {
+                    width: 100%;
+                    padding: 10px 15px 10px 30px;
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                    &_descr {
+                        
+                    }
+
+                    &_name {
+                        color: #0089D0;
+                        margin-bottom: 5px;
+                        font-weight: 600;
+                        font-size: 17px;
+                        line-height: 16px;
+                        display: block;
+                    }
+
+                    &_ex {
+                        font-size: 14px;
+                        line-height: 16px;
+                    }
+
+                    &_value {
+                        font-weight: 500;
+                        font-size: 17px;
+                        line-height: 16px;
+                        white-space: nowrap;
+                        padding-left: 10px;
+                    }
+                }
+
+                
+            }
+
+            &_info {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 25px 0;
+                &_item {
+                    display: flex;
+                    font-weight: 500;
+                    font-size: 17px;
+                    line-height: 16px;
+                    &_name {
+                        margin-right: 5px;
+                    }
+                    &_value {
+
+                    }
+                }
+            }
+
+        }
+
+        &_action {
+            padding: 15px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-left: -10px;
+            margin-right: -10px;
+            background: #F5F6FA;
+            &_item {
+                margin: 10px;
+                .button.button-green {
+                    background-color: #A3DB5A;
+
+                    &:hover {
+                        opacity: .7;
+                        background-color: #A3DB5A;;
+                    }
+                }
+                .button {
+                    text-transform: uppercase;
+
+
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 620px) {
+
+
+
+
+    .addbasket {
+
+
+
+
+
+        &__body {
+           
+
+            &_main {
+
+                &_item {
+
+                    &_img {
+                        width: 100px;
+                        height: 100px;
+                    }
+
+                    &_body {
+                        flex-wrap: wrap;
+                        padding-right: 0;
+                        &_descr {
+                            margin-bottom: 15px;
+                        }
+
+                        &_name {
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 16px;
+                        }
+
+                        &_ex {
+                            font-size: 12px;
+                            line-height: 16px;
+                        }
+                        &_value {
+                            width: 100%;
+                            padding-left: 0;
+                            font-weight: 500;
+                            font-size: 17px;
+                            line-height: 16px;
+                        }
+                    }
+                    
+                }
+
+                &_info {
+                    padding-bottom: 0;
+                    
+                    flex-wrap: wrap;
+
+                    &_item {
+                        width: 100%;
+                        margin-bottom: 10px;
+                        justify-content: space-between;
+                        &_name {
+                            margin: 0;
+                            width: 48%;
+                        }
+
+                        &_value {
+                            width: 48%;
+                        }
+                    }
+                }
+            }
+
+            &_ex {
+
+            }
+
+            &_action {
+                background-color: unset;
+                justify-content: center;
+                margin-left: 0;
+                margin-right: 0;
+                &_item.addbasket__body_action_item-gr {
+                    display: none;
+                }
+                &_item {
+                    margin: 0;
+
+                }
+            }
+
+        }
+
+        
+    }
+}
