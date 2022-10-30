@@ -10,7 +10,7 @@ export function mobileMenu() {
     if(mobileEls.length > 0) {
         
         mobileEls.forEach(el => {
-            let elClose = document.querySelector('[data-mobile-close]');
+            let elClose = el.parentElement.querySelector('[data-mobile-close]');
             el.addEventListener('click', (e) => {
                 e.preventDefault();
 

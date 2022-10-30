@@ -41,9 +41,12 @@
             </div>
 
             <a href="#" class="header__logo">
+                
                 <picture>
                     <source srcset="" type="image/webp">
+                    <source media="(max-width: 600px)" srcset="./img/mobile-logo.svg">
                     <source media="(max-width: 1200px)" srcset="./img/mob-logo.svg">
+                   
                     <!-- <source media="(max-width: 660px)" srcset="./img/logo-mob.svg"> -->
                     <img src="./img/logo.svg" alt="">
                 </picture>
@@ -208,9 +211,18 @@
                     Контакты
                 </a>
 
-                <a href="#"class="nav__user_lk">
+                <div class="nav__user_lk">
                     Личный кабинет
-                </a>
+                    <div class="lkMenu">
+    <div class="lkMenu__in">
+        <div class="lkMenu__item lkMenu__item-orders"><a href="#">Мои заказы</a></div>
+        <div class="lkMenu__item lkMenu__item-profile"><a href="#">Профиль</a></div>
+        <div class="lkMenu__item lkMenu__item-favs"><a href="#">Избранное</a></div>
+        <div class="lkMenu__item lkMenu__item-settings"><a href="#">Настройки</a></div>
+        <div class="lkMenu__item lkMenu__item-exit"><a href="#">Выход</a></div>
+    </div>
+</div>
+                </div>
             </div>
 
             <div class="nav__select">
@@ -225,6 +237,21 @@
                         <option value="Acuvue 1-Day Oasis"></option>
                         <option value="Acuvue 1-Day TrueEye"></option>
                         <option value="Acuvue II"></option>
+                        <option value="Acuvue Oasis"></option>
+                        <option value="Acuvue Oasis"></option>
+                        <option value="Acuvue Oasis"></option>
+                        <option value="Acuvue Oasis"></option>
+                        <option value="Acuvue Oasis"></option>
+                        <option value="Acuvue Oasis"></option>
+                        <option value="Acuvue Oasis"></option>
+                        <option value="Acuvue Oasis"></option>
+                        <option value="Acuvue Oasis"></option>
+                        <option value="Acuvue Oasis"></option>
+                        <option value="Acuvue Oasis"></option>
+                        <option value="Acuvue Oasis"></option>
+                        <option value="Acuvue Oasis"></option>
+                        <option value="Acuvue Oasis"></option>
+                        <option value="Acuvue Oasis"></option>
                         <option value="Acuvue Oasis"></option>
                     </optgroup>
                 </select>
@@ -539,7 +566,7 @@
                                     </div>
                                 </div>
                                 <div class="card__action_btn">
-                                    <button class="button button-blue">ДОБАВИТЬ В КОРЗИНУ</button>
+                                    <button class="card__action_btn_el button button-blue">ДОБАВИТЬ В КОРЗИНУ</button>
                                 </div>
                             </div>
                             <div class="card__body_item card__vendor">
@@ -584,21 +611,32 @@
                         </div>
 
                         <div class="card__tabs_content_list">
-                            <div class="card__tabs_content_item descr">
+                            <div class="card__tabs_content_item descr card-acc">
+                                <div class="card__tabs_content_item_head">
+                                    описание
+                                </div>
                                 Линзы ACUVUE OASYS with HYDRACLEAR Plus созданы из материала Senofilcon A категории
                                 силикон-гидрогелей, который впервые используется для производства контактных линз,
                                 особенностью его является особая мягкость. ACUVUE OASYS содержат Линзы ACUVUE OASYS with
                                 HYDRACLEAR Plus созданы из материала Senofilcon A категории силикон-гидрогелей, который
                                 впервые используется для производства контактных линз, особенностью его является особая
-                                мягкость. ACUVUE OASYS содержат уникальный компонент HYDRACLEAR Plus - следующее
-                                поколение уже используемого компонента HYDRACLEAR, он еще лучше поддерживает уровень
-                                влажности и обеспечивает чрезвычайно гладкую поверхность контактной линзы. Еще одна
-                                особенность ACUVUE OASYS – это высокий коэффициент кислородопроницаемости, что позволяет
-                                носить эти линзы неделю не снимая, а при обычном дневном ношении в течение двух недель
-                                обеспечивает непревзойденный комфорт для глаз – вы не будете чувствовать, что носите
-                                линзы вообще
+                                мягкость. 
+
+                                <div class="card-acc-ex">
+                                    ACUVUE OASYS содержат уникальный компонент HYDRACLEAR Plus - следующее
+                                    поколение уже используемого компонента HYDRACLEAR, он еще лучше поддерживает уровень
+                                    влажности и обеспечивает чрезвычайно гладкую поверхность контактной линзы. Еще одна
+                                    особенность ACUVUE OASYS – это высокий коэффициент кислородопроницаемости, что позволяет
+                                    носить эти линзы неделю не снимая, а при обычном дневном ношении в течение двух недель
+                                    обеспечивает непревзойденный комфорт для глаз – вы не будете чувствовать, что носите
+                                    линзы вообще
+                                </div>
+                                <div class="card-acc-trigger">Показать польностью</div>
                             </div>
-                            <div class="card__tabs_content_item character">
+                            <div class="card__tabs_content_item character card-acc">
+                                <div class="card__tabs_content_item_head">
+                                    Характеристики
+                                </div>
                                 <div class="item">
                                     <div class="name">
                                         <span>Режим ношения</span>
@@ -630,27 +668,93 @@
 
                                     <div class="value">Cиликон - Гидрогелевые</div>
                                 </div>
+                                <div class="card-acc-ex">
 
-                                <div class="item">
-                                    <div class="name">
-                                        <span>Содержание воды</span>
+                                    <div class="item">
+                                        <div class="name">
+                                            <span>Содержание воды</span>
+                                        </div>
+
+                                        <div class="value">38%</div>
                                     </div>
 
-                                    <div class="value">38%</div>
+                                    <div class="item">
+                                        <div class="name">
+                                            <span>Кислородо - проницаемость</span>
+                                        </div>
+
+                                        <div class="value">147 Dk/t</div>
+                                    </div>
                                 </div>
-
-                                <div class="item">
-                                    <div class="name">
-                                        <span>Кислородо - проницаемость</span>
-                                    </div>
-
-                                    <div class="value">147 Dk/t</div>
+                                <div class="card-acc-trigger">
+                                    Показать полностью
                                 </div>
                             </div>
                             <div class="card__tabs_content_item rev">
+                                <div class="card__tabs_content_item_head">
+                                    отзывы
+                                </div>
+                                <div class="rev__mob_part">
+                                    <div class="rev__mob_part_title rev__mob_part_item">Рейтинг товара</div>
+                                    <div class="rev__mob_part_main rev__mob_part_item">
+                                        <div class="rev__mob_part_main_val">
+                                            4.9
+                                        </div>
+                                        <div class="rev__mob_part_main_rate">
+                                            <div class="rating__list" data-rate-total="0">
+    <div class="rating__item" data-rate-value="5">
+        <svg width="20" height="20" viewBox="0 0 14 14" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M13.6962 6.34456C13.9717 6.06425 14.069 5.65284 13.9502 5.27041C13.831 4.88797 13.5207 4.61497 13.1394 4.55704L9.74965 4.04293C9.60528 4.02098 9.48053 3.92647 9.41605 3.78983L7.90057 0.58404C7.73041 0.223843 7.38504 0 7.00014 0C6.61552 0 6.27015 0.223843 6.09999 0.58404L4.58423 3.79012C4.51975 3.92676 4.39472 4.02128 4.25035 4.04322L0.860564 4.55733C0.479592 4.61497 0.168983 4.88827 0.0498411 5.2707C-0.0690201 5.65314 0.0282555 6.06454 0.303823 6.34486L2.75646 8.8402C2.86102 8.9467 2.90896 9.10003 2.88429 9.24984L2.30568 12.7734C2.25438 13.0836 2.33231 13.3852 2.52462 13.6231C2.82346 13.9939 3.34516 14.1068 3.76229 13.878L6.79381 12.2142C6.92052 12.1449 7.08003 12.1455 7.20646 12.2142L10.2383 13.878C10.3857 13.959 10.543 14 10.7053 14C11.0016 14 11.2825 13.8625 11.4757 13.6231C11.6682 13.3852 11.7459 13.083 11.6946 12.7734L11.1157 9.24984C11.091 9.09974 11.139 8.9467 11.2435 8.8402L13.6962 6.34456Z"
+                fill="#fff" stroke="#FEC057" />
+        </svg>
 
-                                <div class="rev__mob_btn">
-                                    <button class="button">Оставить отзыв</button>
+
+    </div>
+    <div class="rating__item" data-rate-value="4">
+        <svg width="20" height="20" viewBox="0 0 14 14" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M13.6962 6.34456C13.9717 6.06425 14.069 5.65284 13.9502 5.27041C13.831 4.88797 13.5207 4.61497 13.1394 4.55704L9.74965 4.04293C9.60528 4.02098 9.48053 3.92647 9.41605 3.78983L7.90057 0.58404C7.73041 0.223843 7.38504 0 7.00014 0C6.61552 0 6.27015 0.223843 6.09999 0.58404L4.58423 3.79012C4.51975 3.92676 4.39472 4.02128 4.25035 4.04322L0.860564 4.55733C0.479592 4.61497 0.168983 4.88827 0.0498411 5.2707C-0.0690201 5.65314 0.0282555 6.06454 0.303823 6.34486L2.75646 8.8402C2.86102 8.9467 2.90896 9.10003 2.88429 9.24984L2.30568 12.7734C2.25438 13.0836 2.33231 13.3852 2.52462 13.6231C2.82346 13.9939 3.34516 14.1068 3.76229 13.878L6.79381 12.2142C6.92052 12.1449 7.08003 12.1455 7.20646 12.2142L10.2383 13.878C10.3857 13.959 10.543 14 10.7053 14C11.0016 14 11.2825 13.8625 11.4757 13.6231C11.6682 13.3852 11.7459 13.083 11.6946 12.7734L11.1157 9.24984C11.091 9.09974 11.139 8.9467 11.2435 8.8402L13.6962 6.34456Z"
+                fill="#fff" stroke="#FEC057" />
+        </svg>
+
+    </div>
+    <div class="rating__item" data-rate-value="3">
+        <svg width="20" height="20" viewBox="0 0 14 14" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M13.6962 6.34456C13.9717 6.06425 14.069 5.65284 13.9502 5.27041C13.831 4.88797 13.5207 4.61497 13.1394 4.55704L9.74965 4.04293C9.60528 4.02098 9.48053 3.92647 9.41605 3.78983L7.90057 0.58404C7.73041 0.223843 7.38504 0 7.00014 0C6.61552 0 6.27015 0.223843 6.09999 0.58404L4.58423 3.79012C4.51975 3.92676 4.39472 4.02128 4.25035 4.04322L0.860564 4.55733C0.479592 4.61497 0.168983 4.88827 0.0498411 5.2707C-0.0690201 5.65314 0.0282555 6.06454 0.303823 6.34486L2.75646 8.8402C2.86102 8.9467 2.90896 9.10003 2.88429 9.24984L2.30568 12.7734C2.25438 13.0836 2.33231 13.3852 2.52462 13.6231C2.82346 13.9939 3.34516 14.1068 3.76229 13.878L6.79381 12.2142C6.92052 12.1449 7.08003 12.1455 7.20646 12.2142L10.2383 13.878C10.3857 13.959 10.543 14 10.7053 14C11.0016 14 11.2825 13.8625 11.4757 13.6231C11.6682 13.3852 11.7459 13.083 11.6946 12.7734L11.1157 9.24984C11.091 9.09974 11.139 8.9467 11.2435 8.8402L13.6962 6.34456Z"
+                fill="#fff" stroke="#FEC057" />
+        </svg>
+
+    </div>
+    <div class="rating__item" data-rate-value="2">
+        <svg width="20" height="20" viewBox="0 0 14 14" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M13.6962 6.34456C13.9717 6.06425 14.069 5.65284 13.9502 5.27041C13.831 4.88797 13.5207 4.61497 13.1394 4.55704L9.74965 4.04293C9.60528 4.02098 9.48053 3.92647 9.41605 3.78983L7.90057 0.58404C7.73041 0.223843 7.38504 0 7.00014 0C6.61552 0 6.27015 0.223843 6.09999 0.58404L4.58423 3.79012C4.51975 3.92676 4.39472 4.02128 4.25035 4.04322L0.860564 4.55733C0.479592 4.61497 0.168983 4.88827 0.0498411 5.2707C-0.0690201 5.65314 0.0282555 6.06454 0.303823 6.34486L2.75646 8.8402C2.86102 8.9467 2.90896 9.10003 2.88429 9.24984L2.30568 12.7734C2.25438 13.0836 2.33231 13.3852 2.52462 13.6231C2.82346 13.9939 3.34516 14.1068 3.76229 13.878L6.79381 12.2142C6.92052 12.1449 7.08003 12.1455 7.20646 12.2142L10.2383 13.878C10.3857 13.959 10.543 14 10.7053 14C11.0016 14 11.2825 13.8625 11.4757 13.6231C11.6682 13.3852 11.7459 13.083 11.6946 12.7734L11.1157 9.24984C11.091 9.09974 11.139 8.9467 11.2435 8.8402L13.6962 6.34456Z"
+                fill="#fff" stroke="#FEC057" />
+        </svg>
+
+    </div>
+    <div class="rating__item" data-rate-value="1">
+        <svg width="20" height="20" viewBox="0 0 14 14" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M13.6962 6.34456C13.9717 6.06425 14.069 5.65284 13.9502 5.27041C13.831 4.88797 13.5207 4.61497 13.1394 4.55704L9.74965 4.04293C9.60528 4.02098 9.48053 3.92647 9.41605 3.78983L7.90057 0.58404C7.73041 0.223843 7.38504 0 7.00014 0C6.61552 0 6.27015 0.223843 6.09999 0.58404L4.58423 3.79012C4.51975 3.92676 4.39472 4.02128 4.25035 4.04322L0.860564 4.55733C0.479592 4.61497 0.168983 4.88827 0.0498411 5.2707C-0.0690201 5.65314 0.0282555 6.06454 0.303823 6.34486L2.75646 8.8402C2.86102 8.9467 2.90896 9.10003 2.88429 9.24984L2.30568 12.7734C2.25438 13.0836 2.33231 13.3852 2.52462 13.6231C2.82346 13.9939 3.34516 14.1068 3.76229 13.878L6.79381 12.2142C6.92052 12.1449 7.08003 12.1455 7.20646 12.2142L10.2383 13.878C10.3857 13.959 10.543 14 10.7053 14C11.0016 14 11.2825 13.8625 11.4757 13.6231C11.6682 13.3852 11.7459 13.083 11.6946 12.7734L11.1157 9.24984C11.091 9.09974 11.139 8.9467 11.2435 8.8402L13.6962 6.34456Z"
+                fill="#fff" stroke="#FEC057" />
+        </svg>
+
+    </div>
+</div>
+                                        </div>
+                                        <div class="rev__mob_part_main_total">42 отзыва</div>
+                                    </div>
+                                    <div class="rev__mob_part_action rev__mob_part_item">
+                                        <button class="rev__mob_part_action_btn"></button>
+                                    </div>
                                 </div>
                                 <div class="rev__list">
                                     <div class="rev__item">
@@ -1039,25 +1143,51 @@
                     <li class="mobmenu__nav_item mobmenu__nav_item-ex">
                         <a class="mobmenu__nav_item_link" href="access.html">аксессуары</a>
                     </li>
+                    <li class="mobmenu__nav_item mobmenu__nav_item-ex mobmenu__nav_item-sm">
+                        <a class="mobmenu__nav_item_link" href="del.html">Доставка и оплата</a>
+                    </li>
+                    <li class="mobmenu__nav_item mobmenu__nav_item-ex mobmenu__nav_item-sm">
+                        <a class="mobmenu__nav_item_link" href="contacts.html">Контакты</a>
+                    </li>
+                    <li class="mobmenu__nav_item mobmenu__nav_item-ex mobmenu__nav_item-sm lk__link mobmenu__nav_item_drop">
+                        <a class="mobmenu__nav_item_link" href="#" data-mobile-drop>Личный кабинет</a>
+                        <ul class="mobmenu__nav_item_submenu lk-submenu">
+                            <div class="head" data-mobile-close>
+                                <svg width="25" height="14" viewBox="0 0 25 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 7H25M1 7L7 1M1 7L7 13" stroke="#212121" stroke-width="1.5" stroke-linejoin="round"/>
+                                    </svg>
+                                    
+                                <span>личный кабинет</span>
+                            </div>
+
+                            <div class="body">
+                                <div class="body__part">
+                                    
+                                    <ul class="body__list">
+                                        <li>
+                                            <a class="body__list_item lk-submenu--orders" href="#">Мои заказы</a>
+                                        </li>
+                                        <li>
+                                            <a class="body__list_item lk-submenu--profile" href="#">Профиль</a>
+                                        </li>
+                                        <li>
+                                            <a class="body__list_item lk-submenu--favs" href="#">Избранное</a>
+                                        </li>
+                                        <li>
+                                            <a class="body__list_item lk-submenu--settings" href="#">Настройки</a>
+                                        </li>
+                                        <li>
+                                            <a class="body__list_item lk-submenu--exit" href="#">Выход</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                            </div>
+                        </ul>
+                    </li>
                 </ul>
 
                 <div class="dop">
-                    <ul class="mobmenu__links">
-                        <li class="mobmenu__links_item">
-                            <a href="del.html">Доставка и оплата</a>
-                        </li>
-                        <li class="mobmenu__links_item">
-                            <a href="contacts">Контакты</a>
-                        </li>
-                    </ul>
-
-                    <a href="#" class="mobmenu__user">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10.0003 4.56543C9.32844 4.56543 8.67172 4.76465 8.11313 5.13788C7.55454 5.51112 7.11917 6.04162 6.86208 6.66229C6.60499 7.28297 6.53772 7.96594 6.66878 8.62484C6.79985 9.28374 7.12336 9.88898 7.5984 10.364C8.07344 10.8391 8.67868 11.1626 9.33759 11.2936C9.99649 11.4247 10.6795 11.3574 11.3001 11.1003C11.9208 10.8433 12.4513 10.4079 12.8245 9.84929C13.1978 9.2907 13.397 8.63398 13.397 7.96217C13.397 7.0613 13.0391 6.19732 12.4021 5.56031C11.7651 4.9233 10.9011 4.56543 10.0003 4.56543ZM10.0003 10.0002C9.59717 10.0002 9.20313 9.88068 8.86798 9.65674C8.53283 9.4328 8.2716 9.1145 8.11735 8.74209C7.96309 8.36969 7.92273 7.95991 8.00137 7.56457C8.08001 7.16922 8.27412 6.80608 8.55914 6.52105C8.84417 6.23603 9.20731 6.04192 9.60265 5.96329C9.998 5.88465 10.4078 5.92501 10.7802 6.07926C11.1526 6.23352 11.4709 6.49474 11.6948 6.82989C11.9188 7.16505 12.0383 7.55908 12.0383 7.96217C12.0378 8.50252 11.8229 9.0206 11.4408 9.40269C11.0587 9.78478 10.5406 9.99967 10.0003 10.0002Z" fill="#212121"/>
-                            <path d="M10 0C8.02219 0 6.08879 0.58649 4.4443 1.6853C2.79981 2.78412 1.51809 4.3459 0.761209 6.17316C0.00433283 8.00043 -0.1937 10.0111 0.192152 11.9509C0.578004 13.8907 1.53041 15.6725 2.92894 17.0711C4.32746 18.4696 6.10929 19.422 8.0491 19.8078C9.98891 20.1937 11.9996 19.9957 13.8268 19.2388C15.6541 18.4819 17.2159 17.2002 18.3147 15.5557C19.4135 13.9112 20 11.9778 20 10C19.997 7.34876 18.9424 4.80698 17.0677 2.93227C15.193 1.05756 12.6512 0.0030248 10 0ZM5.71429 17.4121V16.4286C5.71486 15.8604 5.9408 15.3157 6.34254 14.914C6.74429 14.5122 7.289 14.2863 7.85715 14.2857H12.1429C12.711 14.2863 13.2557 14.5122 13.6575 14.914C14.0592 15.3157 14.2851 15.8604 14.2857 16.4286V17.4121C12.9851 18.1716 11.5061 18.5718 10 18.5718C8.49392 18.5718 7.01488 18.1716 5.71429 17.4121ZM15.7086 16.3757C15.6943 15.4388 15.3126 14.545 14.6457 13.8868C13.9787 13.2287 13.0799 12.8589 12.1429 12.8571H7.85715C6.92013 12.8589 6.02132 13.2287 5.35435 13.8868C4.68739 14.545 4.30567 15.4388 4.29143 16.3757C2.99612 15.2191 2.08267 13.6963 1.67203 12.009C1.26139 10.3218 1.37293 8.54953 1.99189 6.92704C2.61085 5.30455 3.70802 3.90833 5.13813 2.92326C6.56823 1.93819 8.26382 1.41073 10.0004 1.41073C11.7369 1.41073 13.4325 1.93819 14.8626 2.92326C16.2927 3.90833 17.3899 5.30455 18.0088 6.92704C18.6278 8.54953 18.7393 10.3218 18.3287 12.009C17.9181 13.6963 17.0039 15.2191 15.7086 16.3757Z" fill="#212121"/>
-                            </svg>
-                            Личный кабинет                            
-                    </a>
 
                     <div class="mobmenu__contacts">
                         <div class="mobmenu__contacts_title">

@@ -70,8 +70,12 @@
 @media (max-width: 600px) {
 
     .prev {
-        
-
+        .container {
+            padding: 0;
+        }
+        &__in {
+            padding-top: 0;
+        }
         &__left {
             display: none;
         }
@@ -81,8 +85,9 @@
         }
         
         &__slider {
-            height: 366px;
+            height: 300px;
             margin-bottom: 0;
+            border-radius: 0;
         }
 
         &__ex {

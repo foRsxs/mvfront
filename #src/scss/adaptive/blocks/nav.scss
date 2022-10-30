@@ -34,10 +34,10 @@
                     // max-height: 571px;
                     border-radius: 4px;
                     
-                    max-height: calc(100vh - 100px);
+                    max-height: calc(100vh - 200px);
                 
                     .choices__list {
-                        max-height: calc(100vh - 100px);
+                        max-height: calc(100vh - 200px - 39px);
                         
                     }
                     .choices__group {
@@ -136,7 +136,11 @@
     .nav {
         height: 0;
         overflow: hidden;
-        @include def-anim;
+        position: fixed;
+        top: 58px;
+        left: 0;
+        width: 100%;
+        z-index: 100;
 
         &__menu {
             display: none;

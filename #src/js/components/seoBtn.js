@@ -4,18 +4,18 @@ export function seoBtn() {
     const seoEx = document.querySelector('.seo__body_ex');
 
 
-    if(window.innerWidth < 601 && btnEl) {
+    if(seoEx && btnEl) {
         btnEl.addEventListener('click', () => {
             seoEx.classList.toggle('active');
 
             if(seoEx.classList.contains('active')) {
                 seoEx.style.height = `${seoEx.scrollHeight}px`;
-                btnEl.innerHTML = 'СВЕРНУТЬ'
+                btnEl.innerHTML = 'Скрыть'
             }
 
             if(!seoEx.classList.contains('active')) {
                 seoEx.style.height = '0';
-                btnEl.innerHTML = 'ПОДРОБНЕЕ';
+                btnEl.innerHTML = 'Показать полностью';
             }
         });
     }

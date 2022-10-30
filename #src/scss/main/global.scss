@@ -94,7 +94,13 @@ html {
     }
 
     .main {
-        padding-top: 93px;
+        padding-top: 58px;
+    }
+}
+
+@media (max-width: 520px) {
+    .main {
+        padding-bottom: 75px;
     }
 }
 

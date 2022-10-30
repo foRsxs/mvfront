@@ -62,6 +62,9 @@
                 border-radius: 100%;
                 @include def-anim;
 
+                svg {
+                    pointer-events: none;
+                }
                 &:hover {
                     border-color: $red;
 

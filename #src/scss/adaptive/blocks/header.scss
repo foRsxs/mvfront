@@ -86,11 +86,14 @@
         background-color: #fff;
         z-index: 101;
 
+        &__in {
+            padding: 12px 0;
+        }
 
         &__logo {
             img {
-                height: 46px;
-            width: 124px;
+                height: 30px;
+          
             }
         }
 

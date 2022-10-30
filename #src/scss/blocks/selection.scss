@@ -10,19 +10,40 @@
         justify-content: space-between;
         margin-bottom: 30px;
 
+
+        &_title.active {
+            svg {
+                transform: rotate(0);
+            }
+        }
+
         &_title {
+            cursor: pointer;
             margin-right: 46px;
-            padding: 19px 26px;
+            padding: 10px 15px;
             border: 1px solid $line_gray;
             border-radius: 0px 0px 6px 6px;
             text-transform: uppercase;
             border-top: none;
-
+            display: flex;
+            align-items: center;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 24px;
+            
             svg {
-                display: none;
+                margin-left: 30px;
+                @include def-anim;
+                transform: rotate(180deg);
+                // display: none;
+                
             }
         }
 
+        &_ex.active {
+            opacity: 1;
+            padding: 21px 0 0 0;
+        }
         
 
         &_ex {
@@ -31,6 +52,12 @@
             align-items: flex-end;
             flex: 1 0 auto;
             
+            height: 0;
+            overflow: hidden;
+            @include def-anim;
+            box-sizing: content-box;
+            padding-top: 0;
+            opacity: 0;
 
             &_q {
                 font-size: 15px;
@@ -86,10 +113,17 @@
         }
     }
 
+    &__body.active {
+        opacity: 1;
+    }
     &__body {
         display: flex;
         justify-content: space-between;
-
+        box-sizing: content-box;
+        @include def-anim;
+        opacity: 0;
+        height: 0;
+        overflow: hidden;
         &_item {
             .form__name {
                 margin-bottom: 20px;
@@ -112,8 +146,15 @@
         }
 
         &_btn {
-            align-self: flex-end;
+            // align-self: flex-end;
             margin-bottom: 20px;
+            align-items: center;
+            justify-content: space-between;
+            display: flex;
+
+            &_r {
+                display: none;
+            }
         }
     }
 }

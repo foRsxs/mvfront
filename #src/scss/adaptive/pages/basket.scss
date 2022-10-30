@@ -418,6 +418,90 @@
     }
 }
 
+@media (max-width: 600px) {
+    .basket {
+
+        .basket-acc {
+            @include def-anim;
+            padding-bottom: 0;
+
+            .basket-acc-head {
+                cursor: pointer;
+                position: relative;
+
+                &::before {
+                    position: absolute;
+                    top: calc(50% - 10px);
+                    right: 0;
+                    content: '';
+                    width: 15px;
+                    height: 15px;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: contain;
+                    background-image: url('../img/arrow.svg');
+                    transform: rotate(180deg);
+                    @include def-anim;
+                }
+            }
+            .basket-acc-body {
+                height: 0;
+                overflow: hidden;
+                @include def-anim;
+                will-change: height;
+            }
+            
+        }
+        .basket-acc.active {
+            padding-bottom: 20px;
+            .basket-acc-head {
+
+                &::before {
+                    transform: rotate(0);
+                }
+            }
+            .basket-acc-body {
+
+            }
+        }
+
+        &__body {
+            &_prs {
+
+                &_item {
+                    .body {
+
+                        &__act {
+                            align-items: center;
+                            &_price {
+                                width: unset;
+                                margin-bottom: 0;
+                                margin-right: 20px;
+
+                                .name {
+                                    display: none;
+                                }
+
+                                .value {
+                                    font-weight: 500;
+                                }
+                            }
+
+                            &_count {
+                                width: unset;
+
+                                .name {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 520px) {
     .basket {
         .container {
@@ -429,8 +513,47 @@
             padding-right: 15px;
         }
 
+        
+
+        &__body.active {
+            .basket-order{
+                display: block;
+            }
+
+            .basket__mobile_action {
+                display: none;
+            }
+        }
+
+    
+
         &__body {
-            display: none;
+            .basket-order {
+                display: none;
+            }
+
+            &_col {
+                padding: 0 15px;
+            }
+
+            &_prs {
+                width: unset !important; 
+                margin-left: -15px;
+                margin-right: -15px;
+                border-radius: 0;
+                
+                &_item {
+                    
+                    .body {
+
+                        &__name {
+                            span {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
         }
         &__body.active {
             display: block;
@@ -441,23 +564,7 @@
         }
 
         &__mobile {
-            display: block;
-            min-height: 70vh;
-            background-color: #F5F6FA;
-            margin-top: 20px;
-
-            &_body {
-
-                &_item {
-                    
-                    border-top: 1px solid #F5F6FA;
-                    background-color: #fff;
-
-                    &:last-child {
-                        border-bottom: 1px solid #F5F6FA;
-                    }
-                }
-            }
+            
 
             &_action {
                 width: 100%;
@@ -478,5 +585,7 @@
                 line-height: 16px;
             }
         }
+
+        
     }
 }

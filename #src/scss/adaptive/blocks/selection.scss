@@ -25,7 +25,7 @@
                 cursor: pointer;
                 padding-left: 0;
                 padding-right: 0;
-
+                
                 svg {
                     display: block;
                     transform: rotate(180deg);
@@ -70,7 +70,7 @@
 
             &_btn {
                 width: 100%;
-                display: flex;justify-content: center;
+                // display: flex;justify-content: center;
                 margin-top: 38px;
             }
         }
@@ -93,11 +93,21 @@
                 font-size: 16px;
                 line-height: 21px;
             }
+
+            &_ex {
+
+                &_r {
+                    display: none;
+                }
+            }
         }
         &__body {
             
+
             &_item {
                 width: 100% !important;
+                margin-bottom: 25px;
+
 
                 &:nth-child(1) {
 
@@ -106,6 +116,13 @@
                         justify-content: flex-start;
                         gap: 10%;
                     }
+                }
+            }
+
+            &_btn {
+                margin-top: 0;
+                &_r {   
+                    display: flex;
                 }
             }
         }

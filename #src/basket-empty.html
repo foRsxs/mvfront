@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        @@include('./blocks/header.html')
+
+
+        <main class="main">
+            @@include('./blocks/nav.html')
+            @@include('./blocks/bc.html')
+            <section class="basket">
+                <div class="container">
+                    <div class="basket__in">
+                        <div class="basket__head">
+                            <h2 class="basket__head_title section__title">
+                                корзина
+                            </h2>
+                            <button class="basket__head_btn">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.5 5H17.5" stroke="#737783" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M6.66602 4.99984V3.33317C6.66602 2.89114 6.84161 2.46722 7.15417 2.15466C7.46673 1.8421 7.89066 1.6665 8.33268 1.6665H11.666C12.108 1.6665 12.532 1.8421 12.8445 2.15466C13.1571 2.46722 13.3327 2.89114 13.3327 3.33317V4.99984M15.8327 4.99984V16.6665C15.8327 17.1085 15.6571 17.5325 15.3445 17.845C15.032 18.1576 14.608 18.3332 14.166 18.3332H5.83268C5.39065 18.3332 4.96673 18.1576 4.65417 17.845C4.34161 17.5325 4.16602 17.1085 4.16602 16.6665V4.99984H15.8327Z" stroke="#737783" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8.33398 9.1665V14.1665" stroke="#737783" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M11.666 9.1665V14.1665" stroke="#737783" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <span>Очистить корзину   </span>                             
+                            </button>
+                        </div>
+                        @@include('./blocks/empty.html')
+                        
+                        
+
+                        
+                    </div>
+                </div>
+            </section>
+            
+        </main>
+        @@include('./blocks/footer.html')
+    </div>
+
+
+    @@include('./blocks/mobile-menu.html')
+    @@include('./blocks/navbar.html')
+    @@include('./components/addbasket.html')
+    @@include('./components/addrev.html')
+    <script src="./js/bundle.js"></script>
+</body>
+
+
+</html>

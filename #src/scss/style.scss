@@ -19,6 +19,7 @@
 @import './blocks/bc.scss';
 @import './blocks/lenses-filter.scss';
 @import './blocks/empty.scss';
+@import './blocks/lglist.scss';
 
 
 
@@ -45,6 +46,8 @@
 @import './components/addbasket.scss';
 @import './components/mod-popup.scss';
 @import './components/addrev.scss';
+@import './components/product.scss';
+@import './components/lk-menu.scss';
 
 
 
@@ -67,6 +70,7 @@
 @import './adaptive/components/products.scss';
 @import './adaptive/components/mobmenu.scss';
 @import './adaptive/components/table.scss';
+@import './adaptive/components/product.scss';
 
 
 
@@ -80,6 +84,8 @@
 @import './adaptive/blocks/header.scss';
 @import './adaptive/blocks/nav.scss';
 @import './adaptive/blocks/seo.scss';
+@import './adaptive/blocks/empty.scss';
+
 
 
 //pages 

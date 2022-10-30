@@ -26,6 +26,9 @@ import { navbar } from './components/navbar';
 import { mobbasket } from './components/mobbasket';
 import { search } from './components/search';
 import { addRev } from './components/addRev';
+import { addBasket } from './components/addBasket';
+import basketAcc from './components/basketAcc';
+import { cardAcc } from './components/cardAcc';
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -215,7 +218,9 @@ document.addEventListener('DOMContentLoaded', () => {
     mobbasket()
     search();
     addRev();
-
+    addBasket();
+    basketAcc();
+    cardAcc();
     
 });
 

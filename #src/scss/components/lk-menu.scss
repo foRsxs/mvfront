@@ -1,0 +1,92 @@
+.lkMenu {
+    width: 190px;
+    background: #FFFFFF;
+    box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 10px 10px;
+    transform: translateY(70%);
+    opacity: 0;
+    z-index: -1;
+    pointer-events: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    @include def-anim;
+
+    &:after {
+        position: absolute;
+        top: -7px;
+        left: 30px;
+        background-color: #fff;
+        content: '';
+        width: 15px;
+        height: 15px;
+        transform: rotate(45deg);
+    }
+
+    &__in {
+        padding: 20px 30px;
+    }
+
+    &__item {
+        a {
+            padding: 10px 0;
+            padding-left: 30px;
+            position: relative;
+            display: block;
+            color: $black;
+            @include def-anim;
+
+            &:hover {
+                color: $red;
+                // adasdaa
+            }
+            &:after {
+                position: absolute;
+                content: '';
+                top: calc(50% - 10px);
+                left: 0;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+
+    &__item.lkMenu__item-orders {
+        a {
+            &:after {
+                background-image: url('../img/lk-submenu-1.svg');
+            }
+        }
+    }
+    &__item.lkMenu__item-profile {
+        a {
+            &:after {
+                background-image: url('../img/lk-submenu-2.svg');
+            }
+        }
+    }
+    &__item.lkMenu__item-favs {
+        a {
+            &:after {
+                background-image: url('../img/lk-submenu-3.svg');
+            }
+        }
+    }
+    &__item.lkMenu__item-settings {
+        a {
+            &:after {
+                background-image: url('../img/lk-submenu-4.svg');
+            }
+        }
+    }
+    &__item.lkMenu__item-exit {
+        a {
+            &:after {
+                background-image: url('../img/lk-submenu-5.svg');
+            }
+        }
+    }
+}

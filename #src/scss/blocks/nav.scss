@@ -255,15 +255,25 @@
             align-items: center;
             position: relative;
 
+            cursor: pointer;
+
             &:after {
                 position: absolute;
                 left: 0;
                 top: calc(50% - 10px);
                 content: url('../img/user.svg');
+                display: block;
             }
 
             &:hover {
                 color: $red;
+
+                .lkMenu {
+                    z-index: 1000;
+                    opacity: 1;
+                    transform: translateY(100%);
+                    pointer-events: all;
+                }
             }
         }
     }

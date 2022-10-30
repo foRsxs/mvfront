@@ -1,7 +1,7 @@
 @media (max-width: 600px) {
 
     .seo {
-
+        padding: 0;
         &__in {
             padding: 61px 0;
         }
@@ -9,9 +9,7 @@
         &__body {
 
             &_ex {
-                height: 0;
-                @include def-anim;
-                overflow: hidden;
+                
 
             }
 
@@ -21,10 +19,7 @@
         }
 
         &__more {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 20px;
+            
         } 
         
     }

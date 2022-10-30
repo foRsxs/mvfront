@@ -1,23 +1,38 @@
 .card {
     
+    .card-acc {
 
+        .card-acc-trigger {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            color: #0089D0;
+            display: none;
+        }
+
+        .card-acc-ex {
+            height: auto;
+            overflow: hidden;
+            @include def-anim;
+        }
+    }
 
     &__in {
         padding: 30px 0;
+        padding-top: 0;
     }
 
     &__head {
 
-        
+            margin-bottom: 15px;
     }
 
     &__body {
         display: grid;
         grid-template-columns: 1fr 1.5fr 1fr;
-        // grid-template-rows: 25% 25% 50%;
-        grid-template-rows: 14% 14% 1fr 1fr;
+        grid-template-rows: auto 14% 1fr auto;
         grid-column-gap: 40px;
-
+        margin-bottom: 50px;
 
 
         &_item {
@@ -53,6 +68,8 @@
                 grid-row-end: 5;
             }
         }
+
+
     }
 
     &__img {
@@ -409,6 +426,7 @@
                 .old {
                     font-size: 24px;
                     line-height: 28px;
+                    text-decoration: line-through;
                 }
             }
 
@@ -429,7 +447,7 @@
 
     &__vendor {
         padding: 11px 25px;
-        border: 1px solid $line_gray;
+        // border: 1px solid $line_gray;
         border-radius: 10px;
         height: 70px;
         &_name {
@@ -564,6 +582,21 @@
             &_item {
                 display: none;
 
+                &_head {
+                    padding: 10px 15px;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    font-size: 13px;
+                    line-height: 16px;
+                    
+                    text-transform: uppercase;
+                    color: #737783;
+                    background: #F5F6FA;
+                    display: none;
+                    margin-bottom: 10px;
+                    
+                }
+
                 .item {
                     display: flex;
                     justify-content: space-between;
@@ -685,8 +718,68 @@
                         justify-content: center;
                     }
                 }
-                .rev__mob_btn {
+                .rev__mob_part {
                     display: none;
+                    border-bottom: 1px solid #E1E5EE;
+                    padding: 10px 0;
+                    &_title {
+                        font-weight: 500;
+                        font-size: 12px;
+                        line-height: 16px;
+                        // width: calc(100% / );
+                    }
+
+                    &_main {
+
+                        &_val {
+                            font-weight: 700;
+                            font-size: 18px;
+                            line-height: 16px;
+                            margin-bottom: 5px;
+                            text-align: center;
+                        }
+
+                        &_rate {
+                            margin-bottom: 5px;
+
+                            .rating__list {
+                                margin-right: 0;
+                                padding-bottom: 0;
+                                justify-content: center;
+                                .rating__item {
+                                    width: 18px;
+                                    height: 18px;
+
+                                    svg {
+                                        width: 100%;
+                                        height: 100%;
+                                    }
+                                }
+                            }
+                        }
+
+                        &_total {
+                            text-align: center;
+                            font-size: 12px;
+                            line-height: 15px;
+                        }
+                    }
+
+                    &_action {
+                        flex: 0 0 auto;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-end;
+                        &_btn { 
+                            width: 33px;
+                            height: 33px;
+                            
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: contain;
+                            background-image: url('../img/mob-add-rev.svg');
+                        }
+                    }
                 }
                 .rev__list {
                     width: 75%;

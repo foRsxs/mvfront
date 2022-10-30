@@ -1,6 +1,7 @@
 .seo {
     padding: 90px 0;
     border-top: 1px solid $line_gray;
+
     &__in {
 
     }
@@ -23,9 +24,28 @@
                 list-style: disc;
             }
         }
+
+        &_ex {
+            height: 0;
+                @include def-anim;
+                overflow: hidden;
+        }
     }
 
+
+
     &__more {
-        display: none;
+        padding: 20px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &_btn {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            color: $blue;
+        }
+            
     }
 }
