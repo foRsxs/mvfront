@@ -12,7 +12,6 @@ export function customSelect() {
             loadingText: 'Загрузка',
             noChoicesText: '',
 
-            // searchEnabled: false
             
         });
     });

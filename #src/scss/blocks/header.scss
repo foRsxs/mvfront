@@ -96,7 +96,26 @@
     }
 
     &__user {
-        display: none;
+        display: none !important;
+
+        &:hover {
+
+            .lkMenu {
+                transform: translateX(-42%) translateY(100%) !important;
+            }
+        }
+        .lkMenu {
+            left: 0;
+            transform: translateX(-42%) translateY(70%);
+
+            &:after {
+                left: calc(50% - 10px);
+            }
+        }
+
+        &:after {
+            display: none !important;
+        }
     }
 
     &__select {
@@ -177,6 +196,10 @@
 
         &:hover {
             color: $red;
+
+            &:after {
+                content: url('../img/basket-active.svg');
+            }
         }
 
         &:after {

@@ -29,6 +29,8 @@ import { addRev } from './components/addRev';
 import { addBasket } from './components/addBasket';
 import basketAcc from './components/basketAcc';
 import { cardAcc } from './components/cardAcc';
+import lkMenu from './components/lkMenu';
+import cardOpt from './components/cardOpt';
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -139,18 +141,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     //filter tabs test
-    const flTabs = document.querySelectorAll('.category__body_filter_action_tab');
+    // const flTabs = document.querySelectorAll('.category__body_filter_action_tab');
 
-    if(flTabs.length > 0) {
-        flTabs.forEach(i => {
-            i.addEventListener('click', () => {
-                flTabs.forEach(item => {
-                    item.classList.remove('active');
-                });
-                i.classList.add('active');
-            })
-        });
-    }
+    // if(flTabs.length > 0) {
+    //     flTabs.forEach(i => {
+    //         i.addEventListener('click', () => {
+    //             flTabs.forEach(item => {
+    //                 item.classList.remove('active');
+    //             });
+    //             i.classList.add('active');
+    //         })
+    //     });
+    // }
 
 
 
@@ -210,7 +212,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     tabsFunc('.hist__content', '.hist__content_tabs', '.hist__content_tab', '.hist__content_item');
-
+    tabsFunc('.cat_tabwrapper', '.category__body_filter_action_tabs', '.category__body_filter_action_tab', '.category__body_list_tabcontent')
     selectCard();
 
     tableDrop();
@@ -221,6 +223,8 @@ document.addEventListener('DOMContentLoaded', () => {
     addBasket();
     basketAcc();
     cardAcc();
+    lkMenu();
+    cardOpt();
     
 });
 

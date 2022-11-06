@@ -158,12 +158,14 @@
                                     
                                 </div>
     
-                                <div class="category__body_list">
+                                <div class="category__body_list cat_tabwrapper">
                                     <div class="category__body_filter_action_tabs">
-                                        <div class="category__body_filter_action_tab active">Растворы</div>
-                                        <div class="category__body_filter_action_tab">Капли</div>
+                                        <div class="category__body_filter_action_tab active" data-tab>Растворы</div>
+                                        <div class="category__body_filter_action_tab" data-tab>Капли</div>
                                     </div>
-                                    @@include('./blocks/products.html')
+                                    <div class="category__body_list_tabcontent">@@include('./blocks/products.html')</div>
+                                    <div class="category__body_list_tabcontent">@@include('./blocks/products.html')</div>
+                                    
                                     <div class="rev__nav">
                                         <div class="rev__nav_in">
                                             <a href="#" class="rev__nav_left rev__nav_btn disabled">
@@ -191,6 +193,7 @@
             </main>
             @@include('./blocks/footer.html')
         </div>
+        @@include('./blocks/sidebar.html')
         @@include('./blocks/navbar.html')
         @@include('./blocks/mobile-menu.html')
         @@include('./components/addbasket.html')

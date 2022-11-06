@@ -1,5 +1,5 @@
 .card {
-    
+    padding-bottom: 100px;
     .card-acc {
 
         .card-acc-trigger {
@@ -36,7 +36,6 @@
 
 
         &_item {
-            // border: 1px solid #000;
             // height: 100px;
             width: 100%;
 
@@ -74,12 +73,23 @@
 
     &__img {
         border: none;
-        // display: flex;
-        // align-items: flex-start;
         max-width: 350px !important;
+
         &_slider {
             margin-bottom: 10px;
             position: relative;
+            max-height: 380px;
+            height: 100%;
+
+            &_sl {
+                height: 100%;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                    display: flex;
+                }
+            }
             
         }
         &_thumb {
@@ -89,6 +99,13 @@
             display: flex;
             align-items: center;
             justify-content: center;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                display: flex;
+            }
 
         }
 
@@ -131,8 +148,13 @@
         &_item {
             display: flex;
             justify-content: center;
-            padding: 105px 49px;
+            //padding: 105px 49px;
+            padding: 30px;
             border-radius: 10px;
+
+            img {
+                
+            }
         }
     }
 
@@ -268,14 +290,43 @@
                 }
             }
 
+            &_main.db {
+                
+                .card__params_form_main_item {
+                    &:first-child {
+                        opacity: 1;
+                    }
+                }
+                .value_r {
+                    display: block;
+                }
+            }
+
             &_main {
                 border-top: 1px solid $line_gray;
                 border-bottom: 1px solid $line_gray;
                 padding: 13px 0 20px 0;
+
+                .value_r {
+                    display: none;
+                }
+
                 &_item {
                     display: flex;
                     align-items: center;
                     margin-bottom: 10px;
+
+                    .choices__list--dropdown {
+                        .choices__list {
+                            .choices__item {
+                                justify-content: flex-start !important;
+                            }
+                        }
+                    }
+
+                    &:first-child {
+                        opacity: 0;
+                    }
 
                     &:last-child {
                         margin: 0;

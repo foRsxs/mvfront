@@ -1,0 +1,202 @@
+.auth {
+    padding: 44px 0 70px;
+    width: 100%;
+    background: #F5F6FA;
+    border-radius: 10px;
+    position: relative;
+
+    &__ad {
+        padding: 12px 20px;
+        width: 277px;
+        background: #FFFFFF;
+        border-radius: 10px;
+        background-image: url('../img/cb.svg');
+        background-repeat: no-repeat;
+        background-position: 100% 5px;
+        background-size: 80px;
+        top: 44px;
+        right: 70px;
+        position: absolute;
+
+        &_in {
+            width: calc(100% - 60px);
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 22px;
+
+            .red {
+                color: $red;
+            }
+
+            .bold {
+                font-weight: 700;
+                font-size: 17px;
+            }
+        }
+
+    }
+
+    &__form {
+        max-width: 400px;
+        width: 100%;
+        margin: 0 auto;
+        background: #FFFFFF;
+        /* Line Gray */
+        padding: 25px;
+        border: 1px solid #E1E5EE;
+        border-radius: 10px;
+
+        &_head {
+            margin-bottom: 35px;
+            padding-left: 40px;
+            position: relative;
+            font-weight: 500;
+            font-size: 17px;
+            line-height: 16px;
+
+            &:after {
+                position: absolute;
+                width: 25px;
+                height: 25px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                background-image: url('../img/user.svg');
+                content: '';
+                top: calc(50% - 12.5px);
+                left: 0;
+            }
+        }
+
+        &_tel {
+            width: 100%;
+            margin-bottom: 20px;
+
+            .lk-profile__part_body_row {
+                width: 100%;
+                margin: 0;
+
+                .cnt__form_inpt {
+                    width: 100%;
+                    margin: 0;
+                }
+            }
+        }
+
+        &_code {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+            padding-right: 40px;
+            position: relative;
+
+            
+            &_label {
+                font-weight: 500;
+                font-size: 17px;
+                line-height: 16px;
+                margin-right: 15px;
+            }
+
+            &_inp.valid {
+
+                &:after {
+                    display: block;
+                }
+            }
+
+            &_inp.error {
+                input {
+                    border-color: $red;
+                }
+            }
+
+            &_inp {
+                position: relative;
+                &:after {
+                    position: absolute;
+                    width: 20px;
+                    height: 20px;
+                    right: -40px;
+                    top: calc(50% - 10px);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: contain;
+                    background-image: url('../img/check.svg');
+                    content: '';
+                    display: none;
+                }
+                input {
+                    display: block;
+                    padding: 15px;
+                    background: #FFFFFF;
+                    /* Line Gray */
+                    width: 80px;
+                    border: 1px solid #E1E5EE;
+                    border-radius: 4px;
+                }
+
+                input.error {
+                    border-color: $red;
+                }
+            }
+        }
+
+        &_ex {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            color: $red;
+            font-size: 12px;
+            line-height: 15px;
+        }
+    }
+}
+
+@media (max-width: 1150px) {
+    .auth {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__ad {
+            position: static;
+            order: 1;
+            margin-bottom: 20px;
+
+        }
+
+        &__form {
+            order: 2;
+        }
+    }
+}
+
+@media (max-width: 520px) {
+    .auth {
+
+        &__ad {
+            padding: 15px;
+            width: 90%;
+            background-size: 45px;
+            background-position: 100% 100%;
+
+            &_in {
+                width: calc(100% - 45px);
+                font-size: 12px;
+
+                .bold {
+                    font-size: 15px;
+                }
+
+            }
+        }
+        &__form {
+            border-radius: 0;
+            max-width: unset;
+            border: none;
+        }
+    }
+}

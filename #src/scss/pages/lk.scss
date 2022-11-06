@@ -1,0 +1,114 @@
+.lk {
+    position: relative;
+    .container {
+        
+    }
+    &__in {
+        
+        padding: 0 0 150px 0;
+    }
+    &__head {
+        margin-bottom: 40px;
+        font-weight: 800;
+        font-size: 38px;
+        line-height: 46px;
+        text-transform: uppercase;
+
+        &_link {
+            display: none;
+        }
+    }
+
+    
+
+    &__body {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        &_col {
+            &:nth-child(1) {
+                width: 300px;
+                padding-right: 25px;
+                flex: 0 0 auto;
+            }
+
+            &:nth-child(2) {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .lk {
+
+        &__head {
+            font-weight: 800;
+            font-size: 30px;
+            line-height: 36px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .lk {
+        background-color: #F5F6FA;
+        .container {
+            padding: 0;
+        }
+        &__head.light {
+            background-color: #fff;
+        }
+        &__head {
+            padding: 20px;
+            padding-left: 35px;
+            margin-bottom: 0;
+            font-weight: 700;
+            font-size: 24px;
+            background-color: #F5F6FA;
+            text-align: center;
+            line-height: 29px;
+            position: relative;
+
+            &_link {
+                position: absolute;
+                width: 15px;
+                height: 15px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                background-image: url('../img/arrow.svg');
+                content: '';
+                top: calc(50% - 7.5px);
+                left: 10px;
+                display: block;
+                transform: rotate(-90deg);
+            }
+        }
+
+        &__body {
+
+            &_col {
+
+                &:nth-child(1) {
+                    width: 0;
+                    padding: 0;
+                }
+                
+            }
+        }
+
+        // .sidebar {
+        //     display: none;
+        // }
+    }
+}
+
+@media (min-width: 768px) {
+    .lk {
+        .sidebar {
+            display: block;
+        }
+    }
+}

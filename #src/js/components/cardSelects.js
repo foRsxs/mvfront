@@ -13,6 +13,9 @@ export function cardSelects() {
             noResultsText: '',
             loadingText: '',
             searchPlaceholderValue: '',
+            sorter: function (a, b) {
+                return a.value - b.value
+            }
         });
     })
 }

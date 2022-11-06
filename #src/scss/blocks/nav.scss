@@ -222,6 +222,13 @@
             }
         }
 
+        &_contacts.active {
+            color: $red;
+        }
+        &_del.active {
+            color: $red;
+        }
+
         &_contacts {
             padding: 0 15px;
             padding-right: 31px;
@@ -273,6 +280,10 @@
                     opacity: 1;
                     transform: translateY(100%);
                     pointer-events: all;
+                }
+
+                &::after {
+                    content: url('../img/user-active.svg');
                 }
             }
         }

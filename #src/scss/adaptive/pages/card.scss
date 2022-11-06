@@ -1,6 +1,6 @@
 @media (max-width: 1200px) {
     .card {
-
+        padding-bottom: 50px;
         &__in {
             padding-top: 0;
         }
@@ -34,6 +34,7 @@
                     grid-row-start: 3;
                     grid-row-end: 5;
                     margin-top: 50px;
+                    margin-top: 0;
                 }
 
                 &:nth-child(4) {
@@ -411,11 +412,13 @@
 }
 @media (max-width: 520px) {
     .card {
-        .card-acc {
 
+        .card-acc {
+            .card-acc-main {
+                display: block;
+            }
             .card-acc-ex {
-                height: 0;
-                will-change: height;
+                display: none;
             }
 
             .card-acc-trigger {
@@ -426,7 +429,10 @@
 
         .card-acc.active {
             .card-acc-ex {
-
+                display: block;
+            }
+            .card-acc-main {
+                display: none;
             }
         }
     }

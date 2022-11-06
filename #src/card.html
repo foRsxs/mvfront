@@ -186,58 +186,14 @@
                                         <div class="card__params_form_item_name">
                                             Параметры:
                                         </div>
-                                        <div class="card__params_form_item_radio tabs-parent">
-                                            <input type="radio" id="same" name="param">
-                                            <label class="tabs-tab" for="same" data-tab>Одинаковые</label>
-                                            <input type="radio" id="dif" name="param">
-                                            <label class="tabs-tab" for="dif" data-tab>Разные</label>
+                                        <div class="card__params_form_item_radio">
+                                            <input class="cardOpt" type="radio" id="same" name="param">
+                                            <label for="same" data-tab>Одинаковые</label>
+                                            <input type="radio" checked id="dif" name="param">
+                                            <label class="cardOpt" for="dif" data-tab>Разные</label>
                                         </div>
                                     </div>
-                                    <div class="card__params_form_main tabs-content">
-                                        <div class="card__params_form_main_item">
-                                            <div class="name"></div>
-                                            <div class="value_l col-t o-0">Левый глаз</div>
-                                            <div class="value_r col-t o-0">Правый глаз</div>
-                                        </div>
-
-                                        <div class="card__params_form_main_item">
-                                            <div class="name">Оптическая сила</div>
-                                            <div class="value_l">
-                                                <select name="" id="" class="choices card__sel">
-                                                    <option value="1"></option>
-                                                    <option value="2"></option>
-                                                    <option value="3"></option>
-                                                    <option value="4"></option>
-                                                    <option value="5"></option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="card__params_form_main_item">
-                                            <div class="name">Оптическая сила</div>
-                                            <div class="value_l">
-                                                <select name="" id="" class="choices card__sel">
-                                                    <option value="1"></option>
-                                                    <option value="2"></option>
-                                                    <option value="3"></option>
-                                                    <option value="4"></option>
-                                                    <option value="5"></option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="card__params_form_main_item">
-                                            <div class="name">Оптическая сила</div>
-                                            <div class="value_l">
-                                                <select name="" id="" class="choices card__sel">
-                                                    <option value="1"></option>
-                                                    <option value="2"></option>
-                                                    <option value="3"></option>
-                                                    <option value="4"></option>
-                                                    <option value="5"></option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card__params_form_main tabs-content">
+                                    <div class="card__params_form_main db">
                                         <div class="card__params_form_main_item">
                                             <div class="name"></div>
                                             <div class="value_l col-t">Левый глаз</div>
@@ -271,7 +227,7 @@
                                                 <select name="" id="" class="choices card__sel">
                                                     <option value="1"></option>
                                                     <option value="2"></option>
-                                                    <option value="3"></option>
+                                                    <option value="-1"></option>
                                                     <option value="4"></option>
                                                     <option value="5"></option>
                                                 </select>
@@ -371,14 +327,23 @@
                                 <div class="card__tabs_content_item_head">
                                     описание
                                 </div>
-                                Линзы ACUVUE OASYS with HYDRACLEAR Plus созданы из материала Senofilcon A категории
-                                силикон-гидрогелей, который впервые используется для производства контактных линз,
-                                особенностью его является особая мягкость. ACUVUE OASYS содержат Линзы ACUVUE OASYS with
-                                HYDRACLEAR Plus созданы из материала Senofilcon A категории силикон-гидрогелей, который
-                                впервые используется для производства контактных линз, особенностью его является особая
-                                мягкость. 
+                                <div class="card-acc-main">
+                                    Линзы ACUVUE OASYS with HYDRACLEAR Plus созданы из материала Senofilcon A категории
+                                    силикон-гидрогелей, который впервые используется для производства контактных линз,
+                                    особенностью его является особая мягкость. ACUVUE OASYS содержат Линзы ACUVUE OASYS with
+                                    HYDRACLEAR Plus созданы из материала Senofilcon A категории силикон-гидрогелей, который
+                                    впервые используется для производства контактных линз, особенностью его является особая
+                                    мягкость. 
+                                </div>
+                                
 
                                 <div class="card-acc-ex">
+                                    Линзы ACUVUE OASYS with HYDRACLEAR Plus созданы из материала Senofilcon A категории
+                                    силикон-гидрогелей, который впервые используется для производства контактных линз,
+                                    особенностью его является особая мягкость. ACUVUE OASYS содержат Линзы ACUVUE OASYS with
+                                    HYDRACLEAR Plus созданы из материала Senofilcon A категории силикон-гидрогелей, который
+                                    впервые используется для производства контактных линз, особенностью его является особая
+                                    мягкость. 
                                     ACUVUE OASYS содержат уникальный компонент HYDRACLEAR Plus - следующее
                                     поколение уже используемого компонента HYDRACLEAR, он еще лучше поддерживает уровень
                                     влажности и обеспечивает чрезвычайно гладкую поверхность контактной линзы. Еще одна
@@ -393,39 +358,72 @@
                                 <div class="card__tabs_content_item_head">
                                     Характеристики
                                 </div>
-                                <div class="item">
-                                    <div class="name">
-                                        <span>Режим ношения</span>
+                                <div class="card-acc-main">
+                                    <div class="item">
+                                        <div class="name">
+                                            <span>Режим ношения</span>
+                                        </div>
+    
+                                        <div class="value">Дневной, гибкий, пролонгированный</div>
                                     </div>
-
-                                    <div class="value">Дневной, гибкий, пролонгированный</div>
-                                </div>
-
-                                <div class="item">
-                                    <div class="name">
-                                        <span>Срок использования</span>
+    
+                                    <div class="item">
+                                        <div class="name">
+                                            <span>Срок использования</span>
+                                        </div>
+    
+                                        <div class="value">Двухнедельные</div>
                                     </div>
-
-                                    <div class="value">Двухнедельные</div>
-                                </div>
-
-                                <div class="item">
-                                    <div class="name">
-                                        <span>Материал</span>
+    
+                                    <div class="item">
+                                        <div class="name">
+                                            <span>Материал</span>
+                                        </div>
+    
+                                        <div class="value">Senofilcon A</div>
                                     </div>
-
-                                    <div class="value">Senofilcon A</div>
-                                </div>
-
-                                <div class="item">
-                                    <div class="name">
-                                        <span>Состав</span>
+    
+                                    <div class="item">
+                                        <div class="name">
+                                            <span>Состав</span>
+                                        </div>
+    
+                                        <div class="value">Cиликон - Гидрогелевые</div>
                                     </div>
-
-                                    <div class="value">Cиликон - Гидрогелевые</div>
                                 </div>
+                                
                                 <div class="card-acc-ex">
-
+                                    <div class="item">
+                                        <div class="name">
+                                            <span>Режим ношения</span>
+                                        </div>
+    
+                                        <div class="value">Дневной, гибкий, пролонгированный</div>
+                                    </div>
+    
+                                    <div class="item">
+                                        <div class="name">
+                                            <span>Срок использования</span>
+                                        </div>
+    
+                                        <div class="value">Двухнедельные</div>
+                                    </div>
+    
+                                    <div class="item">
+                                        <div class="name">
+                                            <span>Материал</span>
+                                        </div>
+    
+                                        <div class="value">Senofilcon A</div>
+                                    </div>
+    
+                                    <div class="item">
+                                        <div class="name">
+                                            <span>Состав</span>
+                                        </div>
+    
+                                        <div class="value">Cиликон - Гидрогелевые</div>
+                                    </div>
                                     <div class="item">
                                         <div class="name">
                                             <span>Содержание воды</span>
@@ -603,7 +601,7 @@
 
     @@include('./blocks/mobile-menu.html')
 
-
+    @@include('./blocks/sidebar.html')
     @@include('./blocks/navbar.html')
     @@include('./components/addbasket.html')
     @@include('./components/addrev.html')

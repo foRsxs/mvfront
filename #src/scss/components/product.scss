@@ -8,7 +8,10 @@
     box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     position: relative;
-    
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     &__like {
         position: absolute;
@@ -62,16 +65,21 @@
         justify-content: center;
         padding-top: 30px;
         padding-bottom: 37px;
+        height: 200px;
 
         img {
             width: 100%;
             height: 100%;
             max-height: 118px;
-            object-fit: cover;
+            object-fit: contain;
         }
     }
 
     &__body {
+        flex: 1 0 auto;
+        // border: 1px solid red;
+        display: flex;
+        flex-direction: column;
 
         &_fl {
             margin-bottom: 10px;
@@ -116,13 +124,18 @@
                 text-decoration-line: line-through;
             }
         }
+        &_price {
+            padding-bottom: 7px;
+        }
 
         &_action {
+            flex: 1 0 auto;
 
             display: flex;
-            align-items: center;
+            align-items: flex-end;
             justify-content: space-between;
 
+            
             &_btn {
                 // width: 100%;
                 .button {

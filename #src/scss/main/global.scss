@@ -97,10 +97,14 @@ html {
         padding-top: 58px;
     }
 }
-
-@media (max-width: 520px) {
+@media (max-width: 768px) {
+    .main.lk-bg {
+        background-color: #f5f6fa;
+    }
+}
+@media (max-width: 600px) {
     .main {
-        padding-bottom: 75px;
+        padding-bottom: 61px;
     }
 }
 
@@ -133,5 +137,15 @@ html {
     .section__title {
         font-size: 30px;
         line-height: 36px;
+    }
+}
+.choices {
+    input {
+        border: 1px solid #e1e5ee !important;
+    }
+}
+.choices.is-open {
+    .choices__list--dropdown {
+        z-index: 20;
     }
 }

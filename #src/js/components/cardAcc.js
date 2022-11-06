@@ -11,14 +11,18 @@ export const cardAcc = () => {
                 item.classList.toggle('active')
 
                 if(item.classList.contains('active')) {
-                    ex.style.height = `${ex.scrollHeight}px`
                     trigger.innerHTML = 'Скрыть'
                 }
                 if(!item.classList.contains('active')) {
-                    ex.style.height = `${0}px`
                     trigger.innerHTML = 'Показать полностью'
                 }
             })
+            if(item.classList.contains('active')) {
+                trigger.innerHTML = 'Скрыть'
+            }
+            if(!item.classList.contains('active')) {
+                trigger.innerHTML = 'Показать полностью'
+            }
         })
     }
 }

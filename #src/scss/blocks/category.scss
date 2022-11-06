@@ -1,0 +1,9 @@
+.category {
+    padding-bottom: 100px;
+}
+
+@media (max-width: 768px) {
+    .category {
+        padding-bottom: 50px;
+    }
+}

@@ -22,6 +22,16 @@ export function selectionAcc() {
             }
             
         });
+        if(selBody.classList.contains('active') && selHeadEx.classList.contains('active')) {
+            selBody.style.cssText = `height: ${selBody.scrollHeight}px;`;
+            selHeadEx.style.cssText = `height: ${19.2}px`;
+            
+        }
+
+        if(!selBody.classList.contains('active') && !selHeadEx.classList.contains('active')) {
+            selBody.style.cssText = `height: 0px;`;
+            selHeadEx.style.cssText = `height: 0px`;
+        }
         // if(window.innerWidth <= 1200) {
         //     selHead.addEventListener('click', (e) => {
         //         selBody.classList.toggle('active');

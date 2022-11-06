@@ -212,7 +212,54 @@
                             </div>
 
                             <div class="category__body_list">
-                                @@include('./blocks/products.html')
+                                <div class="products"> 
+                                    <div class="products__item products__item--lg">@@include('./blocks/product.html')</div>   
+                                    <div class="products__item products__item--lg">@@include('./blocks/product.html')</div>   
+                                    <div class="products__item products__item--lg">@@include('./blocks/product.html')</div>   
+                                    <div class="products__item">@@include('./blocks/product.html')</div>   
+                                    <div class="products__item">@@include('./blocks/product.html')</div>   
+                                    <div class="products__item">
+                                        <div class="product">
+                                            <button class="product__like">
+                                            </button>
+                                            <div class="product__dc">
+                                                -20%
+                                            </div>
+                                            <div class="product__img">
+                                                <picture>
+                                                    <source srcset="" type="image/webp">
+                                                    <img src="./img/min-product.jpeg" alt="">
+                                                </picture>
+                                            </div>
+                                        
+                                            <div class="product__body"> 
+                                                <div class="product__body_name">
+                                                    Acuvue 1-day TruEye
+                                                    adasdasdasdasd
+                                                    adasdasdasdasd
+                                                </div>
+                                                <div class="product__body_fl">
+                                                    <div class="product__body_fl_item product__body_fl_item_term">Силикон-гидрогелевые</div>
+                                                 
+                                                </div>
+                                                
+                                                
+                                        
+                                                <div class="product__body_action">
+                                                    <div class="product__body_price">
+                                                        <div class="new">12000₸</div>
+                                                    </div>
+                                                    <div class="product__body_action_btn">
+                                                        <button class="button button-blue">Выбрать</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>   
+                                    <div class="products__item">@@include('./blocks/product.html')</div>   
+                                    <div class="products__item">@@include('./blocks/product.html')</div>   
+                                    <div class="products__item">@@include('./blocks/product.html')</div>   
+                                </div>
                                 
                                 <div class="rev__nav">
                                     <div class="rev__nav_in">
@@ -244,7 +291,7 @@
 
 
     @@include('./blocks/mobile-menu.html')
-
+    @@include('./blocks/sidebar.html')
     @@include('./components/addbasket.html')
     @@include('./components/addrev.html')
 
