@@ -6410,6 +6410,7 @@ html {
 }
 .basket__body_prs_item .body {
   padding-left: 20px;
+  width: 100%;
 }
 .basket__body_prs_item .body__name {
   font-weight: 500;
