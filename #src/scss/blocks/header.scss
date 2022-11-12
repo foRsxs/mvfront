@@ -133,6 +133,14 @@
                 padding: 5px 10px;
                 padding-bottom: 5px !important;
                 min-height: unset;
+                height: 39px;
+                display: flex;
+                align-items: flex-start;
+
+                .choices__list--single {
+                    height: 100%;
+                    overflow: hidden;
+                }
             }
 
             .choices__list.choices__list--dropdown {
@@ -181,6 +189,11 @@
 
                 .choices__item.is-highlighted {
                     background-color: #fff;
+                    color: $red;
+                }
+
+                .choices__item.is-selected {
+                    background-color: #eaeaea;
                     color: $red;
                 }
             }

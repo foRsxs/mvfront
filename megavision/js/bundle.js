@@ -50,7 +50,7 @@
 /*!*************************************!*\
   !*** ./#src/js/components/input.js ***!
   \*************************************/
-/*! exports provided: input */function(e,t,s){"use strict";function i(){const e=document.querySelectorAll(".customField");e.length>0&&e.forEach(e=>{e.addEventListener("input",()=>{null!=e.value&&e.parentElement.classList.add("active"),""==e.value&&e.parentElement.classList.remove("active")})})}s.r(t),s.d(t,"input",(function(){return i}))},"./#src/js/components/lkMenu.js":
+/*! exports provided: input */function(e,t,s){"use strict";function i(){const e=document.querySelectorAll(".customField");e.length>0&&e.forEach(e=>{null!=e.value&&e.parentElement.classList.add("active"),""==e.value&&e.parentElement.classList.remove("active"),e.addEventListener("change",()=>{null!=e.value&&e.parentElement.classList.add("active"),""==e.value&&e.parentElement.classList.remove("active")})})}s.r(t),s.d(t,"input",(function(){return i}))},"./#src/js/components/lkMenu.js":
 /*!**************************************!*\
   !*** ./#src/js/components/lkMenu.js ***!
   \**************************************/

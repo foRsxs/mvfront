@@ -37,6 +37,7 @@
                 width: 100%;
             }
         }
+       
     }
 }
 
@@ -52,11 +53,12 @@
 }
 
 @media (max-width: 768px) {
+    .lk > .container {
+        padding: 0;
+    }
     .lk {
         background-color: #F5F6FA;
-        .container {
-            padding: 0;
-        }
+        
         &__head.light {
             background-color: #fff;
         }
