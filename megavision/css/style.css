@@ -663,6 +663,15 @@ html {
   background-color: #9497A3;
   height: 100%;
 }
+.prev__slider_sl img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 .prev__slider .prev__left {
   position: absolute;
   z-index: 5;
@@ -4198,10 +4207,10 @@ html {
   }
   .addbasket__body_main_info_item_name {
     margin: 0;
-    width: 48%;
+    width: 58%;
   }
   .addbasket__body_main_info_item_value {
-    width: 48%;
+    width: 40%;
   }
   .addbasket__body_action {
     background-color: unset;
@@ -4342,12 +4351,6 @@ html {
     padding: 10px 30px;
     background-color: unset;
     border: none;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
-  .mod-popup__body_head_label {
-    display: none;
   }
 }
 .addrev__body_title {
@@ -4685,6 +4688,35 @@ html {
   background-image: url("../img/lk-submenu-5.svg");
 }
 
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  z-index: -1;
+  opacity: 0;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.loader.active {
+  z-index: 100000;
+  opacity: 1;
+}
+
 .card {
   padding-bottom: 100px;
 }
@@ -4973,6 +5005,9 @@ html {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .card__params_form_main_item .choices__list--dropdown .choices__list .choices__item {
   -webkit-box-pack: start !important;
@@ -4994,14 +5029,19 @@ html {
   color: #737783;
   font-size: 12px;
   line-height: 16px;
+  text-align: right;
 }
 .card__params_form_main_item .value_r.col-t {
   color: #737783;
   font-size: 12px;
   line-height: 16px;
+  text-align: right;
+}
+.card__params_form_main_item .value_l.lg {
+  width: 25%;
 }
 .card__params_form_main_item .value_l {
-  width: 25%;
+  width: 65px;
 }
 .card__params_form_main_item .value_l .choices[data-type*=select-one]::after {
   border-color: #DE2747 transparent transparent;
@@ -5020,7 +5060,7 @@ html {
   background-color: #fff;
   border-radius: 5px;
   min-height: 34px;
-  padding-right: 12px;
+  padding-right: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5050,8 +5090,11 @@ html {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.card__params_form_main_item .value_r {
+.card__params_form_main_item .value_r.lg {
   width: 25%;
+}
+.card__params_form_main_item .value_r {
+  width: 65px;
 }
 .card__params_form_main_item .value_r .choices[data-type*=select-one]::after {
   border-color: #DE2747 transparent transparent;
@@ -5080,6 +5123,7 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-right: 20px;
 }
 .card__params_form_main_item .value_r .choices__list--single {
   padding: 0;
@@ -5184,6 +5228,15 @@ html {
   background-color: #414E60;
   -ms-flex-item-align: center;
       align-self: center;
+}
+.card__ex img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .card__pay {
   height: 94px;
@@ -5322,9 +5375,9 @@ html {
   padding-top: 30px;
 }
 .card__tabs_content_item.show.rev {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
 }
 .card__tabs_content_item.rev {
   padding-top: 30px;
@@ -8963,8 +9016,8 @@ html {
     padding-top: 0;
   }
   .card__body {
-    grid-template-columns: 1fr 1fr 1.5fr;
-    grid-template-rows: 10% 1fr 1fr 1fr;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto;
     grid-column-gap: 25px;
     margin-bottom: 30px;
   }
@@ -8972,7 +9025,7 @@ html {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
-    grid-row-end: 4;
+    grid-row-end: 3;
   }
   .card__body_item:nth-child(2) {
     grid-column-start: 2;
