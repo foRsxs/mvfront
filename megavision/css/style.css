@@ -141,6 +141,13 @@ html {
 .choices input {
   border: 1px solid #e1e5ee !important;
 }
+.choices .choices__inner {
+  overflow: hidden !important;
+  padding-right: 25px !important;
+}
+.choices .choices__inner .choices__list--single {
+  overflow: hidden !important;
+}
 .choices .choices__list--dropdown .choices__item.is-selected {
   font-weight: 700 !important;
 }
@@ -4783,7 +4790,7 @@ html {
 .card__img_slider {
   margin-bottom: 10px;
   position: relative;
-  max-height: 380px;
+  max-height: 250px;
   height: 100%;
 }
 .card__img_slider_sl {

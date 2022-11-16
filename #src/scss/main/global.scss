@@ -144,6 +144,16 @@ html {
         border: 1px solid #e1e5ee !important;
     }
 
+    .choices__inner {
+        overflow: hidden !important;
+        // min-height: unset !important;
+        padding-right: 25px !important;
+
+        .choices__list--single {
+            overflow: hidden !important;
+        }
+    }
+
     .choices__list--dropdown {
         .choices__item.is-selected {
             font-weight: 700 !important;
