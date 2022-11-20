@@ -108,6 +108,13 @@
             @include def-anim;
 
             transform: translateY(100%);
+
+            &_head.hide-mob {
+
+                .mod-popup__body_head_label {
+                    display: none !important;
+                }
+            }
             &_head {
                 padding: 10px 30px;
                 background-color: unset;
