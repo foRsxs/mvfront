@@ -225,6 +225,7 @@ document.addEventListener('DOMContentLoaded', () => {
     cardAcc();
     lkMenu();
     cardOpt();
+    tabsFunc('.cardParams', '.cardParams__head_els', '.cardParams__head_els_item', '.cardParams__body_item')
     
 });
 
