@@ -9,13 +9,15 @@ export function cardSelects() {
         var customSel = new Choices(sel, {
             allowHTML: true,
             searchEnabled: false,
+            shouldSort: false,
             itemSelectText: '',
             noResultsText: '',
             loadingText: '',
             searchPlaceholderValue: '',
-            sorter: function (a, b) {
+
+/*            sorter: function (a, b) {
                 return a.value - b.value
-            }
+            }*/
         });
     })
 }

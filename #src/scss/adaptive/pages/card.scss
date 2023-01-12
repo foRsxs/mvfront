@@ -79,7 +79,7 @@
         &__img {
             
             &_item {
-                padding: 65px 20px;
+                padding: 10px 20px;
             }
         }
 
@@ -93,6 +93,9 @@
 
             
         }
+
+
+
 
         &__params {
 
@@ -142,8 +145,15 @@
             align-content: start;
         }
         &__ex {
-            max-height: 110px;
+            max-height: 90px;
+            max-width: 400px;
             margin-top: 30px;
+        }
+
+        &__preorder {
+
+            max-height: 130px;
+
         }
 
         &__pay {
@@ -205,7 +215,7 @@
         &__body {
 
             grid-template-columns: 100%;
-            grid-template-rows: 48px auto auto auto 1fr auto auto auto;
+            grid-template-rows: 1px auto auto auto 1fr auto auto auto;
             grid-row-gap: 15px;
             grid-column-gap: 0;
 
@@ -288,7 +298,7 @@
             &_item {
                 width: 100%;
                 height: 100%;
-                padding: 51px 10px;
+                padding: 5px 10px;
             }
 
             &_thumbs {

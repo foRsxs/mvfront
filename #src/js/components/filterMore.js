@@ -24,26 +24,29 @@ export function filterMore(el, hidden, btn) {
                 
         `;
 
-        moreBtn.addEventListener('click', () => {
-            moreBtn.classList.toggle('active');
-            hiddenBlock.classList.toggle('active');
+        if (moreBtn){
+            moreBtn.addEventListener('click', () => {
+                moreBtn.classList.toggle('active');
+                hiddenBlock.classList.toggle('active');
 
-            if(moreBtn.classList.contains('active')) {
-                moreBtn.innerHTML = hideBtn;
-            }
+                if(moreBtn.classList.contains('active')) {
+                    moreBtn.innerHTML = hideBtn;
+                }
 
-            if(!moreBtn.classList.contains('active')) {
-                moreBtn.innerHTML = showBtn;
-            }
+                if(!moreBtn.classList.contains('active')) {
+                    moreBtn.innerHTML = showBtn;
+                }
 
-            if(hiddenBlock.classList.contains('active')) {
-                hiddenBlock.style.height = `${hiddenBlock.scrollHeight}px`;
-            }
+                if(hiddenBlock.classList.contains('active')) {
+                    hiddenBlock.style.height = `${hiddenBlock.scrollHeight}px`;
+                }
 
-            if(!hiddenBlock.classList.contains('active')) {
-                hiddenBlock.style.height = `0px`;
-            }
+                if(!hiddenBlock.classList.contains('active')) {
+                    hiddenBlock.style.height = `0px`;
+                }
 
-        });
+            });
+        }
+
     }
 }

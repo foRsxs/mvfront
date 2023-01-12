@@ -63,4 +63,14 @@
 
 
 
-
+@media (max-width: 520px) {
+    .button_fix {
+        position: fixed;
+        bottom: 61px;
+        margin-bottom: 0;
+        border-radius: 0;
+        width: 100%;
+        left: 0;
+        z-index: 10;
+    }
+}

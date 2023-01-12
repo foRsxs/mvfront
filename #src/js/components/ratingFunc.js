@@ -9,7 +9,9 @@ export function ratingFunc(el, num) {
             i.addEventListener('click', () => {
                 const { rateValue } = i.dataset;
                 i.parentNode.dataset.rateTotal = rateValue;
-                valueNum.innerHTML = rateValue;
+
+                if (valueNum)
+                    valueNum.innerHTML = rateValue;
             });
         });
     }

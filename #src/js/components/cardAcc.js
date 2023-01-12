@@ -7,8 +7,17 @@ export const cardAcc = () => {
             let trigger = item.querySelector('.card-acc-trigger')
             let ex = item.querySelector('.card-acc-ex')
 
-            trigger.addEventListener('click', () => {
-                item.classList.toggle('active')
+            if (trigger){
+                trigger.addEventListener('click', () => {
+                    item.classList.toggle('active')
+
+                    if(item.classList.contains('active')) {
+                        trigger.innerHTML = 'Скрыть'
+                    }
+                    if(!item.classList.contains('active')) {
+                        trigger.innerHTML = 'Показать полностью'
+                    }
+                })
 
                 if(item.classList.contains('active')) {
                     trigger.innerHTML = 'Скрыть'
@@ -16,13 +25,9 @@ export const cardAcc = () => {
                 if(!item.classList.contains('active')) {
                     trigger.innerHTML = 'Показать полностью'
                 }
-            })
-            if(item.classList.contains('active')) {
-                trigger.innerHTML = 'Скрыть'
             }
-            if(!item.classList.contains('active')) {
-                trigger.innerHTML = 'Показать полностью'
-            }
+
+
         })
     }
 }

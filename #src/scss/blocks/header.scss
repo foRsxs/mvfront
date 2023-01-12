@@ -212,6 +212,9 @@
 
             &:after {
                 content: url('../img/basket-active.svg');
+                position: absolute;
+                top: calc(50% - 13.5px);
+                left: 0;
             }
         }
 

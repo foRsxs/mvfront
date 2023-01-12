@@ -1,5 +1,5 @@
 import Choices from 'choices.js';
-import Swiper, {Navigation, Pagination, Thumbs} from 'swiper';
+import Swiper, {Autoplay, Navigation, Pagination, Thumbs} from 'swiper';
 
 import { navMenu } from './components/navMenu';
 import { selectionAcc } from './components/selectionAcc';
@@ -17,7 +17,6 @@ import { filterMore } from './components/filterMore';
 import { filterMobile } from './components/filterMobile';
 import { cardGallery } from './components/cardGallery';
 import { input } from './components/input';
-import { counter } from './components/conuter';
 import { customSelect } from './components/choice';
 import { switchBasket } from './components/switchBasket';
 import { selectCard } from './components/selectCard';
@@ -27,36 +26,84 @@ import { mobbasket } from './components/mobbasket';
 import { search } from './components/search';
 import { addRev } from './components/addRev';
 import { addBasket } from './components/addBasket';
-import basketAcc from './components/basketAcc';
+//import basketAcc from './components/basketAcc';
 import { cardAcc } from './components/cardAcc';
-import lkMenu from './components/lkMenu';
+//import lkMenu from './components/lkMenu';
 import cardOpt from './components/cardOpt';
-
+import {accountAuth} from "./components/auth";
+import {quickSearch} from "./components/quickSearch";
+import {checkout} from "./components/basket";
+import {basketAuth} from "./components/basketAuth";
+import {basketDone} from "./components/basketDone";
+import {reOrder} from "./components/reOrder";
+import {chat} from "./components/chat";
+//import {counter} from "./components/counter";
+//import {filter} from "./components/filter";
+import {category} from "./components/category";
+import {profile} from "./components/profile";
+import {favorites} from "./components/favorites";
+import {review} from "./components/review";
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    
-    const headerSelect = new Choices('.header-ch', {
+
+    const loader = document.getElementById('loader');
+    loader.classList.remove('active');
+
+
+    const headerCh = document.querySelector('.header-ch');
+
+    const headerSelect = new Choices(headerCh, {
         itemSelectText: '',
         noResultsText: 'Ничего не найдено',
         loadingText: 'Загрузка',
         allowHTML: true,
         searchPlaceholderValue: 'Поиск по названию...',
+        shouldSort: false
         
     });
 
-    const navChoice = new Choices('.nav-ch', {
-        itemSelectText: '',
-        noResultsText: 'Ничего не найдено',
-        loadingText: 'Загрузка',
-        allowHTML: true,
-        searchPlaceholderValue: 'Поиск по названию...',
-    });
+    headerCh.addEventListener('choice',
+        (e) =>  {
+            if (e.detail.choice.value)
+                window.location = e.detail.choice.value;
+        },
+        false,
+    );
+
+    const navCh = document.querySelector('.nav-ch');
+
+    if (navCh){
+        const navChoice = new Choices(navCh, {
+            itemSelectText: '',
+            noResultsText: 'Ничего не найдено',
+            loadingText: 'Загрузка',
+            allowHTML: true,
+            searchPlaceholderValue: 'Поиск по названию...',
+            shouldSort: false
+        });
+
+        navCh.addEventListener('choice',
+            (e) =>  {
+                if (e.detail.choice.value)
+                    window.location = e.detail.choice.value;
+            },
+            false,
+        );
+    }
+
 
 
     const prevSlider = new Swiper('.prev__slider', {
-        modules: [Navigation, Pagination],
+        modules: [Autoplay, Navigation, Pagination],
+        loop: true,
+        speed: 400,
         slidesPerView: 1,
+        autoHeight: true,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: true,
+        },
         navigation: {
             prevEl: '.prev__left',
             nextEl: '.prev__right'
@@ -72,19 +119,24 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
     });
+
+
     
     const connThumbs = new Swiper('.conn__thumbs', {
         
         slidesPerView: 3,
         spaceBetween: 20,
-        
-        
 
     });
     const connSlider = new Swiper('.conn__slider', {
-        modules: [Thumbs],
+        modules: [Autoplay,Thumbs],
         direction: 'horizontal',
         slidesPerView: 1,
+        loop: true,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: true,
+        },
         
         breakpoints: {
             600: {
@@ -100,9 +152,6 @@ document.addEventListener('DOMContentLoaded', () => {
         },
     });
 
-    
-
-    
 
     const connPrev = document.querySelector('#connPrev');
     const connNext = document.querySelector('#connNext');
@@ -138,8 +187,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-
-
     //filter tabs test
     // const flTabs = document.querySelectorAll('.category__body_filter_action_tab');
 
@@ -155,11 +202,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // }
 
 
-
-
     //card slider test
 
-    
 
     const cardThumbs = new Swiper('.card__img_thumbs', {
         slidesPerView: 4,
@@ -183,9 +227,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-   
-    
-    
 
 
     navMenu();
@@ -206,7 +247,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     tabsFunc('.del__action', '.del__action_tabs', '.del__action_tab', '.del__action_tabcontent');
     input();
-    counter();
     customSelect();
     switchBasket();
 
@@ -221,12 +261,21 @@ document.addEventListener('DOMContentLoaded', () => {
     search();
     addRev();
     addBasket();
-    basketAcc();
+    /*basketAcc();*/
     cardAcc();
-    lkMenu();
+    // lkMenu();
     cardOpt();
-    tabsFunc('.cardParams', '.cardParams__head_els', '.cardParams__head_els_item', '.cardParams__body_item')
-    
+    accountAuth();
+    quickSearch();
+    checkout();
+    basketAuth();
+    basketDone();
+    reOrder();
+    chat();
+    category();
+    profile();
+    favorites();
+    review();
 });
 
 

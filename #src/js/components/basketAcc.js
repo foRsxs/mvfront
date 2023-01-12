@@ -1,3 +1,4 @@
+/*
 const basketAcc = () => {
     const items = document.querySelectorAll('.basket-acc');
 
@@ -27,4 +28,4 @@ const basketAcc = () => {
     
 }
 
-export default basketAcc;
+export default basketAcc;*/

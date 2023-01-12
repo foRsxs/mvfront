@@ -4,11 +4,10 @@ export const mobbasket = () => {
     const basket = document.querySelector('.basket__body');
 
 
-    if(btn) {
+    if(btn && basket) {
         
         btn.addEventListener('click', () => {
             basket.classList.add('active')
-            console.log('click')
         })
     }
     

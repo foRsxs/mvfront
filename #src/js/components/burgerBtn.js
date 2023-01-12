@@ -17,7 +17,7 @@ export function burgerBtn() {
     const scrollTarget = document.querySelector('.mobmenu__content');
 
 
-    if(burgerButtonEl) {
+    if(burgerButtonEl && mobMenuEl && mobmenuWrapper) {
 
         
         burgerButtonEl.addEventListener('click', () => {
@@ -32,6 +32,7 @@ export function burgerBtn() {
                 // enableBodyScroll(mobMenuContent);
             }
         });
+
 
         mobmenuWrapper.addEventListener('click', (e) => {
             

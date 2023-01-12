@@ -1,29 +1,31 @@
 import noUiSlider from 'nouislider';
+import {filter} from './filter'
 import wNumb from 'wnumb';
 
 export function rangeSlider() {
     let filterPrice = document.querySelector('#range1');
     let filterVol = document.querySelector('#range2');
 
-    let input1 = document.querySelector('#test1');
-    let input2 = document.querySelector('#test2');
+    let input1 = document.querySelector('#fl_price');
+    let input2 = document.querySelector('#fl_price2');
 
-    let input3 = document.querySelector('#test3');
-    let input4 = document.querySelector('#test4');
+    let input3 = document.querySelector('#fl_volume');
+    let input4 = document.querySelector('#fl_volume2');
 
     let inputs1 = [input1, input2];
     let inputs2 = [input3, input4];
 
+
     if(filterPrice) {
         noUiSlider.create(filterPrice, {
-            start: [0, 100000],
+            start: [0, 50000],
             connect: true,
             step: 100,
             tooltips: false,
     
             range: {
                 'min': 0,
-                'max': 100000
+                'max': 50000
             },
             format: {
                 from: function(value) {
@@ -37,6 +39,10 @@ export function rangeSlider() {
             //     from: wNumb({thousand: ' ', suffix: '₸', }),
             //     to: wNumb({thousand: ' ', suffix: '₸', })
             // }
+        });
+
+        filterPrice.noUiSlider.on('change', ()=> {
+            filter();
         });
     
         filterPrice.noUiSlider.on('update', function (values, handle) {
@@ -61,6 +67,7 @@ export function rangeSlider() {
 
                     case 13:
                         filterPrice.noUiSlider.setHandle(handle, this.value);
+                        filter();
                         break;
                     case 38: 
                         pos = step[1];
@@ -70,7 +77,8 @@ export function rangeSlider() {
                         }
 
                         if(pos !== null) {
-                            filterPrice.noUiSlider.setHandle(handle, value + pos);  
+                            filterPrice.noUiSlider.setHandle(handle, value + pos);
+                            filter();
                         }
 
                         break;
@@ -83,10 +91,15 @@ export function rangeSlider() {
 
                         if(pos !== null) {
                             filterPrice.noUiSlider.setHandle(handle, value - pos);
+                            filter();
                         }
 
                         break;
                 }
+
+
+
+
             });
         });
     }
@@ -95,13 +108,13 @@ export function rangeSlider() {
     if(filterVol) {
 
         noUiSlider.create(filterVol, {
-            start: [100, 500],
+            start: [10, 500],
             connect: true,
-            step: 1,
+            step: 5,
             tooltips: false,
 
             range: {
-                'min': 100,
+                'min': 10,
                 'max': 500
             },
             
@@ -113,6 +126,10 @@ export function rangeSlider() {
                     return parseInt(value);  
                 }
             }
+        });
+
+        filterVol.noUiSlider.on('change', ()=> {
+            filter();
         });
 
         filterVol.noUiSlider.on('update', function (values, handle) {
@@ -137,6 +154,7 @@ export function rangeSlider() {
 
                     case 13:
                         filterVol.noUiSlider.setHandle(handle, this.value);
+                        filter
                         break;
                     case 38: 
                         pos = step[1];
@@ -146,7 +164,8 @@ export function rangeSlider() {
                         }
 
                         if(pos !== null) {
-                            filterVol.noUiSlider.setHandle(handle, value + pos);  
+                            filterVol.noUiSlider.setHandle(handle, value + pos);
+                            filter
                         }
 
                         break;
@@ -159,6 +178,7 @@ export function rangeSlider() {
 
                         if(pos !== null) {
                             filterVol.noUiSlider.setHandle(handle, value - pos);
+                            filter
                         }
 
                         break;
